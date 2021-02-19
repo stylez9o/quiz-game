@@ -1,0 +1,2734 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_OHMPQHKvEeulKaaY3PFXgA" name="quizGame">
+    <eAnnotations xmi:id="_OJ_EkHKvEeulKaaY3PFXgA" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_OJ_roHKvEeulKaaY3PFXgA" source="codegen">
+        <details xmi:id="_OJ_roXKvEeulKaaY3PFXgA" key="codegenDirectory" value="/quizGame/src/main/java"/>
+        <details xmi:id="_OuLWwHKvEeulKaaY3PFXgA" key="AssociatedSourceCode" value="/quizGame/src/main/java/InnerQuestions.java;1855313483/1;/quizGame/src/main/java/IquestionBodys.java;3032884109/1;/quizGame/src/main/java/QuestInfo.java;732934495/1;/quizGame/src/main/java/Questions.java;2028706278/1;/quizGame/src/main/java/QuizGame.java;2100198094/1;/quizGame/src/main/java/User.java;1830107346/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_Oa7DkHKvEeulKaaY3PFXgA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_Oa7DkXKvEeulKaaY3PFXgA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_Oa7DknKvEeulKaaY3PFXgA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_Oa7Dk3KvEeulKaaY3PFXgA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_Oa7DlHKvEeulKaaY3PFXgA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_Oa7qoHKvEeulKaaY3PFXgA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_Oa7qoXKvEeulKaaY3PFXgA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_Oa7qonKvEeulKaaY3PFXgA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_Oa8RsHKvEeulKaaY3PFXgA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_OaY4EHKvEeulKaaY3PFXgA" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_OaY4EXKvEeulKaaY3PFXgA" name="util">
+        <packagedElement xmi:type="uml:Package" xmi:id="_Oa5OYHKvEeulKaaY3PFXgA" name="regex">
+          <packagedElement xmi:type="uml:Class" xmi:id="_OeaccXKvEeulKaaY3PFXgA" name="Matcher"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_OebDgXKvEeulKaaY3PFXgA" name="Pattern"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_OeMaAHKvEeulKaaY3PFXgA" name="ArrayList"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_OeNoIHKvEeulKaaY3PFXgA" name="Scanner"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_OeYnQHKvEeulKaaY3PFXgA" name="LinkedList"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_OeZ1YHKvEeulKaaY3PFXgA" name="TreeSet"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_OavdYHKvEeulKaaY3PFXgA" name="awt">
+        <packagedElement xmi:type="uml:Class" xmi:id="_OeVj8HKvEeulKaaY3PFXgA" name="List"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Oa84wHKvEeulKaaY3PFXgA" name="javafx">
+      <packagedElement xmi:type="uml:Package" xmi:id="_Oa9f0HKvEeulKaaY3PFXgA" name="scene">
+        <packagedElement xmi:type="uml:Package" xmi:id="_Oa-G4HKvEeulKaaY3PFXgA" name="paint">
+          <packagedElement xmi:type="uml:Class" xmi:id="_OebqkXKvEeulKaaY3PFXgA" name="RadialGradient"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ObRo4HKvEeulKaaY3PFXgA" name="InnerQuestions">
+      <generalization xmi:id="_OeTuwHKvEeulKaaY3PFXgA" general="_Ob8-UHKvEeulKaaY3PFXgA"/>
+      <ownedAttribute xmi:id="_OemCoHKvEeulKaaY3PFXgA" name="ANSI_RESET" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_OempsHKvEeulKaaY3PFXgA" value="&quot;\u001B[0m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_OenQwHKvEeulKaaY3PFXgA" name="ANSI_BLACK" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_OenQwXKvEeulKaaY3PFXgA" value="&quot;\u001B[30m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_OenQwnKvEeulKaaY3PFXgA" name="ANSI_RED" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_OenQw3KvEeulKaaY3PFXgA" value="&quot;\u001B[31m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Oen30HKvEeulKaaY3PFXgA" name="ANSI_GREEN" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Oen30XKvEeulKaaY3PFXgA" value="&quot;\u001B[32m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Oen30nKvEeulKaaY3PFXgA" name="ANSI_YELLOW" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Oen303KvEeulKaaY3PFXgA" value="&quot;\u001B[33m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Oen31HKvEeulKaaY3PFXgA" name="ANSI_BLUE" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Oen31XKvEeulKaaY3PFXgA" value="&quot;\u001B[34m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Oeoe4HKvEeulKaaY3PFXgA" name="ANSI_PURPLE" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Oeoe4XKvEeulKaaY3PFXgA" value="&quot;\u001B[35m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Oeoe4nKvEeulKaaY3PFXgA" name="ANSI_CYAN" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Oeoe43KvEeulKaaY3PFXgA" value="&quot;\u001B[36m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Oeoe5HKvEeulKaaY3PFXgA" name="ANSI_WHITE" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Oeoe5XKvEeulKaaY3PFXgA" value="&quot;\u001B[37m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_OepF8HKvEeulKaaY3PFXgA" name="ANSI_BLACK_BACKGROUND" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_OepF8XKvEeulKaaY3PFXgA" value="&quot;\u001B[40m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_OepF8nKvEeulKaaY3PFXgA" name="ANSI_RED_BACKGROUND" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_OepF83KvEeulKaaY3PFXgA" value="&quot;\u001B[41m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_OepF9HKvEeulKaaY3PFXgA" name="ANSI_GREEN_BACKGROUND" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_OepF9XKvEeulKaaY3PFXgA" value="&quot;\u001B[42m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_OepF9nKvEeulKaaY3PFXgA" name="ANSI_YELLOW_BACKGROUND" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_OepF93KvEeulKaaY3PFXgA" value="&quot;\u001B[43m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_OeptAHKvEeulKaaY3PFXgA" name="ANSI_BLUE_BACKGROUND" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_OeptAXKvEeulKaaY3PFXgA" value="&quot;\u001B[44m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_OeptAnKvEeulKaaY3PFXgA" name="ANSI_PURPLE_BACKGROUND" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_OeptA3KvEeulKaaY3PFXgA" value="&quot;\u001B[45m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_OeptBHKvEeulKaaY3PFXgA" name="ANSI_CYAN_BACKGROUND" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_OeptBXKvEeulKaaY3PFXgA" value="&quot;\u001B[46m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_OeptBnKvEeulKaaY3PFXgA" name="ANSI_WHITE_BACKGROUND" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_OeptB3KvEeulKaaY3PFXgA" value="&quot;\u001B[47m&quot;"/>
+      </ownedAttribute>
+      <interfaceRealization xmi:id="_OeSgoHKvEeulKaaY3PFXgA" client="_ObRo4HKvEeulKaaY3PFXgA" supplier="_ObtGsHKvEeulKaaY3PFXgA" contract="_ObtGsHKvEeulKaaY3PFXgA"/>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfASUHKvEeulKaaY3PFXgA" name="questXmovieX_1" specification="_ObY9oHKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfA5YHKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfA5YXKvEeulKaaY3PFXgA" name="frageAbfolge">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfA5YnKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>if (frageNr > 19 | frageNr &lt; 0) {&#xD;
+			System.err.println(&#xD;
+					&quot;Schwerer Frageparameter Fehler, bitte\nwenden Sie sich an den Entwickler.\n&lt;&lt;&lt;&lt;&lt;&lt; Code mov1QN>10QN&lt;0 >>>>>>&quot;);&#xD;
+		} else {&#xD;
+			Scanner movieScL = new Scanner(System.in); // Scanner zum abfragen der Antwort&#xD;
+			System.out.println(&quot;\nFRAGE &quot; + (frageAbfolge));// Index Ausgabe, welche Frage?&#xD;
+			System.out.println(movieQuestionNrLeicht(frageNr)); // Ausgabe methode der Frage #1&#xD;
+			System.out.println(movieQuestionAOLeicht(frageNr)); // Antwortmöglichkeiten #2&#xD;
+&#xD;
+			for (int count = 0; count &lt; 1; count++) {&#xD;
+				String richtigeAntwort = movieQuestionAnswerLeicht(frageNr);&#xD;
+				String eingabeScanner = movieScL.nextLine();&#xD;
+				&#xD;
+				&#xD;
+				&#xD;
+				// if abfrage ob der User eine unerlaubte zahl kleiner als 0 oder größer als 4&#xD;
+				// eingibte--- sollte dies zutreffen wird der loop wiederholt&#xD;
+				if (eingabeScanner.equals(&quot;4&quot;) | eingabeScanner.equals(&quot;3&quot;) | eingabeScanner.equals(&quot;2&quot;) | eingabeScanner.equals(&quot;1&quot;)) {&#xD;
+					if (richtigeAntwort.equals(eingabeScanner)) {&#xD;
+						System.out.println(ANSI_GREEN + &quot;>> Richtig! &lt;&lt;&quot; + ANSI_RESET);&#xD;
+						return true;&#xD;
+					} else {&#xD;
+						System.out.println(ANSI_RED_BACKGROUND + &quot;\nFalsch! - Die richtige Antwort wäre [&quot;&#xD;
+								+ richtigeAntwort + &quot;] gewesen\n\n&quot; + ANSI_RESET);&#xD;
+&#xD;
+					}&#xD;
+				} else {// if Abfrage ob die richtige Antwort eingegeben wurde!&#xD;
+					count--;&#xD;
+					System.err.println(&#xD;
+							&quot;Schwerer Eingabeparameter Fehler, bitte\nwenden Sie sich an den Entwickler.\n&lt;&lt;&lt;&lt;&lt;&lt; Code mov1QiP>4QiP&lt;1 >>>>>>&quot;);&#xD;
+					System.out.println(&quot;Bitte erneut eingeben\n&quot;);&#xD;
+				&#xD;
+					&#xD;
+				}&#xD;
+			}&#xD;
+		}&#xD;
+		return false;&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfEjwHKvEeulKaaY3PFXgA" name="questXmovieX_2" specification="_Obd2IHKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfEjwXKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfEjwnKvEeulKaaY3PFXgA" name="frageAbfolge">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfEjw3KvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>if (frageNr > 19 | frageNr &lt; 0) {&#xD;
+			System.err.println(&#xD;
+					&quot;Schwerer Frageparameter Fehler, bitte\nwenden Sie sich an den Entwickler.\n&lt;&lt;&lt;&lt;&lt;&lt; Code mov2QN>10QN&lt;0 >>>>>>&quot;);&#xD;
+		} else {&#xD;
+			Scanner movieScM = new Scanner(System.in); // Scanner zum abfragen der Antwort&#xD;
+			System.out.println(&quot;\nFRAGE &quot; + (frageAbfolge));// Index Ausgabe, welche Frage?&#xD;
+			System.out.println(movieQuestionNrMittel(frageNr)); // Ausgabe methode der Frage #1&#xD;
+			System.out.println(movieQuestionAOMittel(frageNr)); // Antwortmöglichkeiten #2&#xD;
+&#xD;
+			for (int count = 0; count &lt; 1; count++) {&#xD;
+				String richtigeAntwort = movieQuestionAnswerMittel(frageNr);&#xD;
+				String eingabeScanner = movieScM.nextLine();&#xD;
+&#xD;
+				// if abfrage ob der User eine unerlaubte zahl kleiner als 0 oder größer als 4&#xD;
+				// eingibt--- sollte dies zutreffen wird der loop wiederholt&#xD;
+				if (eingabeScanner.equals(&quot;4&quot;) | eingabeScanner.equals(&quot;3&quot;) | eingabeScanner.equals(&quot;2&quot;) | eingabeScanner.equals(&quot;1&quot;)) {&#xD;
+					if (richtigeAntwort.equals(eingabeScanner)) {&#xD;
+						System.out.println(ANSI_GREEN + &quot;>> Richtig! &lt;&lt;&quot; + ANSI_RESET);&#xD;
+						return true;&#xD;
+					} else {&#xD;
+						System.out.println(ANSI_RED_BACKGROUND + &quot;\nFalsch! - Die richtige Antwort wäre [&quot;&#xD;
+								+ richtigeAntwort + &quot;] gewesen\n\n&quot; + ANSI_RESET);&#xD;
+&#xD;
+					}&#xD;
+				} else {// if Abfrage ob die richtige Antwort eingegeben wurde!&#xD;
+					count--;&#xD;
+					System.err.println(&#xD;
+							&quot;Schwerer Eingabeparameter Fehler, bitte\nwenden Sie sich an den Entwickler.\n&lt;&lt;&lt;&lt;&lt;&lt; Code mov2QiP>4QiP&lt;1 >>>>>>&quot;);&#xD;
+					System.out.println(&quot;Bitte erneut eingeben\n&quot;);&#xD;
+				&#xD;
+					&#xD;
+				}&#xD;
+			}&#xD;
+		}&#xD;
+		return false;&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfFK0HKvEeulKaaY3PFXgA" name="questXmovieX_3" specification="_ObfrUHKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfFK0XKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfFK0nKvEeulKaaY3PFXgA" name="frageAbfolge">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfFK03KvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>if (frageNr > 19 | frageNr &lt; 0) {&#xD;
+			System.err.println(&#xD;
+					&quot;Schwerer Frageparameter Fehler, bitte\nwenden Sie sich an den Entwickler.\n&lt;&lt;&lt;&lt;&lt;&lt; Code mov3QN>10QN&lt;0 >>>>>>&quot;);&#xD;
+		} else {&#xD;
+			Scanner movieScS = new Scanner(System.in); // Scanner zum abfragen der Antwort&#xD;
+			System.out.println(&quot;\nFRAGE &quot; + (frageAbfolge));// Index Ausgabe, welche Frage?&#xD;
+			System.out.println(movieQuestionNrSchwer(frageNr)); // Ausgabe methode der Frage #1&#xD;
+			System.out.println(movieQuestionAOSchwer(frageNr)); // Antwortmöglichkeiten #2&#xD;
+&#xD;
+			for (int count = 0; count &lt; 1; count++) {&#xD;
+				String richtigeAntwort = movieQuestionAnswerSchwer(frageNr);&#xD;
+				String eingabeScanner = movieScS.nextLine();&#xD;
+&#xD;
+				// if abfrage ob der User eine unerlaubte zahl kleiner als 0 oder größer als 4&#xD;
+				// eingibte--- sollte dies zutreffen wird der loop wiederholt&#xD;
+				if (eingabeScanner.equals(&quot;4&quot;) | eingabeScanner.equals(&quot;3&quot;) | eingabeScanner.equals(&quot;2&quot;) | eingabeScanner.equals(&quot;1&quot;)) {&#xD;
+					if (richtigeAntwort.equals(eingabeScanner)) {&#xD;
+						System.out.println(ANSI_GREEN + &quot;>> Richtig! &lt;&lt;&quot; + ANSI_RESET);&#xD;
+						return true;&#xD;
+					} else {&#xD;
+						System.out.println(ANSI_RED_BACKGROUND + &quot;\nFalsch! - Die richtige Antwort wäre [&quot;&#xD;
+								+ richtigeAntwort + &quot;] gewesen\n\n&quot; + ANSI_RESET);&#xD;
+&#xD;
+					}&#xD;
+				} else {// if Abfrage ob die richtige Antwort eingegeben wurde!&#xD;
+					count--;&#xD;
+					System.err.println(&#xD;
+							&quot;Schwerer Eingabeparameter Fehler, bitte\nwenden Sie sich an den Entwickler.\n&lt;&lt;&lt;&lt;&lt;&lt; Code mov3QiP>4QiP&lt;1 >>>>>>&quot;);&#xD;
+					System.out.println(&quot;Bitte erneut eingeben\n&quot;);&#xD;
+				&#xD;
+					&#xD;
+				}&#xD;
+			}&#xD;
+		}&#xD;
+		return false;&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfFK1HKvEeulKaaY3PFXgA" name="questXtechnikX_1" specification="_Obg5cXKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfFK1XKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfFK1nKvEeulKaaY3PFXgA" name="frageAbfolge">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfFK13KvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>if (frageNr > 19 | frageNr &lt; 0) {&#xD;
+			System.err.println(&#xD;
+					&quot;Schwerer Frageparameter Fehler, bitte\nwenden Sie sich an den Entwickler.\n&lt;&lt;&lt;&lt;&lt;&lt; Code tech1QN>10QN&lt;0 >>>>>>&quot;);&#xD;
+		} else {&#xD;
+			Scanner techScL = new Scanner(System.in); // Scanner zum abfragen der Antwort&#xD;
+			System.out.println(&quot;\nFRAGE &quot; + (frageAbfolge));// Index Ausgabe, welche Frage?&#xD;
+			System.out.println(techQuestionNrLeicht(frageNr)); // Ausgabe methode der Frage #1&#xD;
+			System.out.println(techQuestionAOLeicht(frageNr)); // Antwortmöglichkeiten #2&#xD;
+&#xD;
+			for (int count = 0; count &lt; 1; count++) {&#xD;
+				String richtigeAntwort = techQuestionAnswerLeicht(frageNr);&#xD;
+				String eingabeScanner = techScL.nextLine();&#xD;
+&#xD;
+				// if abfrage ob der User eine unerlaubte zahl kleiner als 0 oder größer als 4&#xD;
+				// eingibte--- sollte dies zutreffen wird der loop wiederholt&#xD;
+				if (eingabeScanner.equals(&quot;4&quot;) | eingabeScanner.equals(&quot;3&quot;) | eingabeScanner.equals(&quot;2&quot;) | eingabeScanner.equals(&quot;1&quot;)) {&#xD;
+					if (richtigeAntwort.equals(eingabeScanner)) {&#xD;
+						System.out.println(ANSI_GREEN + &quot;>> Richtig! &lt;&lt;&quot; + ANSI_RESET);&#xD;
+						return true;&#xD;
+					} else {&#xD;
+						System.out.println(ANSI_RED_BACKGROUND + &quot;\nFalsch! - Die richtige Antwort wäre [&quot;&#xD;
+								+ richtigeAntwort + &quot;] gewesen\n\n&quot; + ANSI_RESET);&#xD;
+&#xD;
+					}&#xD;
+				} else {// if Abfrage ob die richtige Antwort eingegeben wurde!&#xD;
+					count--;&#xD;
+					System.err.println(&#xD;
+							&quot;Schwerer Eingabeparameter Fehler, bitte\nwenden Sie sich an den Entwickler.\n&lt;&lt;&lt;&lt;&lt;&lt; Code tech1QiP>4QiP&lt;1 >>>>>>&quot;);&#xD;
+					System.out.println(&quot;Bitte erneut eingeben\n&quot;);&#xD;
+				&#xD;
+					&#xD;
+				}&#xD;
+			}&#xD;
+		}&#xD;
+		return false;&#xD;
+&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfFx4HKvEeulKaaY3PFXgA" name="questXtechnikX_2" specification="_ObiHknKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfFx4XKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfFx4nKvEeulKaaY3PFXgA" name="frageAbfolge">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfFx43KvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>if (frageNr > 19 | frageNr &lt; 0) {&#xD;
+			System.err.println(&#xD;
+					&quot;Schwerer Frageparameter Fehler, bitte\nwenden Sie sich an den Entwickler.\n&lt;&lt;&lt;&lt;&lt;&lt; Code tech2QN>10QN&lt;0 >>>>>>&quot;);&#xD;
+		} else {&#xD;
+			Scanner techScM = new Scanner(System.in); // Scanner zum abfragen der Antwort&#xD;
+			System.out.println(&quot;\nFRAGE &quot; + (frageAbfolge));// Index Ausgabe, welche Frage?&#xD;
+			System.out.println(techQuestionNrMittel(frageNr)); // Ausgabe methode der Frage #1&#xD;
+			System.out.println(techQuestionAOMittel(frageNr)); // Antwortmöglichkeiten #2&#xD;
+&#xD;
+			for (int count = 0; count &lt; 1; count++) {&#xD;
+				String richtigeAntwort = techQuestionAnswerMittel(frageNr);&#xD;
+				String eingabeScanner = techScM.nextLine();&#xD;
+&#xD;
+				// if abfrage ob der User eine unerlaubte zahl kleiner als 0 oder größer als 4&#xD;
+				// eingibte--- sollte dies zutreffen wird der loop wiederholt&#xD;
+				if (eingabeScanner.equals(&quot;4&quot;) | eingabeScanner.equals(&quot;3&quot;) | eingabeScanner.equals(&quot;2&quot;) | eingabeScanner.equals(&quot;1&quot;)) {&#xD;
+					if (richtigeAntwort.equals(eingabeScanner)) {&#xD;
+						System.out.println(ANSI_GREEN + &quot;>> Richtig! &lt;&lt;&quot; + ANSI_RESET);&#xD;
+						return true;&#xD;
+					} else {&#xD;
+						System.out.println(ANSI_RED_BACKGROUND + &quot;\nFalsch! - Die richtige Antwort wäre [&quot;&#xD;
+								+ richtigeAntwort + &quot;] gewesen\n\n&quot; + ANSI_RESET);&#xD;
+&#xD;
+					}&#xD;
+				} else {// if Abfrage ob die richtige Antwort eingegeben wurde!&#xD;
+					count--;&#xD;
+					System.err.println(&#xD;
+							&quot;Schwerer Eingabeparameter Fehler, bitte\nwenden Sie sich an den Entwickler.\n&lt;&lt;&lt;&lt;&lt;&lt; Code tech2QiP>4QiP&lt;1 >>>>>>&quot;);&#xD;
+					System.out.println(&quot;Bitte erneut eingeben\n&quot;);&#xD;
+				&#xD;
+					&#xD;
+				}&#xD;
+			}&#xD;
+		}&#xD;
+		return false;&#xD;
+&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfGY8HKvEeulKaaY3PFXgA" name="questXtechnikX_3" specification="_ObjVsnKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfGY8XKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfGY8nKvEeulKaaY3PFXgA" name="frageAbfolge">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfGY83KvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>if (frageNr > 19 | frageNr &lt; 0) {&#xD;
+			System.err.println(&#xD;
+					&quot;Schwerer Frageparameter Fehler, bitte\nwenden Sie sich an den Entwickler.\n&lt;&lt;&lt;&lt;&lt;&lt; Code tech3QN>10QN&lt;0 >>>>>>&quot;);&#xD;
+		} else {&#xD;
+			Scanner techScS = new Scanner(System.in); // Scanner zum abfragen der Antwort&#xD;
+			System.out.println(&quot;\nFRAGE &quot; + (frageAbfolge));// Index Ausgabe, welche Frage?&#xD;
+			System.out.println(techQuestionNrSchwer(frageNr)); // Ausgabe methode der Frage #1&#xD;
+			System.out.println(techQuestionAOSchwer(frageNr)); // Antwortmöglichkeiten #2&#xD;
+&#xD;
+			for (int count = 0; count &lt; 1; count++) {&#xD;
+				String richtigeAntwort = techQuestionAnswerSchwer(frageNr);&#xD;
+				String eingabeScanner = techScS.nextLine();&#xD;
+&#xD;
+				// if abfrage ob der User eine unerlaubte zahl kleiner als 0 oder größer als 4&#xD;
+				// eingibte--- sollte dies zutreffen wird der loop wiederholt&#xD;
+				if (eingabeScanner.equals(&quot;4&quot;) | eingabeScanner.equals(&quot;3&quot;) | eingabeScanner.equals(&quot;2&quot;) | eingabeScanner.equals(&quot;1&quot;)) {&#xD;
+					if (richtigeAntwort.equals(eingabeScanner)) {&#xD;
+						System.out.println(ANSI_GREEN + &quot;>> Richtig! &lt;&lt;&quot; + ANSI_RESET);&#xD;
+						return true;&#xD;
+					} else {&#xD;
+						System.out.println(ANSI_RED_BACKGROUND + &quot;\nFalsch! - Die richtige Antwort wäre [&quot;&#xD;
+								+ richtigeAntwort + &quot;] gewesen\n\n&quot; + ANSI_RESET);&#xD;
+&#xD;
+					}&#xD;
+				} else {// if Abfrage ob die richtige Antwort eingegeben wurde!&#xD;
+					count--;&#xD;
+					System.err.println(&#xD;
+							&quot;Schwerer Eingabeparameter Fehler, bitte\nwenden Sie sich an den Entwickler.\n&lt;&lt;&lt;&lt;&lt;&lt; Code tech3QiP>4QiP&lt;1 >>>>>>&quot;);&#xD;
+					System.out.println(&quot;Bitte erneut eingeben\n&quot;);&#xD;
+				&#xD;
+					&#xD;
+				}&#xD;
+			}&#xD;
+		}&#xD;
+		return false;&#xD;
+&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfGY9HKvEeulKaaY3PFXgA" name="questXnaturX_1" specification="_Obkj0nKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfGY9XKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfGY9nKvEeulKaaY3PFXgA" name="frageAbfolge">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfGY93KvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>if (frageNr > 19 | frageNr &lt; 0) {&#xD;
+			System.err.println(&#xD;
+					&quot;Schwerer Frageparameter Fehler, bitte\nwenden Sie sich an den Entwickler.\n&lt;&lt;&lt;&lt;&lt;&lt; Code nat1QN>10QN&lt;0 >>>>>>&quot;);&#xD;
+		} else {&#xD;
+			Scanner natureScL = new Scanner(System.in); // Scanner zum abfragen der Antwort&#xD;
+			System.out.println(&quot;\nFRAGE &quot; + (frageAbfolge));// Index Ausgabe, welche Frage?&#xD;
+			System.out.println(natureQuestionNrMittel(frageNr)); // Ausgabe methode der Frage #1&#xD;
+			System.out.println(natureQuestionAOMittel(frageNr)); // Antwortmöglichkeiten #2&#xD;
+&#xD;
+			for (int count = 0; count &lt; 1; count++) {&#xD;
+				String richtigeAntwort = natureQuestionAnswerMittel(frageNr);&#xD;
+				String eingabeScanner = natureScL.nextLine();&#xD;
+&#xD;
+				// if abfrage ob der User eine unerlaubte zahl kleiner als 0 oder größer als 4&#xD;
+				// eingibte--- sollte dies zutreffen wird der loop wiederholt&#xD;
+				if (eingabeScanner.equals(&quot;4&quot;) | eingabeScanner.equals(&quot;3&quot;) | eingabeScanner.equals(&quot;2&quot;) | eingabeScanner.equals(&quot;1&quot;)) {&#xD;
+					if (richtigeAntwort.equals(eingabeScanner)) {&#xD;
+						System.out.println(ANSI_GREEN + &quot;>> Richtig! &lt;&lt;&quot; + ANSI_RESET);&#xD;
+						return true;&#xD;
+					} else {&#xD;
+						System.out.println(ANSI_RED_BACKGROUND + &quot;\nFalsch! - Die richtige Antwort wäre [&quot;&#xD;
+								+ richtigeAntwort + &quot;] gewesen\n\n&quot; + ANSI_RESET);&#xD;
+&#xD;
+					}&#xD;
+				} else {// if Abfrage ob die richtige Antwort eingegeben wurde!&#xD;
+					count--;&#xD;
+					System.err.println(&#xD;
+							&quot;Schwerer Eingabeparameter Fehler, bitte\nwenden Sie sich an den Entwickler.\n&lt;&lt;&lt;&lt;&lt;&lt; Code nat1QiP>4QiP&lt;1 >>>>>>&quot;);&#xD;
+					System.out.println(&quot;Bitte erneut eingeben\n&quot;);&#xD;
+				&#xD;
+					&#xD;
+				}&#xD;
+			}&#xD;
+		}&#xD;
+		return false;&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfHAAHKvEeulKaaY3PFXgA" name="questXnaturX_2" specification="_ObmZAnKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfHAAXKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfHAAnKvEeulKaaY3PFXgA" name="frageAbfolge">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfHAA3KvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>if (frageNr > 19 | frageNr &lt; 0) {&#xD;
+			System.err.println(&#xD;
+					&quot;Schwerer Frageparameter Fehler, bitte\nwenden Sie sich an den Entwickler.\n&lt;&lt;&lt;&lt;&lt;&lt; Code nat2QN>10QN&lt;0 >>>>>>&quot;);&#xD;
+		} else {&#xD;
+			Scanner natureScM = new Scanner(System.in); // Scanner zum abfragen der Antwort&#xD;
+			System.out.println(&quot;\nFRAGE &quot; + (frageAbfolge));// Index Ausgabe, welche Frage?&#xD;
+			System.out.println(natureQuestionNrMittel(frageNr)); // Ausgabe methode der Frage #1&#xD;
+			System.out.println(natureQuestionAOMittel(frageNr)); // Antwortmöglichkeiten #2&#xD;
+&#xD;
+			for (int count = 0; count &lt; 1; count++) {&#xD;
+				String richtigeAntwort = natureQuestionAnswerMittel(frageNr);&#xD;
+				String eingabeScanner = natureScM.nextLine();&#xD;
+&#xD;
+				// if abfrage ob der User eine unerlaubte zahl kleiner als 0 oder größer als 4&#xD;
+				// eingibte--- sollte dies zutreffen wird der loop wiederholt&#xD;
+				if (eingabeScanner.equals(&quot;4&quot;) | eingabeScanner.equals(&quot;3&quot;) | eingabeScanner.equals(&quot;2&quot;) | eingabeScanner.equals(&quot;1&quot;)) {&#xD;
+					if (richtigeAntwort.equals(eingabeScanner)) {&#xD;
+						System.out.println(ANSI_GREEN + &quot;>> Richtig! &lt;&lt;&quot; + ANSI_RESET);&#xD;
+						return true;&#xD;
+					} else {&#xD;
+						System.out.println(ANSI_RED_BACKGROUND + &quot;\nFalsch! - Die richtige Antwort wäre [&quot;&#xD;
+								+ richtigeAntwort + &quot;] gewesen\n\n&quot; + ANSI_RESET);&#xD;
+&#xD;
+					}&#xD;
+				} else {// if Abfrage ob die richtige Antwort eingegeben wurde!&#xD;
+					count--;&#xD;
+					System.err.println(&#xD;
+							&quot;Schwerer Eingabeparameter Fehler, bitte\nwenden Sie sich an den Entwickler.\n&lt;&lt;&lt;&lt;&lt;&lt; Code nat2QiP>4QiP&lt;1 >>>>>>&quot;);&#xD;
+					System.out.println(&quot;Bitte erneut eingeben\n&quot;);&#xD;
+				&#xD;
+					&#xD;
+				}&#xD;
+			}&#xD;
+		}&#xD;
+		return false;&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfHABHKvEeulKaaY3PFXgA" name="questXnaturX_3" specification="_OboOMXKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfHABXKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfHABnKvEeulKaaY3PFXgA" name="frageAbfolge">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfHAB3KvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>if (frageNr > 19 | frageNr &lt; 0) {&#xD;
+			System.err.println(&#xD;
+					&quot;Schwerer Frageparameter Fehler, bitte\nwenden Sie sich an den Entwickler.\n&lt;&lt;&lt;&lt;&lt;&lt; Code nat3QN>10QN&lt;0 >>>>>>&quot;);&#xD;
+		} else {&#xD;
+			&#xD;
+			Scanner natureScS = new Scanner(System.in); // Scanner zum abfragen der Antwort&#xD;
+			System.out.println(&quot;\nFRAGE &quot; + (frageAbfolge));// Index Ausgabe, welche Frage?&#xD;
+			System.out.println(natureQuestionNrSchwer(frageNr)); // Ausgabe methode der Frage #1&#xD;
+			System.out.println(natureQuestionAOSchwer(frageNr)); // Antwortmöglichkeiten #2&#xD;
+&#xD;
+			for (int count = 0; count &lt; 1; count++) {&#xD;
+				String richtigeAntwort = natureQuestionAnswerSchwer(frageNr);&#xD;
+				String eingabeScanner = natureScS.nextLine();&#xD;
+&#xD;
+				// if abfrage ob der User eine unerlaubte zahl kleiner als 0 oder größer als 4&#xD;
+				// eingibte--- sollte dies zutreffen wird der loop wiederholt&#xD;
+				if (eingabeScanner.equals(&quot;4&quot;) | eingabeScanner.equals(&quot;3&quot;) | eingabeScanner.equals(&quot;2&quot;) | eingabeScanner.equals(&quot;1&quot;)) {&#xD;
+					if (richtigeAntwort.equals(eingabeScanner)) {&#xD;
+						System.out.println(ANSI_GREEN + &quot;>> Richtig! &lt;&lt;&quot; + ANSI_RESET);&#xD;
+						return true;&#xD;
+					} else {&#xD;
+						System.out.println(ANSI_RED_BACKGROUND + &quot;\nFalsch! - Die richtige Antwort wäre [&quot;&#xD;
+								+ richtigeAntwort + &quot;] gewesen\n\n&quot; + ANSI_RESET);&#xD;
+&#xD;
+					}&#xD;
+				} else {// if Abfrage ob die richtige Antwort eingegeben wurde!&#xD;
+					count--;&#xD;
+					System.err.println(&#xD;
+							&quot;Schwerer Eingabeparameter Fehler, bitte\nwenden Sie sich an den Entwickler.\n&lt;&lt;&lt;&lt;&lt;&lt; Code nat3QiP>4QiP&lt;1 >>>>>>&quot;);&#xD;
+					System.out.println(&quot;Bitte erneut eingeben\n&quot;);&#xD;
+				&#xD;
+					&#xD;
+				}&#xD;
+			}&#xD;
+		}&#xD;
+		return false;&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_ObY9oHKvEeulKaaY3PFXgA" name="questXmovieX_1" method="_OfASUHKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_ObZksHKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_ObZksXKvEeulKaaY3PFXgA" name="frageAbfolge">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_Obay0HKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_Obd2IHKvEeulKaaY3PFXgA" name="questXmovieX_2" method="_OfEjwHKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_Obd2IXKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_Obd2InKvEeulKaaY3PFXgA" name="frageAbfolge">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_ObedMHKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_ObfrUHKvEeulKaaY3PFXgA" name="questXmovieX_3" method="_OfFK0HKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_ObfrUXKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_ObfrUnKvEeulKaaY3PFXgA" name="frageAbfolge">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_ObfrU3KvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_Obg5cXKvEeulKaaY3PFXgA" name="questXtechnikX_1" method="_OfFK1HKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_Obg5cnKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_Obg5c3KvEeulKaaY3PFXgA" name="frageAbfolge">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_ObhggHKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_ObiHknKvEeulKaaY3PFXgA" name="questXtechnikX_2" method="_OfFx4HKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_ObiHk3KvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_ObiHlHKvEeulKaaY3PFXgA" name="frageAbfolge">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_ObiuoHKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_ObjVsnKvEeulKaaY3PFXgA" name="questXtechnikX_3" method="_OfGY8HKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_ObjVs3KvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_Obj8wHKvEeulKaaY3PFXgA" name="frageAbfolge">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_Obj8wXKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_Obkj0nKvEeulKaaY3PFXgA" name="questXnaturX_1" method="_OfGY9HKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_Obkj03KvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OblK4HKvEeulKaaY3PFXgA" name="frageAbfolge">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OblK4XKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_ObmZAnKvEeulKaaY3PFXgA" name="questXnaturX_2" method="_OfHAAHKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_ObnAEHKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_ObnAEXKvEeulKaaY3PFXgA" name="frageAbfolge">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_ObnAEnKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_OboOMXKvEeulKaaY3PFXgA" name="questXnaturX_3" method="_OfHABHKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OboOMnKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OboOM3KvEeulKaaY3PFXgA" name="frageAbfolge">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_Obo1QHKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_ObtGsHKvEeulKaaY3PFXgA" name="IquestionBodys">
+      <ownedOperation xmi:id="_Obu74HKvEeulKaaY3PFXgA" name="questXmovieX_1">
+        <ownedParameter xmi:id="_Obu74XKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_Obu74nKvEeulKaaY3PFXgA" name="frageAbfolge">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_Obvi8HKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_Obvi8XKvEeulKaaY3PFXgA" name="questXmovieX_2">
+        <ownedParameter xmi:id="_Obvi8nKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_Obvi83KvEeulKaaY3PFXgA" name="frageAbfolge">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_Obvi9HKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_ObwKAHKvEeulKaaY3PFXgA" name="questXmovieX_3">
+        <ownedParameter xmi:id="_ObwKAXKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_ObwKAnKvEeulKaaY3PFXgA" name="frageAbfolge">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_ObwKA3KvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_ObwxEHKvEeulKaaY3PFXgA" name="questXtechnikX_1">
+        <ownedParameter xmi:id="_ObwxEXKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_ObwxEnKvEeulKaaY3PFXgA" name="frageAbfolge">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_ObwxE3KvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_ObxYIHKvEeulKaaY3PFXgA" name="questXtechnikX_2">
+        <ownedParameter xmi:id="_ObxYIXKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_ObxYInKvEeulKaaY3PFXgA" name="frageAbfolge">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_ObxYI3KvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_ObxYJHKvEeulKaaY3PFXgA" name="questXtechnikX_3">
+        <ownedParameter xmi:id="_ObxYJXKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_ObxYJnKvEeulKaaY3PFXgA" name="frageAbfolge">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_Obx_MHKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_Obx_MXKvEeulKaaY3PFXgA" name="questXnaturX_1">
+        <ownedParameter xmi:id="_Obx_MnKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_Obx_M3KvEeulKaaY3PFXgA" name="frageAbfolge">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_Obx_NHKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_ObymQHKvEeulKaaY3PFXgA" name="questXnaturX_2">
+        <ownedParameter xmi:id="_ObymQXKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_ObymQnKvEeulKaaY3PFXgA" name="frageAbfolge">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_ObymQ3KvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_ObzNUHKvEeulKaaY3PFXgA" name="questXnaturX_3">
+        <ownedParameter xmi:id="_ObzNUXKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_ObzNUnKvEeulKaaY3PFXgA" name="frageAbfolge">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_ObzNU3KvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Obz0YHKvEeulKaaY3PFXgA" name="QuestInfo">
+      <ownedAttribute xmi:id="_Oeq7IHKvEeulKaaY3PFXgA" name="ANSI_RESET" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Oeq7IXKvEeulKaaY3PFXgA" value="&quot;\u001B[0m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Oeq7InKvEeulKaaY3PFXgA" name="ANSI_BLACK" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Oeq7I3KvEeulKaaY3PFXgA" value="&quot;\u001B[30m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Oeq7JHKvEeulKaaY3PFXgA" name="ANSI_RED" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_OeriMHKvEeulKaaY3PFXgA" value="&quot;\u001B[31m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_OeriMXKvEeulKaaY3PFXgA" name="ANSI_GREEN" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_OeriMnKvEeulKaaY3PFXgA" value="&quot;\u001B[32m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_OeriM3KvEeulKaaY3PFXgA" name="ANSI_YELLOW" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_OeriNHKvEeulKaaY3PFXgA" value="&quot;\u001B[33m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_OeriNXKvEeulKaaY3PFXgA" name="ANSI_BLUE" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_OesJQHKvEeulKaaY3PFXgA" value="&quot;\u001B[34m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_OesJQXKvEeulKaaY3PFXgA" name="ANSI_PURPLE" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_OesJQnKvEeulKaaY3PFXgA" value="&quot;\u001B[35m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_OesJQ3KvEeulKaaY3PFXgA" name="ANSI_CYAN" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_OesJRHKvEeulKaaY3PFXgA" value="&quot;\u001B[36m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_OesJRXKvEeulKaaY3PFXgA" name="ANSI_WHITE" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_OesJRnKvEeulKaaY3PFXgA" value="&quot;\u001B[37m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_OeswUHKvEeulKaaY3PFXgA" name="ANSI_BLACK_BACKGROUND" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_OeswUXKvEeulKaaY3PFXgA" value="&quot;\u001B[40m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_OeswUnKvEeulKaaY3PFXgA" name="ANSI_RED_BACKGROUND" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_OeswU3KvEeulKaaY3PFXgA" value="&quot;\u001B[41m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_OeswVHKvEeulKaaY3PFXgA" name="ANSI_GREEN_BACKGROUND" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_OeswVXKvEeulKaaY3PFXgA" value="&quot;\u001B[42m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_OeswVnKvEeulKaaY3PFXgA" name="ANSI_YELLOW_BACKGROUND" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_OeswV3KvEeulKaaY3PFXgA" value="&quot;\u001B[43m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_OeswWHKvEeulKaaY3PFXgA" name="ANSI_BLUE_BACKGROUND" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_OetXYHKvEeulKaaY3PFXgA" value="&quot;\u001B[44m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_OetXYXKvEeulKaaY3PFXgA" name="ANSI_PURPLE_BACKGROUND" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_OetXYnKvEeulKaaY3PFXgA" value="&quot;\u001B[45m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_OetXY3KvEeulKaaY3PFXgA" name="ANSI_CYAN_BACKGROUND" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_OetXZHKvEeulKaaY3PFXgA" value="&quot;\u001B[46m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_OetXZXKvEeulKaaY3PFXgA" name="ANSI_WHITE_BACKGROUND" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_OetXZnKvEeulKaaY3PFXgA" value="&quot;\u001B[47m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Oet-cHKvEeulKaaY3PFXgA" name="userName" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfHnEHKvEeulKaaY3PFXgA" name="getUsername" specification="_Ob3ewHKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfHnEXKvEeulKaaY3PFXgA" direction="return">
+          <name xsi:nil="true"/>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>return userName;&#xD;
+		</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfIOIHKvEeulKaaY3PFXgA" name="setUsername" specification="_Ob4F0XKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfIOIXKvEeulKaaY3PFXgA" name="username">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>userName = username;&#xD;
+		</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfIOInKvEeulKaaY3PFXgA" name="chooseDiff" specification="_Ob4s4XKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfIOI3KvEeulKaaY3PFXgA" direction="return">
+          <name xsi:nil="true"/>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>int chosenDiff = 0;//Container der die eingegebene Zahl abspeichert und dann weitergibt&#xD;
+		Scanner scanDiff = new Scanner(System.in);&#xD;
+		System.out.println(&quot;### Bitte Wählen Sie den Schwierigkeit'slevel ###\n&quot; + &#xD;
+	&quot;        (Eingabe über Tastatur)&quot; + &quot;\n[1]&quot; + ANSI_GREEN + &quot; Leicht&quot; + ANSI_RESET  + &quot;    [2]&quot; + ANSI_YELLOW + &quot; Mittel  &quot; + ANSI_RESET + &quot;  [3]&quot; + ANSI_RED +&quot; Schwer&quot; + ANSI_RESET + ANSI_WHITE_BACKGROUND + ANSI_BLACK + &quot;\n[4] Neuen Spieler erstellen.&quot; + ANSI_RESET);&#xD;
+		&#xD;
+		&#xD;
+		&#xD;
+		for(int i = 0; i&lt;1; i++) {&#xD;
+			chosenDiff = scanDiff.nextInt();&#xD;
+			if(chosenDiff > 4 | (chosenDiff &lt; 1 | chosenDiff == 0)) {&#xD;
+				System.err.println(&quot;Eingabe ungültig! Erneut versuchen!&quot;);&#xD;
+				i--;&#xD;
+				break;&#xD;
+			}else {&#xD;
+				return chosenDiff;&#xD;
+			}&#xD;
+			}&#xD;
+		return chosenDiff;&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfIOJHKvEeulKaaY3PFXgA" name="printDiffAnsw" specification="_Ob5T8HKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfIOJXKvEeulKaaY3PFXgA" name="cases">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfIOJnKvEeulKaaY3PFXgA" direction="return">
+          <name xsi:nil="true"/>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>int chosenDiff = 0;&#xD;
+		for(int i = 0; i &lt;1; i++) {&#xD;
+			switch (cases) {&#xD;
+				case 1:&#xD;
+					System.out.println(&quot;\n### Du hast dich für leichte Fragen entschieden. ###\n\n&quot;);return 1;&#xD;
+&#xD;
+					&#xD;
+				case 2:&#xD;
+					System.out.println(&quot;\n### Du hast dich für mittelschwere Fragen entschieden. ###\n\n&quot;);return 2;&#xD;
+					&#xD;
+				&#xD;
+				case 3:&#xD;
+					System.out.println(&quot;\n### Du hast dich für schwere Fragen entschieden. ###\n\n&quot;);return 3;&#xD;
+					&#xD;
+				default:&#xD;
+					Scanner printDiffAnswScanner = new Scanner(System.in);&#xD;
+					i--;&#xD;
+					return printDiffAnswScanner.nextInt();&#xD;
+			}&#xD;
+		}&#xD;
+		return 0;&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfIOJ3KvEeulKaaY3PFXgA" name="askUsername" specification="_Ob57AHKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfIOKHKvEeulKaaY3PFXgA" direction="return">
+          <name xsi:nil="true"/>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>Scanner askUsername = new Scanner(System.in);&#xD;
+		System.out.println(&quot;Geben Sie einen Username ein:&quot;);&#xD;
+		String askUsername2 = askUsername.nextLine();&#xD;
+		System.out.println(&quot;\nDein Username ist: &quot; + askUsername2 + &quot;\n\nWillkommen &quot; + ANSI_RED + askUsername2 + ANSI_RESET + &quot;.\n&quot;);&#xD;
+		return askUsername2;&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfIOKXKvEeulKaaY3PFXgA" name="playAgainQuestion" specification="_Ob6iEXKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfIOKnKvEeulKaaY3PFXgA" name="username">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfIOK3KvEeulKaaY3PFXgA" direction="return">
+          <name xsi:nil="true"/>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>Scanner scanPaQ = new Scanner(System.in);&#xD;
+		for(int i = 0; i &lt; 1; i++) {//Eine For-Schleife falls etwas unerwartetes eingegeben wird.&#xD;
+		System.out.println(&quot;\n\nMöchtest du nochmal spielen? (ja/nein)\nDein letztes Spielergebnis wird auch gespeichert.&quot;);&#xD;
+		String eingabePlayAgain = scanPaQ.nextLine();&#xD;
+			if(eingabePlayAgain.equalsIgnoreCase(&quot;ja&quot;) | eingabePlayAgain.equalsIgnoreCase(&quot;yes&quot;)){&#xD;
+			System.out.println(&quot;Sehr gut &quot; + ANSI_RED + username + ANSI_RESET + &quot;, weiter gehts! =)\n&quot;);&#xD;
+				return true;	&#xD;
+			}else if(eingabePlayAgain.equalsIgnoreCase(&quot;nein&quot;) | eingabePlayAgain.equalsIgnoreCase(&quot;no&quot;)) {&#xD;
+				System.out.println(&quot;Danke fürs mitspielen &quot; + ANSI_RED + username + ANSI_RESET +  &quot;! =)\n&quot;);&#xD;
+			}else {&#xD;
+				System.err.println(&quot;Eingabe ungültig! Erneut versuchen!\n&quot;);&#xD;
+				i--;&#xD;
+			}&#xD;
+		}&#xD;
+		return false;	&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfI1MHKvEeulKaaY3PFXgA" name="chooseTheme" specification="_Ob7JIXKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfI1MXKvEeulKaaY3PFXgA" direction="return">
+          <name xsi:nil="true"/>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>Scanner chooseThemeScanner = new Scanner(System.in);&#xD;
+		for(int i = 0; i&lt;1; i++) {&#xD;
+			System.out.println(&quot;######### WÄHLE EIN THEMENGEBIET #########\n# [1]&quot; +ANSI_CYAN+ &quot;FILM  &quot; +ANSI_RESET+ &quot;[2]&quot; +ANSI_CYAN+ &quot;TECHNIK  &quot; +ANSI_RESET+ &quot;[3]&quot; +ANSI_CYAN+ &quot;NATUR  &quot; +ANSI_RESET+ &quot;[4]&quot; +ANSI_RED+ &quot;MIX&quot; +ANSI_RESET+ &quot;  #&quot;);&#xD;
+			String themeEingabe = chooseThemeScanner.nextLine();&#xD;
+			&#xD;
+			if(themeEingabe == &quot;1&quot;) {&#xD;
+				System.out.println(&quot;\n\n\n  ### Fragen aus dem FILM-Bereich. ###&quot;);&#xD;
+				return &quot;movie&quot;;}&#xD;
+			else if(themeEingabe == &quot;2&quot;) {&#xD;
+				System.out.println(&quot;\n\n\n  ####### Fragen über TECHNIK. #######&quot;);&#xD;
+				return &quot;tech&quot;;}&#xD;
+			else if(themeEingabe == &quot;3&quot;) {&#xD;
+				System.out.println(&quot;\n\n\n  ###### Fragen über die NATUR. ######&quot;);&#xD;
+				return &quot;nature&quot;;}&#xD;
+			else if(themeEingabe == &quot;4&quot;){&#xD;
+				System.out.println(&quot;\n\n\n  ###### Gemischte Fragen ######&quot;);&#xD;
+				return &quot;mix&quot;;} else{i--;}&#xD;
+		}&#xD;
+		return &quot;fehler&quot;;&#xD;
+		&#xD;
+		</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_Ob3ewHKvEeulKaaY3PFXgA" name="getUsername" method="_OfHnEHKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_Ob4F0HKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_Ob4F0XKvEeulKaaY3PFXgA" name="setUsername" method="_OfIOIHKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_Ob4s4HKvEeulKaaY3PFXgA" name="username">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_Ob4s4XKvEeulKaaY3PFXgA" name="chooseDiff" isStatic="true" method="_OfIOInKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_Ob4s4nKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_Ob5T8HKvEeulKaaY3PFXgA" name="printDiffAnsw" isStatic="true" method="_OfIOJHKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_Ob5T8XKvEeulKaaY3PFXgA" name="cases">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_Ob5T8nKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_Ob57AHKvEeulKaaY3PFXgA" name="askUsername" isStatic="true" method="_OfIOJ3KvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_Ob6iEHKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_Ob6iEXKvEeulKaaY3PFXgA" name="playAgainQuestion" isStatic="true" method="_OfIOKXKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_Ob6iEnKvEeulKaaY3PFXgA" name="username">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_Ob7JIHKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_Ob7JIXKvEeulKaaY3PFXgA" name="chooseTheme" isStatic="true" method="_OfI1MHKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_Ob7JInKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Ob8-UHKvEeulKaaY3PFXgA" name="Questions">
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfI1MnKvEeulKaaY3PFXgA" name="movieQuestionNrLeicht" specification="_Ob_akHKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfI1M3KvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfI1NHKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>String[] movieQl = {&quot;Wer spielt die Sch\u00FClerin Chantal im\ndeutschen Film *Fack ju G\u00f6the* (2013) ?\n&quot;,															//0&#xD;
+							&quot;Wer spielt Iron Man im gleichnamigen Film aus dem Jahr 2008 ?\n&quot;,																			//1&#xD;
+							&quot;Wer spielt Nick Fury, den Chef der Spionage-Agentur\nS.H.I.E.L.D., im Film *The Avengers*?\n&quot;,												//2&#xD;
+							&quot;Wie hei\u00dfen die Hauptfiguren in Titanic (1997) mit Vornamen ?\n&quot;,																			//3&#xD;
+							&quot;Wie hei\u00dft der B\u00f6sewicht in *The Dark Knight Rises* ?\n&quot;,																					//4&#xD;
+							&quot;Wie hei\u00dft der kleiner und schleimige \nehemalige Hobbit in *Der Herr der Ringe* (2001) ?\n&quot;,													//5&#xD;
+							&quot;Wie hei\u00dft der Schauspieler, der in \n*Twilight* den Charakter Edward spielt ?\n&quot;,															//6&#xD;
+							&quot;Wie hei\u00dft der schwer atmende Sith der \ndunklen Seite in *Star Wars* (1977) ?\n&quot;,															//7&#xD;
+							&quot;Wer steckt hinter der Stimme von Darth Vader\nin den Star-Wars-Filmen? \n&quot;,																	//8&#xD;
+							&quot;In welchem der folgenden Filme hei\u00dfen die \nHauptfiguren Alex, Marty, Gloria und Melman ?\n&quot;,&#xD;
+							&quot;In der Disney finanzierten Serie *The Mandalorian*, geht es um..&quot;,&#xD;
+							&quot;Wie lautet der Serienname richtig? The Big Bang..&quot;,&#xD;
+							&quot;Wer spielt in *Forest Gump* den Hauptcharakter *Forest Gump* ?&quot;,&#xD;
+							&quot;Worum geht es im Film *Jurassic Park* ?&quot;,&#xD;
+							&quot;Welches Auto f\u00e4hrt der Filmb\u00f6sewicht *Goldfinger*\nim gleichnamigen James-Bond-Film?&quot;,&#xD;
+							&quot;Was ist kein Horkrux von Harry Potters Gegenspieler Lord Voldemort?&quot;,&#xD;
+							&quot;Was ist Superheld *Hawkeyes* bevorzugte Waffe im Kampf gegen das B\u00f6se?&quot;,&#xD;
+							&quot;Wer erfand das Gruselmonster *Freddy Kr\u00FCger* ?&quot;,&#xD;
+							&quot;In der Kinder-Serie *Benjamin Bl\u00FCmchen*. Dieser ist ein...&quot;,&#xD;
+							&quot;Welche Hautfarbe hat *Yoda* aus Star Wars ?&quot;};&#xD;
+		return movieQl[frageNr];&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfJcQHKvEeulKaaY3PFXgA" name="movieQuestionAOLeicht" specification="_OcABoXKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfJcQXKvEeulKaaY3PFXgA" name="frageNrAO">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfJcQnKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>//AO = Answer Options&#xD;
+		String[] movieQlAO = {&quot;[1]Barabara Sch\u00f6neberger   [2]Jella Haase   [3]Sibel Kekilli   [4]Fiona Schweiger&quot;,													//0&#xD;
+									&quot;[1]Robert Downey Jr.   [2]Charlie Sheen   [3]Tom Cruise   [4]Harrison Ford&quot;,													//1&#xD;
+									&quot;[1]Ludacris   [2]Stan Lee   [3]Sam\u00FCl L. Jackson   [4]Ice Cube&quot;,																//2&#xD;
+									&quot;[1]James &amp; Kamilla   [2]Jackyl &amp; Hide   [3]Jordan &amp; Katy   [4]Jack &amp; Kate&quot;,													//3&#xD;
+									&quot;[1]Bone   [2]Pinguin   [3]Bane   [4]Joker&quot;,																					//4&#xD;
+									&quot;[1]Frodo   [2]Aragorn   [3]Gandalf   [4]Gollum&quot;,																				//5&#xD;
+									&quot;[1]Robert Pattinson   [2]Charles Melton   [3]Finn Wolfhard   [4]Taylor Lautner&quot;,												//6&#xD;
+									&quot;[1]Darth Maul   [2]Boba Fett   [3]Darth Vader   [4]Obi-Wan Kenobi&quot;,															//7&#xD;
+									&quot;[1]Robert Frederik [2]James Earl Jones   [3]Peter Scar   [4]James Cameron&quot;,													//8&#xD;
+									&quot;[1]Madagascar   [2]Afrika   [3]Italien   [4]China&quot;,&#xD;
+									&quot;[1]einen Mandalorianer der sich um Waisenkind namens *Grogu* k\u00FCmmert.\n[2]den Kampf gegen die Sith.\n[3]Luke Skywalker.\n[4]einen Sturmtruppler des Imperiums.&quot;,&#xD;
+									&quot;[1]Club   [2]Theory   [3]Boom   [4]Bang&quot;,&#xD;
+									&quot;[1]Mel Gibson   [2]Hugh Grant   [3]Tom Hanks   [4]Sean Connery&quot;,&#xD;
+									&quot;[1]Fossilien   [2]Dinosaurier   [3]Gesteinsschichten   [4]Rechtsprechung&quot;,&#xD;
+									&quot;[1]Maybach   [2]Rolls Royce   [3]Bentley   [4]Mercedes&quot;,&#xD;
+									&quot;[1]Merope Gaunts Medaillon   [2]Helga Hufflepuffs Becher\n[3]Godric Gryffindors Uhr   [4]Tom Riddles Tagebuch&quot;,&#xD;
+									&quot;[1]Steinschleuder   [2]Pistole   [3]Speer   [4]Pfeil und Bogen&quot;,&#xD;
+									&quot;[1]Stephen King   [2]John Carpenter   [3]Wolfgang Hohlbein   [4]Wes Craven&quot;,&#xD;
+									&quot;[1]Elefant   [2]Tiger   [3]Baum   [4]Fisch&quot;,&#xD;
+									&quot;[1]Gelb   [2]Gr\u00FCn   [3]Rot   [4]Grau&quot;};&#xD;
+		return movieQlAO[frageNrAO];&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfJcQ3KvEeulKaaY3PFXgA" name="movieQuestionAnswerLeicht" specification="_OcAosXKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfJcRHKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfJcRXKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>String[] movieQlAnswer = {&quot;2&quot;,&quot;1&quot;,&quot;3&quot;,&quot;4&quot;,&quot;3&quot;,&quot;4&quot;,&quot;1&quot;,&quot;3&quot;,&quot;2&quot;,&quot;1&quot;,&quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;2&quot;,&quot;2&quot;,&quot;3&quot;,&quot;4&quot;,&quot;4&quot;,&quot;1&quot;,&quot;2&quot;};&#xD;
+		return movieQlAnswer[frageNr];&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfJcRnKvEeulKaaY3PFXgA" name="movieQuestionNrMittel" specification="_OcBPwHKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfJcR3KvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfJcSHKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>String[] movieQm = {&quot;Aus welchem Land stammt Al Pachinos Charakter Tony Montana\nurspr\u00FCnglich im Film  *Scarface*  (1983) ?\n&quot;,								//0&#xD;
+							&quot;In welcher der folgenden Serien gibt es keinen Familienhund?\n&quot;,																			//1&#xD;
+							&quot;Im Film *Pain &amp; Gain* (2013) spielen Mark Wahlberg und Anthony Mackie\nzwei der drei Hauptrollen. Wer ist der dritte Hauptdarsteller ?\n&quot;, //2&#xD;
+							&quot;Schreiende Kinder eine Energiequelle, in welchem Film ?\n&quot;,																				//3&#xD;
+							&quot;In welchem Film verliert *Stu* nach einer \nwilden Partynacht seinen Schneidezahn ?\n&quot;,													//4&#xD;
+							&quot;Im welchem Jahr wurde Disneys Zeichentrickfilm\n*Der K\u00f6nig der L\u00f6wen* ver\u00f6ffentlicht ?\n&quot;,												//5&#xD;
+							&quot;Mit welchem Film gelang Arnold Schwarzenegger der\ninternationale Durchbruch auf der Kinoleinwand ?\n&quot;,									//6&#xD;
+							&quot;In der TV-Serie *Dexter* ist die Hauptperson ein Serienkiller \n- was ist jedoch ihr eigentlicher Job ?\n&quot;,									//7&#xD;
+							&quot;Welche der folgenden Schauspieter spielt nicht\nin der Kom\u00f6die *Kindsk\u00f6pfe* (2010) mit ?\n&quot;,											//8&#xD;
+							&quot;Welcher Darsteller spielte bisher am h\u00e4ufigsten \ndie Rolle des  *James Bond* ?\n&quot;,														//9&#xD;
+							&quot;Welcher Film der Firma Pixar war der erste\nComputer-animierte Spielfilm ?\n&quot;,&#xD;
+							&quot;In welcher Ausbildung steckt Kung Fu Panda Po\nbevor er sich zum Kung Fu K\u00e4mpfer ausbilden l\u00e4sst ?\n&quot;,&#xD;
+							&quot;Wie hei\u00dft die Psychiatrie von Gotham City, der Stadt \u00FCber die Batman wacht ?&quot;,&#xD;
+							&quot;Aus welchem Film stammt das Zitat: *Wir sehn uns in etwa 30 Jahren!* ?&quot;,&#xD;
+							&quot;Mit wem verbrachte Stiflers Mom im Kult-Film *American Pie 1* eine Nacht ?&quot;,&#xD;
+							&quot;Wie hei\u00dft ein deutscher M\u00e4rchenfilm richtig? *Die Geschichte vom goldenen...&quot;,&#xD;
+							&quot;In welcher Stadt treibt der d\u00FCmmste Schurke\naller Zeiten *Megamind* sein Unwesen?&quot;,&#xD;
+							&quot;Wen wollen die Protagonisten der Filmreihe\n*Final Destination* \u00FCberlisten?&quot;,&#xD;
+							&quot;Wer spielt die Hauptrolle in dem Actionfilm *16 Blocks* ?&quot;,&#xD;
+							&quot;Welcher war der erste Film aus dem Disney-Studio?&quot;};														//8&#xD;
+		return movieQm[frageNr];&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfKDUHKvEeulKaaY3PFXgA" name="movieQuestionAOMittel" specification="_OcB20HKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfKDUXKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfKDUnKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>//AO = Answer Options&#xD;
+			String[] movieQmAO = {		&quot;[1]Kuba   [2]Kolumbien   [3]Jamaika   [4]Brasilien\n&quot;,								//0&#xD;
+										&quot;[1]Die Simpsons   [2]American Dad   [3]Rick &amp; Morty   [4]South Park\n&quot;,																			//1&#xD;
+										&quot;[1]Tom Cruise   [2]Vin Diesel   [3]Dwayne Johnson   [4]Harrison Ford\n&quot;, //2&#xD;
+										&quot;[1]Toy Story   [2]Disney’s Cars   [3]Das gro\u00dfe Krabbeln   [4]Die Monster AG\n&quot;,																				//3&#xD;
+										&quot;[1]Hangover   [2]One Night in Paris   [3]Set Up   [4]Nightmare on Elm Street\n&quot;,													//4&#xD;
+										&quot;[1]2001   [2]1990  [3]1994   [4]1992\n&quot;,												//5&#xD;
+										&quot;[1]Conan der Barbar   [2]Terminator 2   [3]The Last Stand   [4]The Expendables\n&quot;,									//6&#xD;
+										&quot;[1]Polizist   [2]Forensiker   [3]G\u00e4rtner   [4]Taxi-Fahrer\n&quot;,									//7&#xD;
+										&quot;[1]Adam Sandler   [2]Chris Rock   [3]Kevin James   [4]Jim Carey\n&quot;,											//8&#xD;
+										&quot;[1]Sean Connery   [2]Roger Moore   [3]Silvester Stallone   [4]Pierce Brosnan\n&quot;,														//9&#xD;
+										&quot;[1]Toy Story   [2]Lilo &amp; Stitch   [3]Alles steht Kopf   [4]Das Gro\u00dfe Krabbeln\n&quot;,&#xD;
+										&quot;[1]Pancake-Macher   [2]Fleischkl\u00f6pschen-Macher\n[3]Saure H\u00FChnerbr\u00FC\u00FCstchen-Macher   [4]Nudel-Macher&quot;,&#xD;
+										&quot;[1]Gotham Asylum   [2]Arkham Asylum   [3]Ashecliffe Asylum   [4]Soul Asylum&quot;,&#xD;
+										&quot;[1]Zur\u00FCck in die Zukunft I   [2]Zur\u00FCck in die Zukunft II   \n[3]Zur\u00FCck in die Zukunft III   [4]Der Legion\u00e4r&quot;,&#xD;
+										&quot;[1]Oz   [2]Finch   [3]Jim   [4]Sherman&quot;,&#xD;
+										&quot;[1]Pfennig   [2]B\u00e4umchen   [3]Taler   [4]Teller&quot;,&#xD;
+										&quot;[1]Gotham City   [2]Metro City   [3]New York City   [4]Mexico City&quot;,&#xD;
+										&quot;[1]Die CIA   [2]Ihren Mathe-Lehrer   [3]Den Tod   [4]Ihre Mitsch\u00FCler&quot;,&#xD;
+										&quot;[1]Bruce Willis   [2]Denzel Washington   \n[3]Robert De Niro   [4]Al Pacino&quot;,&#xD;
+										&quot;[1]Die Schneeballfabrik   [2]Schneewittchen und die Sieben Zwerge\n[3]Magdalena der Frosch   [4]Der K\u00f6nig der L\u00f6wen&quot;};&#xD;
+			return movieQmAO[frageNr];&#xD;
+		</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfKDU3KvEeulKaaY3PFXgA" name="movieQuestionAnswerMittel" specification="_OcCd4HKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfKDVHKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfKDVXKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>String[] movieQmAnswer = {&quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;4&quot;,&quot;1&quot;,&quot;3&quot;,&quot;1&quot;,&quot;2&quot;,&quot;4&quot;,&quot;2&quot;,&quot;1&quot;,&quot;4&quot;,&quot;2&quot;,&quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;2&quot;,&quot;3&quot;,&quot;1&quot;,&quot;2&quot;};&#xD;
+			return movieQmAnswer[frageNr];&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfKDVnKvEeulKaaY3PFXgA" name="movieQuestionNrSchwer" specification="_OcDsAHKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfKDV3KvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfKDWHKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>String[] movieQs = {&quot;Welches Film-Unternehmen ver\u00f6ffentlichte die *Herr der Ringe* – Trilogie ?\n&quot;,&#xD;
+									&quot;Welches Lied spielt Marty McFly in *Zur\u00FCck in die Zukunft* auf der Gitarre ?\n&quot;,&#xD;
+									&quot;Wer f\u00FChrte bei *Alien* und *Blade Runner* Regie ?\n&quot;,&#xD;
+									&quot;Wer f\u00FChrte zur Science-Fiction-Parodie *Dark Star* aus dem Jahr 1974 Regie ?\n&quot;,&#xD;
+									&quot;Wer schrieb und f\u00FChrte Regie zum preisgekr\u00f6nten Film *Avatar* ?\n&quot;,&#xD;
+									&quot;Wer spielt die Hauptrolle im Film *Shoot ´Em Up*  (2007) ?\n&quot;,&#xD;
+									&quot;Wer spielte Johnny Cash im Film *Walk the Line* ?\n&quot;,&#xD;
+									&quot;Wer spielte neben Mel Gibson die Hauptrolle in der Reihe *Lethal Weapon* - Zwei stahlharte Profis ?\n&quot;,&#xD;
+									&quot;Wer war urspr\u00FCnglich f\u00FCr die Rolle des *Indiana Jones* vorgesehen ?\n&quot;,&#xD;
+									&quot;Wie hei\u00dft der von Leslie Nielson gespielte tollpatschige Lieutenant in der Filmreihe *Die nackte Kanone* ?\n&quot;,&#xD;
+									&quot;Welche Schauspielerin war kein Bond-Girl ?&quot;,&#xD;
+									&quot;Welcher Film ist bis dato der l\u00e4ngste, der je als\n*Bester Film* mit dem Oscar ausgezeichnet wurde ?&quot;,&#xD;
+									&quot;Welcher fiktiven Spezies geh\u00f6rt Kultfigur Scrat\naus den *Ice Age*-Filmen an ?&quot;,&#xD;
+									&quot;Wer spielt das Elternpaar im oscar-nominierten\nFilm *Extrem laut und unglaublich nah* ?&quot;,&#xD;
+									&quot;Wer verk\u00f6rperte den kleinen Elliott im Spielberg-Streifen:\n*E.T. - Der Au\u00dferirdische* ?&quot;,&#xD;
+									&quot;Welche besondere Gabe besitzt Vampir Alice,\ndie Schwester von Edward ?&quot;,&#xD;
+									&quot;Welchen seiner Filme drehte Alfred Hitchcock\nin einer *3-D-Naturalversion* ?&quot;,&#xD;
+									&quot;Im Film *Quiet Earth – Das letzte Experiment*\ntreffen sich 3 \u00FCberlebende Personen. Welche ?&quot;,&#xD;
+									&quot;Wer f\u00FChrt Regie im Film *Equilibrium* ?&quot;,&#xD;
+									&quot;In welchem Teil von *Rocky* (Boxfilme) spielt Dolph Lundgren\nden Gegner von Sylvester Stallone ?&quot;};&#xD;
+		return movieQs[frageNr];&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfKDWXKvEeulKaaY3PFXgA" name="movieQuestionAOSchwer" specification="_OcE6IHKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfKDWnKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfKDW3KvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>//AO = AnswerOptions&#xD;
+		String[] movieQsAO = {&quot;[1]Universal   [2]New Line Cinema   [3]Tele M\u00FCnchen Gruppe   [4]Paramount&quot;,&#xD;
+									&quot;[1]Roxanne   [2]Sweet Home Alabama   [3]Johnny B. Goode   [4]Texas&quot;,&#xD;
+									&quot;[1]Ridley Scott   [2]James Cameron   [3]Steven Spielberg   [4]Jonathan Frakes&quot;,&#xD;
+									&quot;[1]Peter Jackson   [2]Mich\u00e4l Bay   [3]Steven Spielberg   [4]John Carpenter&quot;,&#xD;
+									&quot;[1]Christopher Nolan   [2]James Cameron   [3]Jonathan Frakes   [4]David Yates&quot;,&#xD;
+									&quot;[1]Clive Owen   [2]Tom Cruise   [3]Will Smith   [4]Tim Burton&quot;,&#xD;
+									&quot;[1]Tom Hanks   [2]Kevin Spacey   [3]Christian Bale   [4]Joaquin Ph\u00f6nix&quot;,&#xD;
+									&quot;[1]Sean Connery   [2]Dustin Hoffmann   [3]Danny Clover   [4]David Hasselhoff&quot;,&#xD;
+									&quot;[1]Roger Moore   [2]Tom Selleck   [3]Nicolas Cage   [4]Jonathan Frakes&quot;,&#xD;
+									&quot;[1]Frank Debrin   [2]Jack Goldman   [3]James Hunt   [4]Pierre Cardin&quot;,&#xD;
+									&quot;[1]Elke Sommer   [2]Ursula Andress   [3]Britt Ekland   [4]Jane Seymour&quot;,&#xD;
+									&quot;[1]Vom Winde verweht   [2]Hamlet   \n[3]Der mit dem Wolf tanzt   [4]Titanic&quot;,&#xD;
+									&quot;[1]Eisratte   [2]S\u00e4belzahneichh\u00f6rnchen\n[3]Mammutmaus   [4]Uhrzeithamster&quot;,&#xD;
+									&quot;[1]Scarlett Johansson &amp; Ewan McGregor   [2]Jennifer Aniston &amp; Owen Wilson\n[3]Tom Hanks &amp; Sandra Bullock   [4]George Clooney &amp; Patricia Hastie&quot;,&#xD;
+									&quot;[1]Henry Thomas   [2]Brad Pitt   [3]Keanu Reeves   [4]River Ph\u00f6nix&quot;,&#xD;
+									&quot;[1]Sie kann sich ohne Probleme in der Sonne zeigen.\n[2]Sie hat Visionen der Zukunft.\n[3]Sie kann Gedanken lesen.\n[4]Sie kann die Stimmung anderer Leute beeinflussen.&quot;,&#xD;
+									&quot;[1]Bei Anruf Mord   [2]Vertigo   [3]Das Fenster zum Hof   [4]Psycho&quot;,&#xD;
+									&quot;[1]Neo, Morpheus &amp; Trinity   [2]Tick, Trick &amp; Track\n[3]Lev, Frank &amp; Claire   [4]Zac, Api &amp; Joanne&quot;,&#xD;
+									&quot;[1]Andy Wachowski   [2]George Lucas   [3]Kurt Wimmer   [4]Peter Jackson&quot;,&#xD;
+									&quot;[1]Rocky IV   [2]in allen.   [3]Rocky III   [4]Rocky II&quot;};&#xD;
+		return movieQsAO[frageNr];&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfKqYHKvEeulKaaY3PFXgA" name="movieQuestionAnswerSchwer" specification="_OcGIQHKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfKqYXKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfKqYnKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>String[] movieQmAnswer = {&quot;2&quot;,&quot;3&quot;,&quot;1&quot;,&quot;4&quot;,&quot;2&quot;,&quot;1&quot;,&quot;4&quot;,&quot;3&quot;,&quot;2&quot;,&quot;1&quot;,&quot;1&quot;,&quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;1&quot;,&quot;2&quot;,&quot;1&quot;,&quot;4&quot;,&quot;3&quot;,&quot;1&quot;};&#xD;
+		return movieQmAnswer[frageNr];&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfKqY3KvEeulKaaY3PFXgA" name="techQuestionNrLeicht" specification="_OcGvUHKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfKqZHKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfKqZXKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>String[] techQl = {&quot;Was bedeutet die Abk\u00FCrzung *CD*?\n&quot;,															//0&#xD;
+						&quot;Moderne TV-Ger\u00e4te haben einen so genannten\nLCD-Bildschirm. Wof\u00FCr steht LCD ?\n&quot;,																			//1&#xD;
+						&quot;Welche der folgenden ist eine Programmiersprache ?\n&quot;,												//2&#xD;
+						&quot;Wie nennt man eine Armbanduhr, die \u00FCber ein\nDisplay und Internetzugriff verf\u00FCgt ?\n&quot;,																			//3&#xD;
+						&quot;Was speichert ein Kondensator?\n&quot;,																					//4&#xD;
+						&quot;Wie nennt man ein gel\u00e4ufiges Werkzeug zum \u00f6ffnen von T\u00FCren ?\n&quot;,												//5&#xD;
+						&quot;Wie wird die textbasierte Auszeichnungssprache, auf\nder das World Wide Web beruht, abgek\u00FCrzt ?\n&quot;,															//6&#xD;
+						&quot;Wo wurde in der Raumfahrt ein *Lunar Rover* eingesetzt ?\n&quot;,															//7&#xD;
+						&quot;Welche Farbe hat *Schutzleiter* in einem gew\u00f6hnlichen Stromkabel ? \n&quot;,																//8&#xD;
+						&quot;Welche Aufl\u00f6sung besitzt ein sogenannter Full-HD-TV ?\n&quot;,&#xD;
+						&quot;Zu welchem Dateityp geh\u00f6rt eine Datei mit der Endung .bmp ?&quot;,&#xD;
+						&quot;Wie welchem Emoticon versendet man per SMS einen Kuss ?&quot;,&#xD;
+						&quot;Wof\u00FCr braucht man im Internet Bookmarks ?&quot;,&#xD;
+						&quot;Welches Ger\u00e4t kann Schallwellen aufnehmen und in\nelektrische Signale umwandeln ?&quot;,&#xD;
+						&quot;Ein Teilbereich der Physik: Die Lehre vom Licht ist die...&quot;,&#xD;
+						&quot;Was bedeutet *Astronaut* w\u00f6rtlich \u00FCbersetzt ?&quot;,&#xD;
+						&quot;Welches Werkzeug ist am besten geeignet, um Erde zu bewegen ?&quot;,&#xD;
+						&quot;Womit kann man auf dem Fernseher den Sender wechseln ?&quot;,&#xD;
+						&quot;Wof\u00FCr verwendet man einen Kompass?&quot;,&#xD;
+						&quot;Was ben\u00f6tigt man f\u00FCr einen Laptop damit er mit dem Strom verbunden ist?&quot;};&#xD;
+	return techQl[frageNr];&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfKqZnKvEeulKaaY3PFXgA" name="techQuestionAOLeicht" specification="_OcH9cHKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfKqZ3KvEeulKaaY3PFXgA" name="frageNrAO">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfKqaHKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>//AO = Answer Options&#xD;
+	String[] techQlAO = {&quot;[1]Compact Disc   [2]Computer Disc   [3]Collective Decision   [4]Class Decryption&quot;,													//0&#xD;
+								&quot;[1]Light Cascading Dash  [2]Light Comparing Demodulator\n[3]Liquid Crystal Display   [4]Long Correct Display&quot;,													//1&#xD;
+								&quot;[1]Cobra   [2]Pyton   [3]Bird   [4]Hornet&quot;,																//2&#xD;
+								&quot;[1]G-Shock   [2]Automatic Watch   [3]Smartwatch   [4]Digitaluhr&quot;,													//3&#xD;
+								&quot;[1]Elektrische Ladung   [2]Kondenswasser   [3]Honig   [4]Gestein&quot;,																					//4&#xD;
+								&quot;[1]Wilhelm   [2]Dietrich   [3]Jochen   [4]Meinhard&quot;,																				//5&#xD;
+								&quot;[1]SQL   [2]HTML   [3]PHP   [4]CSS&quot;,												//6&#xD;
+								&quot;[1]Auf dem Nordpol   [2]Auf der ISS   [3]Auf dem Mars   [4]Auf dem Mond&quot;,															//7&#xD;
+								&quot;[1]Gr\u00FCn-Gelb [2]Orange   [3]Schwarz   [4]Rot&quot;,													//8&#xD;
+								&quot;[1]800 x 600   [2]2048 x 1200   [3]1920 x 1080   [4]3840 x 2160&quot;,&#xD;
+								&quot;[1]Tabellenkalkulationsdatei   [2]Ausf\u00FChrbare Datei   \n[3]Bilddatei   [4]Audiodatei&quot;,&#xD;
+								&quot;[1] :-o   [2] :-$   [3] :-8   [4] :-*&quot;,&#xD;
+								&quot;[1]als PIN f\u00FCr Online-Banking   [2]als Lesezeichen f\u00FCr eine Webseite\n[3]zur Nutzererkennung   [4]f\u00FCr Geb\u00FChrenabrechnungen&quot;,&#xD;
+								&quot;[1]Lautsprecher   [2]Bildschirm   [3]Grammofon   [4]Mikrofon&quot;,&#xD;
+								&quot;[1]Optik   [2]Analytik   [3]Linguistik   [4]Phonetik&quot;,&#xD;
+								&quot;[1]Raumfahrer   [2]Sternfahrer [3]Weltallreisender   [4]Hochflieger&quot;,&#xD;
+								&quot;[1]Ein Bohrer   [2]Eine S\u00e4ge   [3]Eine Schaufel   [4]Ein Hammer&quot;,&#xD;
+								&quot;[1]Fernbedienung   [2]Drucker   [3]Videorecorder   [4]Fernsehbox&quot;,&#xD;
+								&quot;[1]Bronzeguss   [2]Navigation   [3]Abk\u00FChlung   [4]Kochen&quot;,&#xD;
+								&quot;[1]Prozessor   [2]Arbeitsspeicher   [3]Netzteil   [4]Grafikkarte&quot;};&#xD;
+	return techQlAO[frageNrAO];&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfKqaXKvEeulKaaY3PFXgA" name="techQuestionAnswerLeicht" specification="_OcIkgHKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfKqanKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfKqa3KvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>String[] techQlAnswer = {&quot;1&quot;,&quot;3&quot;,&quot;2&quot;,&quot;3&quot;,&quot;1&quot;,&quot;2&quot;,&quot;2&quot;,&quot;4&quot;,&quot;1&quot;,&quot;3&quot;,&quot;3&quot;,&quot;4&quot;,&quot;2&quot;,&quot;4&quot;,&quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;1&quot;,&quot;2&quot;,&quot;3&quot;};&#xD;
+	return techQlAnswer[frageNr];&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfLRcHKvEeulKaaY3PFXgA" name="techQuestionNrMittel" specification="_OcJyoHKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfLRcXKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfLRcnKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>String[] techQm = {&quot;Welches Unternehmen steht hinter dem\nLinux-basierten Betriebssystem *Android* ?\n&quot;,												//1&#xD;
+						&quot;Wie lautet KEIN Name eines Unternehmens, das Notebooks entwickelt ?\n&quot;, 														//2&#xD;
+						&quot;Wie nennt man einen Herd, bei dem der Topf oder die\nPfanne mittels eines Magnetfeldes erhitzt wird ?\n&quot;,						//3&#xD;
+						&quot;Wonach ist eine Bauform des Verbrennungsmotors benannt ?\n&quot;,																	//4&#xD;
+						&quot;Wof\u00FCr benutzt man einen sogenannten *Fuchsschwanz* ?\n&quot;,																		//5&#xD;
+						&quot;Wie hie\u00df der Konkurrent der BluRay, der\nsich jedoch nicht durchsetzen konnte ?\n&quot;,												//6&#xD;
+						&quot;Welche Mercedes-Klasse gibt es nicht ?\n&quot;,																						//7&#xD;
+						&quot;Welche Erfindung wird mit Farbbrillen, Polarisationsfiltern\noder Shutter-Brillen verbunden ?\n&quot;,								//8&#xD;
+						&quot;Welche Erfindung gibt es in den Varianten\nOtto, Wankel oder Stirling ?\n&quot;,														//9&#xD;
+						&quot;Was kann man mit einem Pager machen ?\n&quot;,&#xD;
+						&quot;Der 2011 verstorbene iGod Steve Jobs kehrte erst 1997 zu Apple zur\u00FCck.\nWomit gelang ihm damals die Rettung der Firma ?&quot;,&#xD;
+						&quot;WAP steht f\u00FCr... ?&quot;,&#xD;
+						&quot;Welches Tier war das Maskottchen der Apollo-11-Mission ?&quot;,&#xD;
+						&quot;Das Verhalten von K\u00f6rpern in einem Luftstrom beschreibt...&quot;,&#xD;
+						&quot;Wie bewegt ein Unterseeboot im Wasser auf und ab ?&quot;,&#xD;
+						&quot;Wie hei\u00dft die Europ\u00e4ische Weltraumorganisation ?&quot;,&#xD;
+						&quot;Was misst man auf der Richterskala ?&quot;,&#xD;
+						&quot;Wer oder was ist *ASCII* ?&quot;,&#xD;
+						&quot;Die kleinste Informationseinheit, die ein Computer darstellen kann ist ein ... &quot;,&#xD;
+						&quot;GPRS, EDGE, UMTS, HSPA - wer blickt noch durch beim mobilen Internet?\nWelche Aussage stimmt ?&quot;};																						//10&#xD;
+	return techQm[frageNr];&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfL4gHKvEeulKaaY3PFXgA" name="techQuestionAOMittel" specification="_OcLAwHKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfL4gXKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfL4gnKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>//AO = Answer Options&#xD;
+		String[] techQmAO = {		&quot;[1]Microsoft   [2]Google  [3]Oracle   [4]Yahoo\n&quot;,																	//1&#xD;
+									&quot;[1]Android   [2]Acer  [3]Dell   [4]HP\n&quot;, 																			//2&#xD;
+									&quot;[1]Tesla Herd   [2]Power Herd  [3]Induktionsherd   [4]Magnetherd\n&quot;,												//3&#xD;
+									&quot;[1]Stern   [2]Sechseck  [3]Trapez   [4]Kreis\n&quot;,																	//4&#xD;
+									&quot;[1]als Troph\u00e4e   [2]w\u00e4rmen   [3]als Schl\u00FCsselanh\u00e4nger   [4]S\u00e4gen\n&quot;,												//5&#xD;
+									&quot;[1]Super Disk   [2]HD DVD   [3]Betamax Final   [4]Red Beam\n&quot;,														//6&#xD;
+									&quot;[1]A-Klasse   [2]G-Klasse   [3]I-Klasse   [4]C-Klasse\n&quot;,															//7&#xD;
+									&quot;[1]3D-Film   [2]Skibrillen   [3]Augenmessung   [4]Splitterschutzbrillen\n&quot;,										//8&#xD;
+									&quot;[1]Teller   [2]Motor   [3]Verlag   [4]Formel\n&quot;,																	//9&#xD;
+									&quot;[1]Sein Alter pr\u00FCfen   [2]Internetseiten sehen   [3]Kurznachrichten empfangen   [4]Seiten sortieren\n&quot;,&#xD;
+									&quot;[1]iPhone   [2]iMac   [3]iPad   [4]MacBook&quot;,&#xD;
+									&quot;[1]Wireless Application Protocol   [2]Wave Add-on Protocol   \n[3]Wireless Application Program   [4]Wireless Application Path&quot;,&#xD;
+									&quot;[1]ein Fisch   [2]ein Adler   [3]ein Puma   [4]ein Bison&quot;,&#xD;
+									&quot;[1]die Hydrologie [2]die Architektur   [3]die Aerodynamik   [4]die Astrophysik&quot;,&#xD;
+									&quot;[1]Durch Kork und Steine   [2]Durch Luft und Sand   \n[3]Durch aufblasbare Kissen   [4]Durch Wasser und Luft&quot;,&#xD;
+									&quot;[1]ESA   [2]ESS   [3]CSG   [4]ISS&quot;,&#xD;
+									&quot;[1]Radiowellen   [2]Temperatur   [3]Erdbebenst\u00e4rke   [4]Lautst\u00e4rke&quot;,&#xD;
+									&quot;[1]Mischung aus Ascorbins\u00e4ure &amp; Sa\u00FCrstoff   [2]ein Zeichencode   \n[3]die regierende Partei in Nigeria   [4]Bemannte Raumf\u00e4hre der USA&quot;,&#xD;
+									&quot;[1]Byte   [2]Bit   [3]Kibibit   [4]Bol&quot;,&#xD;
+									&quot;[1]GPRS gibt es nicht mehr\n[2]HSDPA ist schneller als GPRS\n[3]UMTS ist das schnellste Netz\n[4]EDGE hat nichts mit mobilem Internet zu tun&quot;};			//10&#xD;
+		return techQmAO[frageNr];&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfL4g3KvEeulKaaY3PFXgA" name="techQuestionAnswerMittel" specification="_OcLn0XKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfL4hHKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfL4hXKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>String[] techQmAnswer = {&quot;2&quot;,&quot;1&quot;,&quot;3&quot;,&quot;1&quot;,&quot;4&quot;,&quot;2&quot;,&quot;3&quot;,&quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;2&quot;,&quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;4&quot;,&quot;1&quot;,&quot;3&quot;,&quot;2&quot;,&quot;2&quot;,&quot;2&quot;};&#xD;
+		return techQmAnswer[frageNr];&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfL4hnKvEeulKaaY3PFXgA" name="techQuestionNrSchwer" specification="_OcMO4XKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfL4h3KvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfL4iHKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>String[] techQs = {			&quot;In welchem Handwerk wird ein sogenannter *Sch\u00FCtze* verwendet?\n&quot;,&#xD;
+								&quot;In welchem Jahr erfand Fahrenheit das erste Thermometer?\n&quot;,&#xD;
+								&quot;Wann wurde der *Commodore 64*-Heimcomputer\ndas erste mal ver\u00f6ffentlicht?\n&quot;,&#xD;
+								&quot;In welchem Jahr wurde der *Zauberw\u00FCrfel*,\nauch Rubik´s Cube genannt, erfunden?\n&quot;,&#xD;
+								&quot;Wann wurde die NASA gegr\u00FCndet?\n&quot;,&#xD;
+								&quot;Was wurde mit dem foucaultschen Pendel bewiesen?\n&quot;,&#xD;
+								&quot;Welcher Flugzeugba\u00FCr hat den Langstreckenbomber B-52 entwickelt?\n&quot;,&#xD;
+								&quot;Welches Unternehmen entwickelte den ersten PC,\nder am 12. August 1981 ver\u00f6ffentlicht wurde?\n&quot;,&#xD;
+								&quot;Wie hie\u00df die Raumfahrtmission, die im Jahr 1969\ndie ersten Menschen auf den Mond brachte?\n&quot;,&#xD;
+								&quot;Wof\u00FCr ist *Modem* eine Abk\u00FCrzung ?\n&quot;,&#xD;
+								&quot;Was war ein Plagiat des franz. Citr\u00f6n 5CV ?&quot;,&#xD;
+								&quot;Wie viele Passagiere bef\u00f6rderte der Flughafen\nFrankfurt/Main im Jahr 2011 ?&quot;,&#xD;
+								&quot;Ein *Coulomb* ist die abgeleitete SI-Einheit... ?&quot;,&#xD;
+								&quot;Was verwendeten die amerikanischen Soldaten im Zweiten Weltkrieg,\num Salzwasser aus ihren Gewehrm\u00FCndungen zu halten,\nals sie an Land schwommen ?&quot;,&#xD;
+								&quot;Aus welchem Material waren die ersten zugelassenen Kondome in den USA ?&quot;,&#xD;
+								&quot;Wo sitzt normalerweise kein Schloss ?&quot;,&#xD;
+								&quot;Was erzeugt das typische Pling beim tropfenden Wasserhahn ?&quot;,&#xD;
+								&quot;Unter Augmented Reality versteht man ...&quot;,&#xD;
+								&quot;Welches Bauteil ist bei Dieselmotoren, im Gegensatz zu Ottomotoren, \u00FCberfl\u00FCssig ?&quot;,&#xD;
+								&quot;Wie hei\u00dft die kleinste Einheit einer Rastergrafik ?&quot;};&#xD;
+	return techQs[frageNr];&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfL4iXKvEeulKaaY3PFXgA" name="techQuestionAOSchwer" specification="_OcM18XKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfMfkHKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfMfkXKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>//AO = AnswerOptions&#xD;
+		String[] techQsAO = {&quot;[1]Weberei   [2]Gastronomie   [3]Sicherheitsdienst   [4]Dachdecker&quot;,&#xD;
+								&quot;[1]1701   [2]1724   [3]1829   [4]1790&quot;,&#xD;
+								&quot;[1]1960   [2]2000   [3]1982   [4]1990&quot;,&#xD;
+								&quot;[1]1974   [2]1955   [3]1983   [4]1992&quot;,&#xD;
+								&quot;[1]1966   [2]1930   [3]1940   [4]1958&quot;,&#xD;
+								&quot;[1]Die Schwerkraft  [2]Die Erdrotation   [3]Hexerei   [4]Radioaktive Strahlung&quot;,&#xD;
+								&quot;[1]Lockheed   [2]Airbus   [3]B\u00f6ing   [4]Bell&quot;,&#xD;
+								&quot;[1]Apple   [2]Microsoft   [3]Atari   [4]IBM&quot;,&#xD;
+								&quot;[1]Apollo 11   [2]Apollo 7   [3]Apollo 18   [4]Apollo 9&quot;,&#xD;
+								&quot;[1]Modulator Demodulator   [2]Modemato Scalare\n[3]Multi Order Decryption Encryption Mode   [4]Mono-Decrypter&quot;,&#xD;
+								&quot;[1]Opel Laubfrosch   [2]Ford Capri 1   [3]VW Karmann-Ghia   \n[4]Mercedes-Benz 300S Coupé&quot;,&#xD;
+								&quot;[1]33,35 Millionen   [2]91,45 Millionen   [3]56,44 Millionen   [4]36,26 Millionen&quot;,&#xD;
+								&quot;[1]der elektrischen Stromst\u00e4rke   [2]der elektrischen Spannung   \n[3]des elektrischen Wiederstandes   [4]der elektrischen Ladung&quot;,&#xD;
+								&quot;[1]Ein Kondom   [2]Einen Stock   [3]Einen Butt-Plug   [4]Einen Dildo&quot;,&#xD;
+								&quot;[1]Tierdarm   [2]Leinen   [3]Gummi   [4]Plastik&quot;,&#xD;
+								&quot;[1]Am Ofen   [2]Im Haus   [3]Am Briefkasten   [4]Im Auto&quot;,&#xD;
+								&quot;[1]Kapillarwellen, die an der Oberfl\u00e4che entlanglaufen\n[2]Ein vibrierender Hohlraum darunter, der nach dem Aufprall entsteht\n[3]Das Auftreffen des Tropfens auf der Wasseroberfl\u00e4che\n[4]Durch die Schwerkraft der Erde&quot;,&#xD;
+								&quot;[1]Comp. gest\u00FCtzte Erweiterung der Wahrnehmung\n[2]Computerspiel Genre   [3]3D Effekt\n[4]eine Software zum realit\u00e4tsgetre\u00FCn Darstellen von Objekten&quot;,&#xD;
+								&quot;[1]Batterie   [2]Z\u00FCndkerze   [3]Verbrennungsraum   [4]Nockenwelle&quot;,&#xD;
+								&quot;[1]Vektor   [2]Punkt   [3]Linie   [4]Pixel&quot;};&#xD;
+	return techQsAO[frageNr];&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfMfknKvEeulKaaY3PFXgA" name="techQuestionAnswerSchwer" specification="_OcNdAnKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfMfk3KvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfMflHKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>String[] techQmAnswer = {&quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;1&quot;,&quot;4&quot;,&quot;2&quot;,&quot;3&quot;,&quot;4&quot;,&quot;1&quot;,&quot;1&quot;,&quot;1&quot;,&quot;3&quot;,&quot;4&quot;,&quot;1&quot;,&quot;3&quot;,&quot;1&quot;,&quot;2&quot;,&quot;1&quot;,&quot;2&quot;,&quot;4&quot;};&#xD;
+	return techQmAnswer[frageNr];&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfMflXKvEeulKaaY3PFXgA" name="natureQuestionNrLeicht" specification="_OcOEEnKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfMflnKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfMfl3KvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>String[] natureQl = {&quot;Welches dieser Bodentiere ist KEIN Insekt?\n&quot;,															//0&#xD;
+						&quot;Welches der folgenden *Vegetables* z\u00e4hlt NICHT zum Gem\u00FCse?\n&quot;,																			//1&#xD;
+						&quot;Wie viele Z\u00e4hne kann ein Hai im \nLaufe seines Lebens bekommen?\n&quot;,												//2&#xD;
+						&quot;Wie hoch ist der Berg *Mount Everest* im Himalaya?\n&quot;,																			//3&#xD;
+						&quot;Welches der folgenden Tiere kann \nam schnellsten *rennen*?\n&quot;,																					//4&#xD;
+						&quot;Was speichern Kamele in ihren H\u00f6ckern?\n&quot;,												//5&#xD;
+						&quot;Welches ist kein echter Baum?\n&quot;,															//6&#xD;
+						&quot;In welchem Lebensraum lebt der Igel?\n&quot;,															//7&#xD;
+						&quot;Welche der folgenden Fr\u00FCchte sind giftig? \n&quot;,																//8&#xD;
+						&quot;Aus welchem Material besteht Lava?\n&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;};&#xD;
+	return natureQl[frageNr];&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfMfmHKvEeulKaaY3PFXgA" name="natureQuestionAOLeicht" specification="_OcOrIXKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfMfmXKvEeulKaaY3PFXgA" name="frageNrAO">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfMfmnKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>//AO = Answer Options&#xD;
+	String[] natureQlAO = {&quot;[1]Wespe   [2]Stubenfliege   [3]Milbe   [4]Borkenk\u00e4fer&quot;,													//0&#xD;
+								&quot;[1]Tomate   [2]Karotte   [3]Zucchini   [4]Kartoffel&quot;,													//1&#xD;
+								&quot;Bis zu... [1]10000   [2]40000   [3]20000   [4]30000&quot;,																//2&#xD;
+								&quot;[1]6700m   [2]8800m   [3]7100m   [4]6000m&quot;,													//3&#xD;
+								&quot;[1]Gazelle   [2]Strau\u00df   [3]Gepard   [4]Panther&quot;,																					//4&#xD;
+								&quot;[1]Urin   [2]Fett   [3]Blut   [4]Wasser&quot;,																				//5&#xD;
+								&quot;[1]Gummibaum   [2]Dinosaurierbaum   [3]Mammutbaum   [4]Elfenbaum&quot;,												//6&#xD;
+								&quot;[1]Im Wald   [2]Im Wasser   [3]In der Erde   [4]In der Erde&quot;,															//7&#xD;
+								&quot;[1]Weintraube [2]Tollkirsche   [3]Heidelbeere   [4]Litschi&quot;,													//8&#xD;
+								&quot;[1]Gestein   [2]Holz   [3]Kunststoff   [4]Wasser&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;};&#xD;
+	return natureQlAO[frageNrAO];&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfMfm3KvEeulKaaY3PFXgA" name="natureQuestionAnswerLeicht" specification="_OcPSMXKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfMfnHKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfMfnXKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>String[] techQlAnswer = {&quot;3&quot;,&quot;1&quot;,&quot;4&quot;,&quot;2&quot;,&quot;3&quot;,&quot;2&quot;,&quot;1&quot;,&quot;1&quot;,&quot;2&quot;,&quot;1&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;};&#xD;
+	return techQlAnswer[frageNr];&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfMfnnKvEeulKaaY3PFXgA" name="natureQuestionNrMittel" specification="_OcQgUHKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfMfn3KvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfMfoHKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>String[] natureQm = {&quot;Wie nennt man ein m\u00e4nnliches Schaf?\n&quot;,												//1&#xD;
+						&quot;Welcher dieser Affen z\u00e4hlt NICHT zu den Menschenaffen?\n&quot;, 														//2&#xD;
+						&quot;Aus welcher Pflanze wird Vanille gewonnen?\n&quot;,						//3&#xD;
+						&quot;Welches dieser Tiere ist so intelligent, dass\nes sich selbst im Spiegel erkennen kann?\n&quot;,																	//4&#xD;
+						&quot;Woraus besteht das Skelett eines Hai's?\n&quot;,																		//5&#xD;
+						&quot;Wie viel wiegt ein Igel?\n&quot;,												//6&#xD;
+						&quot;Welches Tier hat die l\u00e4ngsten Samenzellen der Welt?\n&quot;,																						//7&#xD;
+						&quot;Welche S\u00e4ugetiere leben am l\u00e4ngsten?\n&quot;,								//8&#xD;
+						&quot;Welches dieser Reptilien ist am gr\u00f6\u00dften?\n&quot;,														//9&#xD;
+						&quot;\u00e4ltere Gorillam\u00e4nnchen sind riesig und k\u00f6nnen bis zu 200 kg wiegen.\nSie leben mit einem Harem von 5-30 Weibchen.\nWie nennt man sie?\n&quot;,&#xD;
+						&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;};																						//10&#xD;
+	return natureQm[frageNr];&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfNGoHKvEeulKaaY3PFXgA" name="natureQuestionAOMittel" specification="_OcQgU3KvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfNGoXKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfNGonKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>//AO = Answer Options&#xD;
+		String[] natureQmAO = {		&quot;[1]Hammel   [2]Widder  [3]Lamm   [4]Mufflon\n&quot;,																	//1&#xD;
+									&quot;[1]Gibbon   [2]Gorilla  [3]Orang U-Tan   [4]Schimpanse\n&quot;, 																			//2&#xD;
+									&quot;[1]Wasserpflanze   [2]R\u00FCben  [3]Orchidee   [4]Nussbaum\n&quot;,												//3&#xD;
+									&quot;[1]Elefant   [2]Hund  [3]Affe   [4]Schwein\n&quot;,																	//4&#xD;
+									&quot;[1]Knochen   [2]Muskeln   [3]Gr\u00e4ten   [4]Knorpel\n&quot;,												//5&#xD;
+									&quot;[1]1750g   [2]1000g   [3]2250g   [4]880g\n&quot;,														//6&#xD;
+									&quot;[1]Eine Giraffe   [2]Ein Tigerhai   [3]Eine Fruchtfliege   [4]Eine Schlange\n&quot;,															//7&#xD;
+									&quot;[1]Wale   [2]Elefanten   [3]Nilpferde   [4]W\u00f6lfe\n&quot;,										//8&#xD;
+									&quot;[1]Der amerik. Alligator   [2]Das Salzwasserkrokodil   \n[3]Der Komodowaran   [4]Die Anakonda\n&quot;,																	//9&#xD;
+									&quot;[1]Casanova   [2]King Kong   [3]Silberr\u00FCcken   [4]Don Juan\n&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;};			//10&#xD;
+		return natureQmAO[frageNr];&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfNGo3KvEeulKaaY3PFXgA" name="natureQuestionAnswerMittel" specification="_OcRHYXKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfNGpHKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfNGpXKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>String[] natureQmAnswer = {&quot;2&quot;,&quot;1&quot;,&quot;3&quot;,&quot;1&quot;,&quot;4&quot;,&quot;2&quot;,&quot;3&quot;,&quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;};&#xD;
+		return natureQmAnswer[frageNr];&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfNGpnKvEeulKaaY3PFXgA" name="natureQuestionNrSchwer" specification="_OcRucHKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfNGp3KvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfNGqHKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>String[] natureQs = {&quot;\n&quot;,&#xD;
+								&quot;Was wird mit der Fehlingl\u00f6sung nachgewiesen?\n&quot;,&#xD;
+								&quot;Welcher von diesen Pflanzen sind giftig?\n&quot;,&#xD;
+								&quot;Wer oder was ist eine Mimose?\n&quot;,&#xD;
+								&quot;Wie viele L\u00e4nder grenzen an Ungarn?\n&quot;,&#xD;
+								&quot;Wer ist der Haupttr\u00e4ger der Tollwut?\n&quot;,&#xD;
+								&quot;Welche dieser vier spanischen Inseln ist die gr\u00f6\u00dfte?\n&quot;,&#xD;
+								&quot;Wie hei\u00dft der zweith\u00f6chste Berg Deutschlands?\n&quot;,&#xD;
+								&quot;Welche Fr\u00FChlingsblume entsteht aus den Buchstaben?\nR-E-U-E-L-W-Z-G-N-E-L\r\n&quot;,&#xD;
+								&quot;Zwischen welchen St\u00e4dten ist die Luftlinie am k\u00FCrzesten?\n&quot;,&#xD;
+								&quot;Welcher Vogel l\u00e4sst seine Eier von anderen V\u00f6geln ausbr\u00FCten?\n&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;};&#xD;
+	return natureQs[frageNr];&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfNGqXKvEeulKaaY3PFXgA" name="natureQuestionAOSchwer" specification="_OcRuc3KvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfNGqnKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfNGq3KvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>//AO = AnswerOptions&#xD;
+		String[] natureQsAO = {&quot;[1]Eiwei\u00df   [2]Zucker   [3]Sa\u00FCrstoff   [4]S\u00e4ure&quot;,&#xD;
+								&quot;[1]Heidelbeere   [2]Einbeere   [3]Physalis   [4]Stachelbeere&quot;,&#xD;
+								&quot;[1]ein Weichei   [2]ein S\u00FCdseefisch   \n[3]eine tropische Pflanze   [4]eine Hautkrankheit&quot;,&#xD;
+								&quot;[1]7   [2]6   [3]8   [4]5&quot;,&#xD;
+								&quot;[1]der Wolf   [2]der Hase   [3]das Reh   [4]der Fuchs&quot;,&#xD;
+								&quot;[1]Isla de Lobos   [2]Alegranza   [3]Isla de la Toja   [4]Isla Dragonera&quot;,&#xD;
+								&quot;[1]Watzmann   [2]Hochvogel   [3]Schneefernerkopf   \n[4]Mittlere H\u00f6llentalspitze&quot;,&#xD;
+								&quot;[1]Wurzegel   [2]Egelwurzel   [3]Wurzeleng   [4]Engelwurzel&quot;,&#xD;
+								&quot;[1]B\u00FCnosAires - SantiagodeChile    [2]Sidney - Aucklan   \n[3Berlin - Moskau    [4]Durban - Antananarivo&quot;,&#xD;
+								&quot;[1]Der Kuckuck   [2]Der Specht   [3]Die Amsel   [4]Der Uhu&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;};&#xD;
+	return natureQsAO[frageNr];&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfNGrHKvEeulKaaY3PFXgA" name="natureQuestionAnswerSchwer" specification="_OcSVgHKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfNGrXKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfNGrnKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>String[] natureQmAnswer = {&quot;2&quot;,&quot;2&quot;,&quot;3&quot;,&quot;1&quot;,&quot;4&quot;,&quot;2&quot;,&quot;3&quot;,&quot;4&quot;,&quot;1&quot;,&quot;1&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;};&#xD;
+	return natureQmAnswer[frageNr];&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfNGr3KvEeulKaaY3PFXgA" name="mixQuestionNrRandom" specification="_OcS8kHKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfNGsHKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfNGsXKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>String[] natureQs = {		&quot;Welches Bauteil ist bei Dieselmotoren, im Gegensatz zu Ottomotoren, \u00FCberfl\u00FCssig ?&quot;,&#xD;
+								&quot;Welcher von diesen Pflanzen sind giftig?\n&quot;,&#xD;
+								&quot;Wer oder was ist eine Mimose?\n&quot;,&#xD;
+								&quot;Wie viele L\u00e4nder grenzen an Ungarn?\n&quot;,&#xD;
+								&quot;Welches Tier hat die l\u00e4ngsten Samenzellen der Welt?\\n&quot;,&#xD;
+								&quot;Welche dieser vier spanischen Inseln ist die gr\u00f6\u00dfte?\n&quot;,&#xD;
+								&quot;Wie hei\u00dft der zweith\u00f6chste Berg Deutschlands?\n&quot;,&#xD;
+								&quot;In welchem Film verliert *Stu* nach einer \nwilden Partynacht seinen Schneidezahn ?\n&quot;,&#xD;
+								&quot;Zwischen welchen St\u00e4dten ist die Luftlinie am k\u00FCrzesten?\n&quot;,&#xD;
+								&quot;Welcher Vogel l\u00e4sst seine Eier von anderen V\u00f6geln ausbr\u00FCten?\n&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;};&#xD;
+	return natureQs[frageNr];&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfNtsHKvEeulKaaY3PFXgA" name="mixQuestionAORandom" specification="_OcS8k3KvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfNtsXKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfNtsnKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>//AO = AnswerOptions&#xD;
+		String[] natureQsAO = {&quot;[1]Batterie   [2]Z\u00FCndkerze   [3]Verbrennungsraum   [4]Nockenwelle&quot;,&#xD;
+								&quot;[1]Heidelbeere   [2]Einbeere   [3]Physalis   [4]Stachelbeere&quot;,&#xD;
+								&quot;[1]ein Weichei   [2]ein S\u00FCdseefisch   \n[3]eine tropische Pflanze   [4]eine Hautkrankheit&quot;,&#xD;
+								&quot;[1]7   [2]6   [3]8   [4]5&quot;,&#xD;
+								&quot;[1]Eine Giraffe   [2]Ein Tigerhai   [3]Eine Fruchtfliege   [4]Eine Schlange\\n&quot;,&#xD;
+								&quot;[1]Isla de Lobos   [2]Alegranza   [3]Isla de la Toja   [4]Isla Dragonera&quot;,&#xD;
+								&quot;[1]Watzmann   [2]Hochvogel   [3]Schneefernerkopf   \n[4]Mittlere H\u00f6llentalspitze&quot;,&#xD;
+								&quot;[1]Hangover   [2]One Night in Paris   [3]Set Up   [4]Nightmare on Elm Street\n&quot;,&#xD;
+								&quot;[1]B\u00FCnosAires - SantiagodeChile    [2]Sidney - Aucklan   \n[3Berlin - Moskau    [4]Durban - Antananarivo&quot;,&#xD;
+								&quot;[1]Der Kuckuck   [2]Der Specht   [3]Die Amsel   [4]Der Uhu&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;};&#xD;
+	return natureQsAO[frageNr];&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfNts3KvEeulKaaY3PFXgA" name="mixQuestionAnswerRandom" specification="_OcTjoXKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfNttHKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfNttXKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>String[] natureQmAnswer = {&quot;2&quot;,&quot;2&quot;,&quot;3&quot;,&quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;1&quot;,&quot;1&quot;,&quot;1&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;};&#xD;
+	return natureQmAnswer[frageNr];&#xD;
+</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_Ob_akHKvEeulKaaY3PFXgA" name="movieQuestionNrLeicht" isStatic="true" method="_OfI1MnKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_Ob_akXKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OcABoHKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_OcABoXKvEeulKaaY3PFXgA" name="movieQuestionAOLeicht" isStatic="true" method="_OfJcQHKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OcABonKvEeulKaaY3PFXgA" name="frageNrAO">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OcAosHKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_OcAosXKvEeulKaaY3PFXgA" name="movieQuestionAnswerLeicht" isStatic="true" method="_OfJcQ3KvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OcAosnKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OcAos3KvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_OcBPwHKvEeulKaaY3PFXgA" name="movieQuestionNrMittel" isStatic="true" method="_OfJcRnKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OcBPwXKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OcBPwnKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_OcB20HKvEeulKaaY3PFXgA" name="movieQuestionAOMittel" isStatic="true" method="_OfKDUHKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OcB20XKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OcB20nKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_OcCd4HKvEeulKaaY3PFXgA" name="movieQuestionAnswerMittel" isStatic="true" method="_OfKDU3KvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OcCd4XKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OcDE8HKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_OcDsAHKvEeulKaaY3PFXgA" name="movieQuestionNrSchwer" isStatic="true" method="_OfKDVnKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OcDsAXKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OcETEHKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_OcE6IHKvEeulKaaY3PFXgA" name="movieQuestionAOSchwer" isStatic="true" method="_OfKDWXKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OcFhMHKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OcFhMXKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_OcGIQHKvEeulKaaY3PFXgA" name="movieQuestionAnswerSchwer" isStatic="true" method="_OfKqYHKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OcGIQXKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OcGIQnKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_OcGvUHKvEeulKaaY3PFXgA" name="techQuestionNrLeicht" isStatic="true" method="_OfKqY3KvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OcHWYHKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OcHWYXKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_OcH9cHKvEeulKaaY3PFXgA" name="techQuestionAOLeicht" isStatic="true" method="_OfKqZnKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OcH9cXKvEeulKaaY3PFXgA" name="frageNrAO">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OcH9cnKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_OcIkgHKvEeulKaaY3PFXgA" name="techQuestionAnswerLeicht" isStatic="true" method="_OfKqaXKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OcIkgXKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OcIkgnKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_OcJyoHKvEeulKaaY3PFXgA" name="techQuestionNrMittel" isStatic="true" method="_OfLRcHKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OcKZsHKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OcKZsXKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_OcLAwHKvEeulKaaY3PFXgA" name="techQuestionAOMittel" isStatic="true" method="_OfL4gHKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OcLAwXKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OcLn0HKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_OcLn0XKvEeulKaaY3PFXgA" name="techQuestionAnswerMittel" isStatic="true" method="_OfL4g3KvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OcLn0nKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OcMO4HKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_OcMO4XKvEeulKaaY3PFXgA" name="techQuestionNrSchwer" isStatic="true" method="_OfL4hnKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OcMO4nKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OcM18HKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_OcM18XKvEeulKaaY3PFXgA" name="techQuestionAOSchwer" isStatic="true" method="_OfL4iXKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OcNdAHKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OcNdAXKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_OcNdAnKvEeulKaaY3PFXgA" name="techQuestionAnswerSchwer" isStatic="true" method="_OfMfknKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OcOEEHKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OcOEEXKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_OcOEEnKvEeulKaaY3PFXgA" name="natureQuestionNrLeicht" isStatic="true" method="_OfMflXKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OcOEE3KvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OcOrIHKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_OcOrIXKvEeulKaaY3PFXgA" name="natureQuestionAOLeicht" isStatic="true" method="_OfMfmHKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OcOrInKvEeulKaaY3PFXgA" name="frageNrAO">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OcPSMHKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_OcPSMXKvEeulKaaY3PFXgA" name="natureQuestionAnswerLeicht" isStatic="true" method="_OfMfm3KvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OcP5QHKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OcP5QXKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_OcQgUHKvEeulKaaY3PFXgA" name="natureQuestionNrMittel" isStatic="true" method="_OfMfnnKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OcQgUXKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OcQgUnKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_OcQgU3KvEeulKaaY3PFXgA" name="natureQuestionAOMittel" isStatic="true" method="_OfNGoHKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OcQgVHKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OcRHYHKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_OcRHYXKvEeulKaaY3PFXgA" name="natureQuestionAnswerMittel" isStatic="true" method="_OfNGo3KvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OcRHYnKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OcRHY3KvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_OcRucHKvEeulKaaY3PFXgA" name="natureQuestionNrSchwer" isStatic="true" method="_OfNGpnKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OcRucXKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OcRucnKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_OcRuc3KvEeulKaaY3PFXgA" name="natureQuestionAOSchwer" isStatic="true" method="_OfNGqXKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OcRudHKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OcRudXKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_OcSVgHKvEeulKaaY3PFXgA" name="natureQuestionAnswerSchwer" isStatic="true" method="_OfNGrHKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OcSVgXKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OcSVgnKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_OcS8kHKvEeulKaaY3PFXgA" name="mixQuestionNrRandom" isStatic="true" method="_OfNGr3KvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OcS8kXKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OcS8knKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_OcS8k3KvEeulKaaY3PFXgA" name="mixQuestionAORandom" isStatic="true" method="_OfNtsHKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OcS8lHKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OcTjoHKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_OcTjoXKvEeulKaaY3PFXgA" name="mixQuestionAnswerRandom" isStatic="true" method="_OfNts3KvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OcTjonKvEeulKaaY3PFXgA" name="frageNr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OcUKsHKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_OcVY0HKvEeulKaaY3PFXgA" name="QuizGame">
+      <ownedAttribute xmi:id="_OevMkHKvEeulKaaY3PFXgA" name="ANSI_RESET" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_OevMkXKvEeulKaaY3PFXgA" value="&quot;\u001B[0m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_OevzoHKvEeulKaaY3PFXgA" name="ANSI_BLACK" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_OevzoXKvEeulKaaY3PFXgA" value="&quot;\u001B[30m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_OevzonKvEeulKaaY3PFXgA" name="ANSI_RED" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Oevzo3KvEeulKaaY3PFXgA" value="&quot;\u001B[31m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_OewasHKvEeulKaaY3PFXgA" name="ANSI_GREEN" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_OewasXKvEeulKaaY3PFXgA" value="&quot;\u001B[32m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_OewasnKvEeulKaaY3PFXgA" name="ANSI_YELLOW" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Oewas3KvEeulKaaY3PFXgA" value="&quot;\u001B[33m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_OewatHKvEeulKaaY3PFXgA" name="ANSI_BLUE" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_OewatXKvEeulKaaY3PFXgA" value="&quot;\u001B[34m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_OexBwHKvEeulKaaY3PFXgA" name="ANSI_PURPLE" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_OexBwXKvEeulKaaY3PFXgA" value="&quot;\u001B[35m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_OexBwnKvEeulKaaY3PFXgA" name="ANSI_CYAN" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_OexBw3KvEeulKaaY3PFXgA" value="&quot;\u001B[36m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_OexBxHKvEeulKaaY3PFXgA" name="ANSI_WHITE" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_OexBxXKvEeulKaaY3PFXgA" value="&quot;\u001B[37m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_OexBxnKvEeulKaaY3PFXgA" name="ANSI_BLACK_BACKGROUND" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_OexBx3KvEeulKaaY3PFXgA" value="&quot;\u001B[40m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_OexByHKvEeulKaaY3PFXgA" name="ANSI_RED_BACKGROUND" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Oexo0HKvEeulKaaY3PFXgA" value="&quot;\u001B[41m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Oexo0XKvEeulKaaY3PFXgA" name="ANSI_GREEN_BACKGROUND" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Oexo0nKvEeulKaaY3PFXgA" value="&quot;\u001B[42m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Oexo03KvEeulKaaY3PFXgA" name="ANSI_YELLOW_BACKGROUND" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Oexo1HKvEeulKaaY3PFXgA" value="&quot;\u001B[43m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Oexo1XKvEeulKaaY3PFXgA" name="ANSI_BLUE_BACKGROUND" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Oexo1nKvEeulKaaY3PFXgA" value="&quot;\u001B[44m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Oexo13KvEeulKaaY3PFXgA" name="ANSI_PURPLE_BACKGROUND" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Oexo2HKvEeulKaaY3PFXgA" value="&quot;\u001B[45m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_OeyP4HKvEeulKaaY3PFXgA" name="ANSI_CYAN_BACKGROUND" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_OeyP4XKvEeulKaaY3PFXgA" value="&quot;\u001B[46m&quot;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_OeyP4nKvEeulKaaY3PFXgA" name="ANSI_WHITE_BACKGROUND" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_OeyP43KvEeulKaaY3PFXgA" value="&quot;\u001B[47m&quot;"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfOUwHKvEeulKaaY3PFXgA" name="main" specification="_OcX1EHKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfOUwXKvEeulKaaY3PFXgA" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OfOUwnKvEeulKaaY3PFXgA" value="*"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>// Main Variables: often-Use&#xD;
+//		User.lastQuestContainer;&#xD;
+		User.highscores = User.createHighScoreList();&#xD;
+		boolean antwort;&#xD;
+		String username = &quot;Leer&quot;;&#xD;
+		int countDurchgänge = 0;// Anzahl der SPIEL-Durchgänge&#xD;
+		int punkte = 0;&#xD;
+		int intoSetPunkte = 0;&#xD;
+		int pnkte = 0;&#xD;
+		int diff = 0;&#xD;
+&#xD;
+		// Blind Variables: without function&#xD;
+		User dummyUser = new User(&quot;dummy&quot;, 0);&#xD;
+		User user = new User(&quot;dummy&quot;, 0);&#xD;
+		int p = 0;&#xD;
+&#xD;
+		// Hier die Möglichkeit, ältere Spielergebnisse trotzdem darzustellen:&#xD;
+		// z.B.&#xD;
+		/**&#xD;
+		 * ---------------------------------------------------------&#xD;
+		 * &#xD;
+		 * &#xD;
+		 * &#xD;
+		 * &#xD;
+		 * ---------------------------------------------------------&#xD;
+		 **/&#xD;
+		// Spiel-Schleife-beginnt-hier-----------------------------------------------&#xD;
+		for (int count = 0; count &lt; 1; count++) {&#xD;
+			user.setPunkte(0);// Damit zu beginn des SPiels die Werte zurückgesetzt werden&#xD;
+			pnkte = 0;// Dasselbe wie Oben pnkte ist ein zwischensammler der Punkte&#xD;
+//	 Startsequenz: Name des Spiels&#xD;
+			System.out.println(&quot;\n[[[[[ DAS ]][[ FRAGE ]][[ SPIEL ]]]]]&quot;);&#xD;
+			InnerQuestions quest = new InnerQuestions(); // Fragenkatalog Objekt wird erzeugt&#xD;
+			long start = System.currentTimeMillis();// Zeitmessung des Spiels beginnt&#xD;
+			/**&#xD;
+			 * -----------------------------------------------------------------------------------------&#xD;
+			 **/&#xD;
+// Spieler erstellung! / Abfrage (if) ob der Spieler und der dummyUser(testNutzer) den selben Namen haben&#xD;
+			for (int z = 1; z &lt; 2; z++) {&#xD;
+				if (user.getUsername().equals(dummyUser.getUsername())) {&#xD;
+					username = QuestInfo.askUsername();&#xD;
+					user = new User(username, 0);&#xD;
+				}&#xD;
+&#xD;
+				/**&#xD;
+				 * ------------------------------------------------------------------------------------------&#xD;
+				 **/&#xD;
+&#xD;
+				diff = QuestInfo.chooseDiff();&#xD;
+&#xD;
+				if (diff == 4) {&#xD;
+					z--;&#xD;
+					username = QuestInfo.askUsername();&#xD;
+				} else {&#xD;
+					z++;&#xD;
+				}&#xD;
+			}&#xD;
+&#xD;
+			diff = QuestInfo.printDiffAnsw(diff);&#xD;
+			String theme = QuestInfo.chooseTheme();&#xD;
+//			int i;&#xD;
+			if (diff == 1) {&#xD;
+&#xD;
+// Nummern Set ----- für jede Schwierigkeit - neu erzeugt -----				&#xD;
+				TreeSet&lt;Integer> setNmbrs = new TreeSet&lt;Integer>();&#xD;
+				int f = 0;&#xD;
+				setNmbrs.add(17);&#xD;
+				setNmbrs.add(0);&#xD;
+				setNmbrs.add(20);&#xD;
+				setNmbrs.add(1);&#xD;
+				setNmbrs.add(18);&#xD;
+				setNmbrs.add(3);&#xD;
+				setNmbrs.add(15);&#xD;
+				setNmbrs.add(19);&#xD;
+				setNmbrs.add(2);&#xD;
+				setNmbrs.add(8);&#xD;
+				setNmbrs.add(4);&#xD;
+				setNmbrs.add(12);&#xD;
+				setNmbrs.add(9);&#xD;
+				setNmbrs.add(5);&#xD;
+				setNmbrs.add(16);&#xD;
+				setNmbrs.add(10);&#xD;
+				setNmbrs.add(13);&#xD;
+				setNmbrs.add(7);&#xD;
+				setNmbrs.add(14);&#xD;
+				setNmbrs.add(11);&#xD;
+				setNmbrs.add(6);&#xD;
+&#xD;
+				switch (theme) {&#xD;
+				case &quot;movie&quot;:&#xD;
+&#xD;
+					for (int i = 1; i &lt;= 10; i++) {&#xD;
+&#xD;
+						int[] arrayZ = new int[11];&#xD;
+						Scanner mathScanner = new Scanner(System.in);&#xD;
+						int x = 0 + (int) (Math.random() * 19);&#xD;
+&#xD;
+						for (int z = 0; z &lt; 19; z++) {&#xD;
+							if (x > 5) {&#xD;
+								f = setNmbrs.higher(1 | 10);&#xD;
+							} else {&#xD;
+								f = setNmbrs.floor(19);&#xD;
+							}&#xD;
+						}&#xD;
+&#xD;
+						&#xD;
+						int frageNr = f;// i oder x&#xD;
+&#xD;
+						int fA = i;&#xD;
+&#xD;
+						if (i != 10) { &#xD;
+&#xD;
+							antwort = quest.questXmovieX_1(frageNr, fA);&#xD;
+&#xD;
+							if (antwort) {&#xD;
+								pnkte += 3;&#xD;
+								intoSetPunkte = 3;&#xD;
+								user.setPunkte(intoSetPunkte);&#xD;
+								punkte = user.getPunkte();&#xD;
+								setNmbrs.remove(f);&#xD;
+							} else {&#xD;
+								System.out.println(&quot;Deine letzte Punktzahl: &quot; + user.getPunkte());&#xD;
+								User.highscores.add(User.createUser(username, user.getPunkte()));&#xD;
+								setNmbrs.remove(f);&#xD;
+								break;&#xD;
+							} // arrayZ[i] = 0;&#xD;
+&#xD;
+						} if(i == 10) {System.out.println(&quot;>>>Du hast alle &quot; + i + &quot; Fragen dieser Schwierigkeitsstufe richtig beantwortet!&lt;&lt;&lt; &quot;);} &#xD;
+					}&#xD;
+					break;&#xD;
+				case &quot;tech&quot;:&#xD;
+&#xD;
+					for (int i = 1; i &lt;= 10; i++) {&#xD;
+&#xD;
+						int x = 0 + (int) (Math.random() * 19);&#xD;
+&#xD;
+						for (int z = 0; z &lt; 19; z++) {&#xD;
+							if (x > 5) {&#xD;
+								f = setNmbrs.higher(1 | 10);&#xD;
+							} else {&#xD;
+								f = setNmbrs.floor(19);&#xD;
+							}&#xD;
+						}&#xD;
+&#xD;
+						int frageNr = f;// i oder x&#xD;
+						int fA = i;&#xD;
+						if (i != 10) {&#xD;
+							antwort = quest.questXtechnikX_1(frageNr, fA);&#xD;
+&#xD;
+							if (antwort) {&#xD;
+								pnkte += 3;&#xD;
+								intoSetPunkte = 3;&#xD;
+								user.setPunkte(intoSetPunkte);&#xD;
+								punkte = user.getPunkte();&#xD;
+								setNmbrs.remove(f);&#xD;
+							} else {&#xD;
+								System.out.println(&quot;Deine letzte Punktzahl: &quot; + user.getPunkte());&#xD;
+								User.highscores.add(User.createUser(username, user.getPunkte()));&#xD;
+								setNmbrs.remove(f);&#xD;
+								break;&#xD;
+							}&#xD;
+						}if(i == 10) System.out.println(&quot;>>>Du hast alle &quot; + i + &quot; Fragen dieser Schwierigkeitsstufe richtig beantwortet!&lt;&lt;&lt; &quot;);&#xD;
+					}&#xD;
+					break;&#xD;
+				case &quot;nature&quot;:&#xD;
+					for (int i = 1; i &lt;= 20; i++) {&#xD;
+&#xD;
+						int x = 0 + (int) (Math.random() * 19);&#xD;
+&#xD;
+						for (int z = 0; z &lt; 19; z++) {&#xD;
+							if (x > 5) {&#xD;
+								f = setNmbrs.higher(1 | 10);&#xD;
+							} else {&#xD;
+								f = setNmbrs.floor(19);&#xD;
+							}&#xD;
+						}&#xD;
+&#xD;
+						int frageNr = f;// i oder x&#xD;
+						int fA = i;&#xD;
+						if (i != 10) {&#xD;
+							antwort = quest.questXnaturX_1(frageNr, fA);&#xD;
+&#xD;
+							if (antwort) {&#xD;
+								pnkte += 3;&#xD;
+								intoSetPunkte = 3;&#xD;
+								user.setPunkte(intoSetPunkte);&#xD;
+								punkte = user.getPunkte();&#xD;
+								setNmbrs.remove(f);&#xD;
+							} else {&#xD;
+								System.out.println(&quot;Deine letzte Punktzahl: &quot; + user.getPunkte());&#xD;
+								User.highscores.add(User.createUser(username, user.getPunkte()));&#xD;
+								setNmbrs.remove(f);&#xD;
+								break;&#xD;
+							}&#xD;
+						}if(i == 10) {System.out.println(&quot;>>>Du hast alle &quot; + i + &quot; Fragen dieser Schwierigkeitsstufe richtig beantwortet!&lt;&lt;&lt; &quot;);}&#xD;
+					}&#xD;
+&#xD;
+					break;&#xD;
+				case &quot;mix&quot;:&#xD;
+					break;&#xD;
+				}&#xD;
+&#xD;
+//------------------------------------------------------------------------------------------------------				&#xD;
+&#xD;
+			} else if (diff == 2) {&#xD;
+&#xD;
+// Nummern Set ----- für jede Schwierigkeit - neu erzeugt -----				&#xD;
+				TreeSet&lt;Integer> setNmbrs = new TreeSet&lt;Integer>();&#xD;
+				int f = 0;&#xD;
+				setNmbrs.add(17);&#xD;
+				setNmbrs.add(0);&#xD;
+				setNmbrs.add(20);&#xD;
+				setNmbrs.add(1);&#xD;
+				setNmbrs.add(18);&#xD;
+				setNmbrs.add(3);&#xD;
+				setNmbrs.add(15);&#xD;
+				setNmbrs.add(19);&#xD;
+				setNmbrs.add(2);&#xD;
+				setNmbrs.add(8);&#xD;
+				setNmbrs.add(4);&#xD;
+				setNmbrs.add(12);&#xD;
+				setNmbrs.add(9);&#xD;
+				setNmbrs.add(5);&#xD;
+				setNmbrs.add(16);&#xD;
+				setNmbrs.add(10);&#xD;
+				setNmbrs.add(13);&#xD;
+				setNmbrs.add(7);&#xD;
+				setNmbrs.add(14);&#xD;
+				setNmbrs.add(11);&#xD;
+				setNmbrs.add(6);&#xD;
+&#xD;
+				switch (theme) {&#xD;
+				case &quot;movie&quot;:&#xD;
+&#xD;
+					for (int i = 1; i &lt;= 15; i++) {&#xD;
+&#xD;
+						int x = 0 + (int) (Math.random() * 19);&#xD;
+&#xD;
+						for (int z = 0; z &lt; 19; z++) {&#xD;
+							if (x > 5) {&#xD;
+								f = setNmbrs.higher(1 | 10);&#xD;
+							} else {&#xD;
+								f = setNmbrs.floor(19);&#xD;
+							}&#xD;
+						}&#xD;
+&#xD;
+						int frageNr = f;// i oder x (x) = wenn zufälige zahlen erscheinen sollen&#xD;
+						int fA = i;&#xD;
+						if (i != 15) {&#xD;
+							antwort = quest.questXmovieX_2(frageNr, fA);&#xD;
+&#xD;
+							if (antwort) {&#xD;
+								pnkte += 5;&#xD;
+								intoSetPunkte = 5;&#xD;
+								user.setPunkte(intoSetPunkte);&#xD;
+								punkte = user.getPunkte();&#xD;
+								setNmbrs.remove(f);&#xD;
+							} else {&#xD;
+								System.out.println(&quot;Deine letzte Punktzahl: &quot; + user.getPunkte());&#xD;
+								User.highscores.add(User.createUser(username, user.getPunkte()));&#xD;
+								setNmbrs.remove(f);&#xD;
+								break;&#xD;
+							}&#xD;
+						}if(i == 15) {System.out.println(&quot;>>>Du hast alle &quot; + i + &quot; Fragen dieser Schwierigkeitsstufe richtig beantwortet!&lt;&lt;&lt; &quot;);}&#xD;
+					}&#xD;
+					break;&#xD;
+				case &quot;tech&quot;:&#xD;
+&#xD;
+					for (int i = 1; i &lt;= 15; i++) {&#xD;
+&#xD;
+						int x = 0 + (int) (Math.random() * 19);&#xD;
+&#xD;
+						for (int z = 0; z &lt; 19; z++) {&#xD;
+							if (x > 5) {&#xD;
+								f = setNmbrs.higher(1 | 10);&#xD;
+							} else {&#xD;
+								f = setNmbrs.floor(19);&#xD;
+							}&#xD;
+						}&#xD;
+&#xD;
+						//Das hier ist ein Kommentar&#xD;
+						&#xD;
+						&#xD;
+						int frageNr = f;// i oder x (x) = wenn zufälige zahlen erscheinen sollen&#xD;
+						int fA = i;&#xD;
+						if (i != 15) {&#xD;
+							antwort = quest.questXtechnikX_2(frageNr, fA);&#xD;
+&#xD;
+							if (antwort) {&#xD;
+								pnkte += 5;&#xD;
+								intoSetPunkte = 5;&#xD;
+								user.setPunkte(intoSetPunkte);&#xD;
+								punkte = user.getPunkte();&#xD;
+								setNmbrs.remove(f);&#xD;
+							} else {&#xD;
+								System.out.println(&quot;Deine letzte Punktzahl: &quot; + user.getPunkte());&#xD;
+								User.highscores.add(User.createUser(username, user.getPunkte()));&#xD;
+								setNmbrs.remove(f);&#xD;
+								break;&#xD;
+							}&#xD;
+						}if(i == 15) {System.out.println(&quot;>>>Du hast alle &quot; + i + &quot; Fragen dieser Schwierigkeitsstufe richtig beantwortet!&lt;&lt;&lt; &quot;);}&#xD;
+					}&#xD;
+					break;&#xD;
+				case &quot;nature&quot;:&#xD;
+					for (int i = 1; i &lt;= 15; i++) {&#xD;
+&#xD;
+						int x = 0 + (int) (Math.random() * 19);&#xD;
+&#xD;
+						for (int z = 0; z &lt; 19; z++) {&#xD;
+							if (x > 5) {&#xD;
+								f = setNmbrs.higher(1 | 10);&#xD;
+							} else {&#xD;
+								f = setNmbrs.floor(19);&#xD;
+							}&#xD;
+						}&#xD;
+&#xD;
+						int frageNr = f;// i oder x (x) = wenn zufälige zahlen erscheinen sollen&#xD;
+						int fA = i;&#xD;
+						if (i != 15) {&#xD;
+							antwort = quest.questXnaturX_2(frageNr, fA);&#xD;
+&#xD;
+							if (antwort) {&#xD;
+								pnkte += 5;&#xD;
+								intoSetPunkte = 5;&#xD;
+								user.setPunkte(intoSetPunkte);&#xD;
+								punkte = user.getPunkte();&#xD;
+								setNmbrs.remove(f);&#xD;
+&#xD;
+							} else {&#xD;
+								System.out.println(&quot;Deine letzte Punktzahl: &quot; + user.getPunkte());&#xD;
+								User.highscores.add(User.createUser(username, user.getPunkte()));&#xD;
+								setNmbrs.remove(f);&#xD;
+								break;&#xD;
+							}&#xD;
+						}if(i == 15) {System.out.println(&quot;>>>Du hast alle &quot; + i + &quot; Fragen dieser Schwierigkeitsstufe richtig beantwortet!&lt;&lt;&lt; &quot;);}&#xD;
+					}&#xD;
+					break;&#xD;
+				case &quot;mix&quot;:&#xD;
+					break;&#xD;
+				}&#xD;
+&#xD;
+//------------------------------------------------------------------------------------------------------					&#xD;
+&#xD;
+			} else if (diff == 3) {&#xD;
+&#xD;
+// Nummern Set ----- für jede Schwierigkeit - neu erzeugt -----				&#xD;
+				TreeSet&lt;Integer> setNmbrs = new TreeSet&lt;Integer>();&#xD;
+				int f = 0;&#xD;
+				setNmbrs.add(17);&#xD;
+				setNmbrs.add(0);&#xD;
+				setNmbrs.add(20);&#xD;
+				setNmbrs.add(1);&#xD;
+				setNmbrs.add(18);&#xD;
+				setNmbrs.add(3);&#xD;
+				setNmbrs.add(15);&#xD;
+				setNmbrs.add(19);&#xD;
+				setNmbrs.add(2);&#xD;
+				setNmbrs.add(8);&#xD;
+				setNmbrs.add(4);&#xD;
+				setNmbrs.add(12);&#xD;
+				setNmbrs.add(9);&#xD;
+				setNmbrs.add(5);&#xD;
+				setNmbrs.add(16);&#xD;
+				setNmbrs.add(10);&#xD;
+				setNmbrs.add(13);&#xD;
+				setNmbrs.add(7);&#xD;
+				setNmbrs.add(14);&#xD;
+				setNmbrs.add(11);&#xD;
+				setNmbrs.add(6);&#xD;
+&#xD;
+				switch (theme) {&#xD;
+				case &quot;movie&quot;:&#xD;
+&#xD;
+					for (int i = 1; i &lt;= 20; i++) {&#xD;
+&#xD;
+						int x = 0 + (int) (Math.random() * 19);&#xD;
+&#xD;
+						for (int z = 0; z &lt; 19; z++) {&#xD;
+							if (x > 5) {&#xD;
+								f = setNmbrs.higher(1 | 10);&#xD;
+							} else {&#xD;
+								f = setNmbrs.floor(19);&#xD;
+							}&#xD;
+						}&#xD;
+&#xD;
+						int frageNr = f;// i oder x (x) = wenn zufälige zahlen erscheinen sollen&#xD;
+						int fA = i;&#xD;
+						if (i != 20) {&#xD;
+							antwort = quest.questXmovieX_3(frageNr, fA);&#xD;
+&#xD;
+							if (antwort) {&#xD;
+								pnkte += 7;&#xD;
+								intoSetPunkte = 7;&#xD;
+								user.setPunkte(intoSetPunkte);&#xD;
+								punkte = user.getPunkte();&#xD;
+								setNmbrs.remove(f);&#xD;
+							} else {&#xD;
+								System.out.println(&quot;Deine letzte Punktzahl: &quot; + user.getPunkte());&#xD;
+								User.highscores.add(User.createUser(username, user.getPunkte()));&#xD;
+								setNmbrs.remove(f);&#xD;
+								break;&#xD;
+							}&#xD;
+						}if(i == 20) {System.out.println(&quot;>>>Du hast alle &quot; + i + &quot; Fragen dieser Schwierigkeitsstufe richtig beantwortet!&lt;&lt;&lt; &quot;);}&#xD;
+					}&#xD;
+					break;&#xD;
+				case &quot;tech&quot;:&#xD;
+&#xD;
+					for (int i = 1; i &lt;= 20; i++) {&#xD;
+&#xD;
+						int x = 0 + (int) (Math.random() * 19);&#xD;
+&#xD;
+						for (int z = 0; z &lt; 19; z++) {&#xD;
+							if (x > 5) {&#xD;
+								f = setNmbrs.higher(1 | 10);&#xD;
+							} else {&#xD;
+								f = setNmbrs.floor(19);&#xD;
+							}&#xD;
+						}&#xD;
+&#xD;
+						int frageNr = f;// i oder x (x) = wenn zufälige zahlen erscheinen sollen&#xD;
+						int fA = i;&#xD;
+						if (i != 20) {&#xD;
+							antwort = quest.questXtechnikX_3(frageNr, fA);&#xD;
+&#xD;
+							if (antwort) {&#xD;
+								pnkte += 7;&#xD;
+								intoSetPunkte = 7;&#xD;
+								user.setPunkte(intoSetPunkte);&#xD;
+								punkte = user.getPunkte();&#xD;
+								setNmbrs.remove(f);&#xD;
+&#xD;
+							} else {&#xD;
+								System.out.println(&quot;Deine letzte Punktzahl: &quot; + user.getPunkte());&#xD;
+								User.highscores.add(User.createUser(username, user.getPunkte()));&#xD;
+								setNmbrs.remove(f);&#xD;
+								break;&#xD;
+							}&#xD;
+						}if(i == 20) {System.out.println(&quot;>>>Du hast alle &quot; + i + &quot; Fragen dieser Schwierigkeitsstufe richtig beantwortet!&lt;&lt;&lt; &quot;);}&#xD;
+					}&#xD;
+					break;&#xD;
+				case &quot;nature&quot;:&#xD;
+					for (int i = 1; i &lt;= 20; i++) {&#xD;
+&#xD;
+						int x = 0 + (int) (Math.random() * 19);&#xD;
+&#xD;
+						for (int z = 0; z &lt; 19; z++) {&#xD;
+							if (x > 5) {&#xD;
+								f = setNmbrs.higher(1 | 10);&#xD;
+							} else {&#xD;
+								f = setNmbrs.floor(19);&#xD;
+							}&#xD;
+						}&#xD;
+&#xD;
+						int frageNr = f;// i oder x (x) = wenn zufälige zahlen erscheinen sollen&#xD;
+						int fA = i;&#xD;
+						if (i != 20) {&#xD;
+							antwort = quest.questXnaturX_3(frageNr, fA);&#xD;
+&#xD;
+							if (antwort) {&#xD;
+								pnkte += 7;&#xD;
+								intoSetPunkte = 7;&#xD;
+								user.setPunkte(intoSetPunkte);&#xD;
+								punkte = user.getPunkte();&#xD;
+								setNmbrs.remove(f);&#xD;
+&#xD;
+							} else {&#xD;
+								System.out.println(&quot;Deine letzte Punktzahl: &quot; + user.getPunkte());&#xD;
+								User.highscores.add(User.createUser(username, user.getPunkte()));&#xD;
+								setNmbrs.remove(f);&#xD;
+								break;&#xD;
+							}&#xD;
+						}if(i == 20) {System.out.println(&quot;>>>Du hast alle &quot; + i + &quot; Fragen dieser Schwierigkeitsstufe richtig beantwortet!&lt;&lt;&lt; &quot;);}&#xD;
+					}&#xD;
+&#xD;
+					break;&#xD;
+				case &quot;mix&quot;:&#xD;
+					break;&#xD;
+				}&#xD;
+			}&#xD;
+&#xD;
+			User userNeu = user;&#xD;
+&#xD;
+			long finish = System.currentTimeMillis();&#xD;
+			long timeElapsed = finish - start;&#xD;
+			System.out.println(ANSI_YELLOW_BACKGROUND + &quot;#### Deine Spielzeit: &quot; + (timeElapsed / 1000)&#xD;
+					+ &quot; Sekunden. ####&quot; + ANSI_RESET);&#xD;
+&#xD;
+			// Blanko Vorlage: Frage 1 oder 2...&#xD;
+//			int frageNr;&#xD;
+//			Scanner scanEingabeFrage = new Scanner(System.in);&#xD;
+//			frageNr = scanEingabeFrage.nextInt();&#xD;
+//			antwort = quest.questXmovieX_1(frageNr);&#xD;
+//			System.out.println(antwort);&#xD;
+//&#xD;
+//			if (antwort) {&#xD;
+//				user.setPunkte(3);&#xD;
+//			}&#xD;
+&#xD;
+			countDurchgänge++;// Zählt einen durchgang am ENDE eines Spiels&#xD;
+			if (QuestInfo.playAgainQuestion(user.getUsername()) == false) {&#xD;
+				count++;&#xD;
+				break;&#xD;
+			} else {&#xD;
+				;&#xD;
+				count--;&#xD;
+&#xD;
+			}&#xD;
+			if (dummyUser.getUsername().equals(user.getUsername())) {&#xD;
+&#xD;
+			} else {&#xD;
+				System.out.println(&quot;################################&quot; + &quot;\n## H  I  G  H  S  C  O  R  E ###&quot;&#xD;
+						+ &quot;\n################################&quot; + &quot;\n#### N a m e ## P u n k t e ####&quot;&#xD;
+						+ &quot;\n********************************&quot;);&#xD;
+&#xD;
+				user.setPunkte(-pnkte);&#xD;
+				for (Object userInListe : User.highscores) {&#xD;
+					System.out.println(&quot;   &quot; + ((User) userInListe).getUsername() + &quot;   &quot;&#xD;
+							+ ((User) userInListe).punktereferenz + &quot; Punkte&quot;);&#xD;
+				}&#xD;
+				System.out.println(&quot;################################&quot;);&#xD;
+&#xD;
+			}&#xD;
+		} // Ende der Großen FOR-Schleife die Das Quiz umhüllt&#xD;
+&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_OcX1EHKvEeulKaaY3PFXgA" name="main" isStatic="true" method="_OfOUwHKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OcX1EXKvEeulKaaY3PFXgA" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OcYcIHKvEeulKaaY3PFXgA" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_OcaRUHKvEeulKaaY3PFXgA" name="User">
+      <ownedAttribute xmi:id="_OeyP5HKvEeulKaaY3PFXgA" name="highscores" visibility="package" isStatic="true" type="_OeMaAHKvEeulKaaY3PFXgA" association="_OfYFwHKvEeulKaaY3PFXgA"/>
+      <ownedAttribute xmi:id="_Oe0sIHKvEeulKaaY3PFXgA" name="userName" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Oe1TMHKvEeulKaaY3PFXgA" name="punkteHs" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Oe16QXKvEeulKaaY3PFXgA" name="punktereferenz" visibility="package">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Oe16QnKvEeulKaaY3PFXgA" value="punkteHs"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfO70HKvEeulKaaY3PFXgA" name="getUsername" specification="_Oca4YHKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfO70XKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>return userName;&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfO70nKvEeulKaaY3PFXgA" name="setUsername" specification="_OccGgHKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfO703KvEeulKaaY3PFXgA" name="username">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>this.userName = username;&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfPi4HKvEeulKaaY3PFXgA" name="getPunkte" specification="_OcctkHKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfPi4XKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>return punkteHs;&#xD;
+			</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfPi4nKvEeulKaaY3PFXgA" name="setPunkte" specification="_OcctknKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfPi43KvEeulKaaY3PFXgA" name="punkte">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>this.punkteHs += punkte;&#xD;
+			</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfPi5HKvEeulKaaY3PFXgA" name="User" specification="_OcdUoXKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfPi5XKvEeulKaaY3PFXgA" name="spielername">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfPi5nKvEeulKaaY3PFXgA" name="punkte">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfPi53KvEeulKaaY3PFXgA" type="_OcaRUHKvEeulKaaY3PFXgA" direction="return"/>
+        <language>java</language>
+        <body>setUsername(spielername);&#xD;
+		setPunkte(punkte);&#xD;
+		&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfPi6HKvEeulKaaY3PFXgA" name="createUser" specification="_OceiwHKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfPi6XKvEeulKaaY3PFXgA" name="userName">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfPi6nKvEeulKaaY3PFXgA" name="punkteHs">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OfPi63KvEeulKaaY3PFXgA" type="_OcaRUHKvEeulKaaY3PFXgA" direction="return"/>
+        <language>java</language>
+        <body>return new User(userName, punkteHs);&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OfPi7HKvEeulKaaY3PFXgA" name="createHighScoreList" specification="_OcfJ0HKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OfPi7XKvEeulKaaY3PFXgA" type="_OeMaAHKvEeulKaaY3PFXgA" direction="return"/>
+        <language>java</language>
+        <body>return new ArrayList&lt;Object>();&#xD;
+		&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_Oca4YHKvEeulKaaY3PFXgA" name="getUsername" method="_OfO70HKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OcbfcHKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_OccGgHKvEeulKaaY3PFXgA" name="setUsername" method="_OfO70nKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OccGgXKvEeulKaaY3PFXgA" name="username">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_OcctkHKvEeulKaaY3PFXgA" name="getPunkte" method="_OfPi4HKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OcctkXKvEeulKaaY3PFXgA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_OcctknKvEeulKaaY3PFXgA" name="setPunkte" method="_OfPi4nKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OcdUoHKvEeulKaaY3PFXgA" name="punkte">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_OcdUoXKvEeulKaaY3PFXgA" name="User" method="_OfPi5HKvEeulKaaY3PFXgA">
+        <eAnnotations xmi:id="_Ocd7snKvEeulKaaY3PFXgA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_Ocd7s3KvEeulKaaY3PFXgA" key="create"/>
+        </eAnnotations>
+        <ownedParameter xmi:id="_Ocd7sHKvEeulKaaY3PFXgA" name="spielername">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_Ocd7sXKvEeulKaaY3PFXgA" name="punkte">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_Ocd7tHKvEeulKaaY3PFXgA" type="_OcaRUHKvEeulKaaY3PFXgA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_OceiwHKvEeulKaaY3PFXgA" name="createUser" isStatic="true" method="_OfPi6HKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OceiwXKvEeulKaaY3PFXgA" name="userName">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OceiwnKvEeulKaaY3PFXgA" name="punkteHs">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OeeG0HKvEeulKaaY3PFXgA" type="_OcaRUHKvEeulKaaY3PFXgA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_OcfJ0HKvEeulKaaY3PFXgA" name="createHighScoreList" isStatic="true" method="_OfPi7HKvEeulKaaY3PFXgA">
+        <ownedParameter xmi:id="_OejmYHKvEeulKaaY3PFXgA" type="_OeMaAHKvEeulKaaY3PFXgA" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_OfYFwHKvEeulKaaY3PFXgA" name="" memberEnd="_OfYFwXKvEeulKaaY3PFXgA _OeyP5HKvEeulKaaY3PFXgA">
+      <ownedEnd xmi:id="_OfYFwXKvEeulKaaY3PFXgA" name="" type="_OcaRUHKvEeulKaaY3PFXgA" association="_OfYFwHKvEeulKaaY3PFXgA"/>
+    </packagedElement>
+    <profileApplication xmi:id="_OKBg0HKvEeulKaaY3PFXgA">
+      <eAnnotations xmi:id="_OKGZUHKvEeulKaaY3PFXgA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_OKKDsHKvEeulKaaY3PFXgA" base_Package="_OHMPQHKvEeulKaaY3PFXgA">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ObbZ4HKvEeulKaaY3PFXgA" base_Element="_ObY9oHKvEeulKaaY3PFXgA"/>
+  <UMLLabProfile:Annotations xmi:id="_ObdPEHKvEeulKaaY3PFXgA" base_Element="_ObY9oHKvEeulKaaY3PFXgA">
+    <annotations xmi:id="_ObdPEXKvEeulKaaY3PFXgA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ObedMXKvEeulKaaY3PFXgA" base_Element="_Obd2IHKvEeulKaaY3PFXgA"/>
+  <UMLLabProfile:Annotations xmi:id="_ObfEQHKvEeulKaaY3PFXgA" base_Element="_Obd2IHKvEeulKaaY3PFXgA">
+    <annotations xmi:id="_ObfEQXKvEeulKaaY3PFXgA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ObgSYHKvEeulKaaY3PFXgA" base_Element="_ObfrUHKvEeulKaaY3PFXgA"/>
+  <UMLLabProfile:Annotations xmi:id="_ObgSYXKvEeulKaaY3PFXgA" base_Element="_ObfrUHKvEeulKaaY3PFXgA">
+    <annotations xmi:id="_Obg5cHKvEeulKaaY3PFXgA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ObhggXKvEeulKaaY3PFXgA" base_Element="_Obg5cXKvEeulKaaY3PFXgA"/>
+  <UMLLabProfile:Annotations xmi:id="_ObiHkHKvEeulKaaY3PFXgA" base_Element="_Obg5cXKvEeulKaaY3PFXgA">
+    <annotations xmi:id="_ObiHkXKvEeulKaaY3PFXgA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ObiuoXKvEeulKaaY3PFXgA" base_Element="_ObiHknKvEeulKaaY3PFXgA"/>
+  <UMLLabProfile:Annotations xmi:id="_ObjVsHKvEeulKaaY3PFXgA" base_Element="_ObiHknKvEeulKaaY3PFXgA">
+    <annotations xmi:id="_ObjVsXKvEeulKaaY3PFXgA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Obj8wnKvEeulKaaY3PFXgA" base_Element="_ObjVsnKvEeulKaaY3PFXgA"/>
+  <UMLLabProfile:Annotations xmi:id="_Obkj0HKvEeulKaaY3PFXgA" base_Element="_ObjVsnKvEeulKaaY3PFXgA">
+    <annotations xmi:id="_Obkj0XKvEeulKaaY3PFXgA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Oblx8HKvEeulKaaY3PFXgA" base_Element="_Obkj0nKvEeulKaaY3PFXgA"/>
+  <UMLLabProfile:Annotations xmi:id="_ObmZAHKvEeulKaaY3PFXgA" base_Element="_Obkj0nKvEeulKaaY3PFXgA">
+    <annotations xmi:id="_ObmZAXKvEeulKaaY3PFXgA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ObnnIHKvEeulKaaY3PFXgA" base_Element="_ObmZAnKvEeulKaaY3PFXgA"/>
+  <UMLLabProfile:Annotations xmi:id="_ObnnIXKvEeulKaaY3PFXgA" base_Element="_ObmZAnKvEeulKaaY3PFXgA">
+    <annotations xmi:id="_OboOMHKvEeulKaaY3PFXgA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Obo1QXKvEeulKaaY3PFXgA" base_Element="_OboOMXKvEeulKaaY3PFXgA"/>
+  <UMLLabProfile:Annotations xmi:id="_ObpcUHKvEeulKaaY3PFXgA" base_Element="_OboOMXKvEeulKaaY3PFXgA">
+    <annotations xmi:id="_ObpcUXKvEeulKaaY3PFXgA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Generics xmi:id="_Ocfw4HKvEeulKaaY3PFXgA" genericsValue="Object" base_Element="_OcfJ0HKvEeulKaaY3PFXgA"/>
+  <UMLLabProfile:Reference xmi:id="_OeNBEHKvEeulKaaY3PFXgA" base_Element="_OeMaAHKvEeulKaaY3PFXgA"/>
+  <UMLLabProfile:Reference xmi:id="_OeOPMHKvEeulKaaY3PFXgA" base_Element="_OeNoIHKvEeulKaaY3PFXgA"/>
+  <UMLLabProfile:Reference xmi:id="_OeWLAHKvEeulKaaY3PFXgA" base_Element="_OeVj8HKvEeulKaaY3PFXgA"/>
+  <UMLLabProfile:Reference xmi:id="_OeZOUHKvEeulKaaY3PFXgA" base_Element="_OeYnQHKvEeulKaaY3PFXgA"/>
+  <UMLLabProfile:Reference xmi:id="_OeaccHKvEeulKaaY3PFXgA" base_Element="_OeZ1YHKvEeulKaaY3PFXgA"/>
+  <UMLLabProfile:Reference xmi:id="_OebDgHKvEeulKaaY3PFXgA" base_Element="_OeaccXKvEeulKaaY3PFXgA"/>
+  <UMLLabProfile:Reference xmi:id="_OebqkHKvEeulKaaY3PFXgA" base_Element="_OebDgXKvEeulKaaY3PFXgA"/>
+  <UMLLabProfile:Reference xmi:id="_OecRoHKvEeulKaaY3PFXgA" base_Element="_OebqkXKvEeulKaaY3PFXgA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Oet-cXKvEeulKaaY3PFXgA" base_Element="_Oet-cHKvEeulKaaY3PFXgA"/>
+  <UMLLabProfile:Generics xmi:id="_OezeAHKvEeulKaaY3PFXgA" genericsValue="Object" base_Element="_OeyP5HKvEeulKaaY3PFXgA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Oe0FEHKvEeulKaaY3PFXgA" base_Element="_OeyP5HKvEeulKaaY3PFXgA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Oe0sIXKvEeulKaaY3PFXgA" base_Element="_Oe0sIHKvEeulKaaY3PFXgA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Oe16QHKvEeulKaaY3PFXgA" base_Element="_Oe1TMHKvEeulKaaY3PFXgA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Oe2hUHKvEeulKaaY3PFXgA" base_Element="_Oe16QXKvEeulKaaY3PFXgA"/>
+  <UMLLabProfile:Reference xmi:id="_OfYs0HKvEeulKaaY3PFXgA" base_Element="_OfYFwHKvEeulKaaY3PFXgA"/>
+</xmi:XMI>
