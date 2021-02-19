@@ -6,7 +6,7 @@ public class InnerQuestions extends Questions implements IquestionBodys {
 	// Hier werden die Fragen sowie die Abläufe dazu gesteuert z.B.
 	// Frageschwierigkeit, Welche frage, Welche Antwortmöglichkeiten, Punkte,
 	// Fehlschlagoptionen.
-
+//hgjkjhgfcdfvghjk
 	// Farbkonstanten
 	public static final String ANSI_RESET = "\u001B[0m";
 	public static final String ANSI_BLACK = "\u001B[30m";
