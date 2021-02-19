@@ -30,6 +30,10 @@ public class QuizGame{
 
 	public static void main(String[] args) {
 
+		//TEstig threads
+		Thread thread = new Thread(new QuizGameSecondThread());
+		thread.start();
+		
 		// Main Variables: often-Use
 //		User.lastQuestContainer;
 		User.highscores = User.createHighScoreList();
@@ -547,7 +551,7 @@ public class QuizGame{
 				user.setPunkte(-pnkte);
 				for (Object userInListe : User.highscores) {
 					System.out.println("   " + ((User) userInListe).getUsername() + "   "
-							+ ((User) userInListe).punktereferenz + " Punkte");
+							+ ((User) userInListe).getPunkte() + " Punkte");
 				}
 				System.out.println("################################");
 

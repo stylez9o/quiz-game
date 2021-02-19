@@ -1,4 +1,3 @@
-import java.awt.List;
 import java.util.*;
 
 public class User {
@@ -26,9 +25,6 @@ public class User {
 		 */
 	
 	private int punkteHs;
-int punktereferenz = punkteHs;
-	
-
 
 			//GETTER - Punkte auslesen
 			public int getPunkte() {

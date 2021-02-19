@@ -1,26 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_OuVu0HKvEeulKaaY3PFXgA">
   <modelElement href="quizGame.uml#_OHMPQHKvEeulKaaY3PFXgA"/>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_O6hwsHKvEeulKaaY3PFXgA" sourceAnchor="488.0,130.0" targetAnchor="0.0,135.0" dashed="true" superClass="_O6mCIHKvEeulKaaY3PFXgA" subClass="_O5ZvUHKvEeulKaaY3PFXgA">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_O6hwsHKvEeulKaaY3PFXgA" sourceAnchor="488.0,105.0" targetAnchor="0.0,135.0" dashed="true" superClass="_O6mCIHKvEeulKaaY3PFXgA" subClass="_O5ZvUHKvEeulKaaY3PFXgA">
     <modelElement href="quizGame.uml#_OeSgoHKvEeulKaaY3PFXgA"/>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_O7I0sHKvEeulKaaY3PFXgA" sourceAnchor="0.0,271.0" targetAnchor="401.0,365.0" superClass="_O7O7UHKvEeulKaaY3PFXgA" subClass="_O5ZvUHKvEeulKaaY3PFXgA">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_O7I0sHKvEeulKaaY3PFXgA" sourceAnchor="0.0,329.0" targetAnchor="401.0,365.0" superClass="_O7O7UHKvEeulKaaY3PFXgA" subClass="_O5ZvUHKvEeulKaaY3PFXgA">
     <modelElement href="quizGame.uml#_OeTuwHKvEeulKaaY3PFXgA"/>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_O7v4sHKvEeulKaaY3PFXgA" source="_O7wfwHKvEeulKaaY3PFXgA">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_O7v4sHKvEeulKaaY3PFXgA" sourceAnchor="0.0,151.0" targetAnchor="38.0,54.0" target="_rJfpYHLGEeueUvXBUNUoQQ" source="_O7wfwHKvEeulKaaY3PFXgA">
     <modelElement href="quizGame.uml#_OfYFwHKvEeulKaaY3PFXgA"/>
-    <visualProperties xmi:id="_O730gHKvEeulKaaY3PFXgA" position="170.0,170.0"/>
+    <visualProperties xmi:id="_O730gHKvEeulKaaY3PFXgA" position="-283.0,198.0"/>
+    <bendpoints xmi:id="_wfuHMHLGEeueUvXBUNUoQQ" sourceX="-107" targetY="206"/>
     <stereotypes xmi:id="_O7v4sXKvEeulKaaY3PFXgA" name="Reference">
       <modelElement href="quizGame.uml#_OfYs0HKvEeulKaaY3PFXgA"/>
     </stereotypes>
-    <nameVisual xmi:id="_O7v4snKvEeulKaaY3PFXgA" text=""/>
+    <nameVisual xmi:id="_O7v4snKvEeulKaaY3PFXgA" text="">
+      <visualProperties xmi:id="_rS-8kHLGEeueUvXBUNUoQQ" position="0.0,-62.99999999999994"/>
+    </nameVisual>
     <sourceRole xmi:id="_O7v4s3KvEeulKaaY3PFXgA" aggregationKind="NONE" name="">
       <modelElement href="quizGame.uml#_OfYFwXKvEeulKaaY3PFXgA"/>
+      <visualProperties xmi:id="_rS9ucHLGEeueUvXBUNUoQQ" position="-17.0,2.0"/>
       <visibility xmi:id="_O7v4tHKvEeulKaaY3PFXgA" label="+"/>
       <cardinality xmi:id="_O7v4tXKvEeulKaaY3PFXgA" label="1" max="1" min="1"/>
     </sourceRole>
     <targetRole xmi:id="_O7v4tnKvEeulKaaY3PFXgA" aggregationKind="NONE" name="highscores" navigable="true">
       <modelElement href="quizGame.uml#_OeyP5HKvEeulKaaY3PFXgA"/>
+      <visualProperties xmi:id="_rS-8kXLGEeueUvXBUNUoQQ" position="1.0,1.0000000000000284"/>
+      <stereotypes xmi:id="_c92qEHLGEeueUvXBUNUoQQ" name="Generics">
+        <modelElement href="quizGame.uml#_OezeAHKvEeulKaaY3PFXgA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_c95GUHLGEeueUvXBUNUoQQ" name="LegacyStyledElement">
+        <modelElement href="quizGame.uml#_Oe0FEHKvEeulKaaY3PFXgA"/>
+      </stereotypes>
       <visibility xmi:id="_O7v4t3KvEeulKaaY3PFXgA" label="~"/>
       <cardinality xmi:id="_O7v4uHKvEeulKaaY3PFXgA" label="1" max="1" min="1"/>
     </targetRole>
@@ -570,9 +581,17 @@
       </parameters>
     </operations>
   </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:PackageVisual" xmi:id="_O75CoHKvEeulKaaY3PFXgA" name="java">
+    <modelElement href="quizGame.uml#_OaY4EHKvEeulKaaY3PFXgA"/>
+    <visualProperties xmi:id="_O75CoXKvEeulKaaY3PFXgA" position="958.0,410.0" size="-1.0,-1.0"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:PackageVisual" xmi:id="_O7-iMHKvEeulKaaY3PFXgA" name="javafx">
+    <modelElement href="quizGame.uml#_Oa84wHKvEeulKaaY3PFXgA"/>
+    <visualProperties xmi:id="_O7-iMXKvEeulKaaY3PFXgA" position="784.0,401.0" size="-1.0,-1.0"/>
+  </nodes>
   <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_O5ZvUHKvEeulKaaY3PFXgA" name="InnerQuestions" generalizations="_O6hwsHKvEeulKaaY3PFXgA _O7I0sHKvEeulKaaY3PFXgA">
     <modelElement href="quizGame.uml#_ObRo4HKvEeulKaaY3PFXgA"/>
-    <visualProperties xmi:id="_O5ZvUXKvEeulKaaY3PFXgA" position="16.0,-641.0" size="-1.0,-1.0"/>
+    <visualProperties xmi:id="_O5ZvUXKvEeulKaaY3PFXgA" position="6.0,-699.0" size="-1.0,-1.0"/>
     <visibility xmi:id="_O5ZvUnKvEeulKaaY3PFXgA" label="+"/>
     <attributes xmi:id="_O5ZvU3KvEeulKaaY3PFXgA" defaultValue="&quot;\u001B[0m&quot;" name="ANSI_RESET" staticAttribute="true">
       <modelElement href="quizGame.uml#_OemCoHKvEeulKaaY3PFXgA"/>
@@ -992,7 +1011,7 @@
   </nodes>
   <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_O6mCIHKvEeulKaaY3PFXgA" name="IquestionBodys" subclassedBy="_O6hwsHKvEeulKaaY3PFXgA">
     <modelElement href="quizGame.uml#_ObtGsHKvEeulKaaY3PFXgA"/>
-    <visualProperties xmi:id="_O6mCIXKvEeulKaaY3PFXgA" position="572.0,-646.0" size="-1.0,-1.0"/>
+    <visualProperties xmi:id="_O6mCIXKvEeulKaaY3PFXgA" position="575.0,-729.0" size="-1.0,-1.0"/>
     <visibility xmi:id="_O6mCInKvEeulKaaY3PFXgA" label="+"/>
     <operations xmi:id="_O6mCI3KvEeulKaaY3PFXgA" name="questXmovieX_1">
       <modelElement href="quizGame.uml#_Obu74HKvEeulKaaY3PFXgA"/>
@@ -1222,7 +1241,7 @@
   </nodes>
   <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_O67ZUHKvEeulKaaY3PFXgA" name="QuestInfo">
     <modelElement href="quizGame.uml#_Obz0YHKvEeulKaaY3PFXgA"/>
-    <visualProperties xmi:id="_O67ZUXKvEeulKaaY3PFXgA" position="653.0,-244.0" size="-1.0,-1.0"/>
+    <visualProperties xmi:id="_O67ZUXKvEeulKaaY3PFXgA" position="600.0,-436.0" size="-1.0,-1.0"/>
     <visibility xmi:id="_O67ZUnKvEeulKaaY3PFXgA" label="+"/>
     <attributes xmi:id="_O67ZU3KvEeulKaaY3PFXgA" defaultValue="&quot;\u001B[0m&quot;" name="ANSI_RESET" staticAttribute="true">
       <modelElement href="quizGame.uml#_Oeq7IHKvEeulKaaY3PFXgA"/>
@@ -1464,26 +1483,179 @@
       </outParameters>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:PackageVisual" xmi:id="_O75CoHKvEeulKaaY3PFXgA" name="java">
-    <modelElement href="quizGame.uml#_OaY4EHKvEeulKaaY3PFXgA"/>
-    <visualProperties xmi:id="_O75CoXKvEeulKaaY3PFXgA" position="958.0,410.0" size="-1.0,-1.0"/>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_O7hPMHKvEeulKaaY3PFXgA" name="QuizGame">
+    <modelElement href="quizGame.uml#_OcVY0HKvEeulKaaY3PFXgA"/>
+    <visualProperties xmi:id="_O7hPMXKvEeulKaaY3PFXgA" position="72.0,-16.0" size="407.0,464.0"/>
+    <visibility xmi:id="_O7hPMnKvEeulKaaY3PFXgA" label="+"/>
+    <attributes xmi:id="_O7hPM3KvEeulKaaY3PFXgA" defaultValue="&quot;\u001B[0m&quot;" name="ANSI_RESET" staticAttribute="true">
+      <modelElement href="quizGame.uml#_OevMkHKvEeulKaaY3PFXgA"/>
+      <visibility xmi:id="_O7hPNHKvEeulKaaY3PFXgA" label="+"/>
+      <cardinality xmi:id="_O7hPNXKvEeulKaaY3PFXgA" label="1" max="1" min="1"/>
+      <type xmi:id="_O7h2QHKvEeulKaaY3PFXgA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_O7h2QXKvEeulKaaY3PFXgA" defaultValue="&quot;\u001B[30m&quot;" name="ANSI_BLACK" staticAttribute="true">
+      <modelElement href="quizGame.uml#_OevzoHKvEeulKaaY3PFXgA"/>
+      <visibility xmi:id="_O7h2QnKvEeulKaaY3PFXgA" label="+"/>
+      <cardinality xmi:id="_O7h2Q3KvEeulKaaY3PFXgA" label="1" max="1" min="1"/>
+      <type xmi:id="_O7h2RHKvEeulKaaY3PFXgA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_O7h2RXKvEeulKaaY3PFXgA" defaultValue="&quot;\u001B[31m&quot;" name="ANSI_RED" staticAttribute="true">
+      <modelElement href="quizGame.uml#_OevzonKvEeulKaaY3PFXgA"/>
+      <visibility xmi:id="_O7h2RnKvEeulKaaY3PFXgA" label="+"/>
+      <cardinality xmi:id="_O7h2R3KvEeulKaaY3PFXgA" label="1" max="1" min="1"/>
+      <type xmi:id="_O7h2SHKvEeulKaaY3PFXgA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_O7h2SXKvEeulKaaY3PFXgA" defaultValue="&quot;\u001B[32m&quot;" name="ANSI_GREEN" staticAttribute="true">
+      <modelElement href="quizGame.uml#_OewasHKvEeulKaaY3PFXgA"/>
+      <visibility xmi:id="_O7h2SnKvEeulKaaY3PFXgA" label="+"/>
+      <cardinality xmi:id="_O7h2S3KvEeulKaaY3PFXgA" label="1" max="1" min="1"/>
+      <type xmi:id="_O7h2THKvEeulKaaY3PFXgA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_O7h2TXKvEeulKaaY3PFXgA" defaultValue="&quot;\u001B[33m&quot;" name="ANSI_YELLOW" staticAttribute="true">
+      <modelElement href="quizGame.uml#_OewasnKvEeulKaaY3PFXgA"/>
+      <visibility xmi:id="_O7h2TnKvEeulKaaY3PFXgA" label="+"/>
+      <cardinality xmi:id="_O7h2T3KvEeulKaaY3PFXgA" label="1" max="1" min="1"/>
+      <type xmi:id="_O7h2UHKvEeulKaaY3PFXgA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_O7h2UXKvEeulKaaY3PFXgA" defaultValue="&quot;\u001B[34m&quot;" name="ANSI_BLUE" staticAttribute="true">
+      <modelElement href="quizGame.uml#_OewatHKvEeulKaaY3PFXgA"/>
+      <visibility xmi:id="_O7h2UnKvEeulKaaY3PFXgA" label="+"/>
+      <cardinality xmi:id="_O7h2U3KvEeulKaaY3PFXgA" label="1" max="1" min="1"/>
+      <type xmi:id="_O7h2VHKvEeulKaaY3PFXgA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_O7h2VXKvEeulKaaY3PFXgA" defaultValue="&quot;\u001B[35m&quot;" name="ANSI_PURPLE" staticAttribute="true">
+      <modelElement href="quizGame.uml#_OexBwHKvEeulKaaY3PFXgA"/>
+      <visibility xmi:id="_O7h2VnKvEeulKaaY3PFXgA" label="+"/>
+      <cardinality xmi:id="_O7h2V3KvEeulKaaY3PFXgA" label="1" max="1" min="1"/>
+      <type xmi:id="_O7h2WHKvEeulKaaY3PFXgA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_O7h2WXKvEeulKaaY3PFXgA" defaultValue="&quot;\u001B[36m&quot;" name="ANSI_CYAN" staticAttribute="true">
+      <modelElement href="quizGame.uml#_OexBwnKvEeulKaaY3PFXgA"/>
+      <visibility xmi:id="_O7h2WnKvEeulKaaY3PFXgA" label="+"/>
+      <cardinality xmi:id="_O7h2W3KvEeulKaaY3PFXgA" label="1" max="1" min="1"/>
+      <type xmi:id="_O7h2XHKvEeulKaaY3PFXgA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_O7h2XXKvEeulKaaY3PFXgA" defaultValue="&quot;\u001B[37m&quot;" name="ANSI_WHITE" staticAttribute="true">
+      <modelElement href="quizGame.uml#_OexBxHKvEeulKaaY3PFXgA"/>
+      <visibility xmi:id="_O7h2XnKvEeulKaaY3PFXgA" label="+"/>
+      <cardinality xmi:id="_O7h2X3KvEeulKaaY3PFXgA" label="1" max="1" min="1"/>
+      <type xmi:id="_O7h2YHKvEeulKaaY3PFXgA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_O7h2YXKvEeulKaaY3PFXgA" defaultValue="&quot;\u001B[40m&quot;" name="ANSI_BLACK_BACKGROUND" staticAttribute="true">
+      <modelElement href="quizGame.uml#_OexBxnKvEeulKaaY3PFXgA"/>
+      <visibility xmi:id="_O7h2YnKvEeulKaaY3PFXgA" label="+"/>
+      <cardinality xmi:id="_O7h2Y3KvEeulKaaY3PFXgA" label="1" max="1" min="1"/>
+      <type xmi:id="_O7h2ZHKvEeulKaaY3PFXgA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_O7h2ZXKvEeulKaaY3PFXgA" defaultValue="&quot;\u001B[41m&quot;" name="ANSI_RED_BACKGROUND" staticAttribute="true">
+      <modelElement href="quizGame.uml#_OexByHKvEeulKaaY3PFXgA"/>
+      <visibility xmi:id="_O7h2ZnKvEeulKaaY3PFXgA" label="+"/>
+      <cardinality xmi:id="_O7h2Z3KvEeulKaaY3PFXgA" label="1" max="1" min="1"/>
+      <type xmi:id="_O7h2aHKvEeulKaaY3PFXgA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_O7h2aXKvEeulKaaY3PFXgA" defaultValue="&quot;\u001B[42m&quot;" name="ANSI_GREEN_BACKGROUND" staticAttribute="true">
+      <modelElement href="quizGame.uml#_Oexo0XKvEeulKaaY3PFXgA"/>
+      <visibility xmi:id="_O7h2anKvEeulKaaY3PFXgA" label="+"/>
+      <cardinality xmi:id="_O7h2a3KvEeulKaaY3PFXgA" label="1" max="1" min="1"/>
+      <type xmi:id="_O7h2bHKvEeulKaaY3PFXgA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_O7h2bXKvEeulKaaY3PFXgA" defaultValue="&quot;\u001B[43m&quot;" name="ANSI_YELLOW_BACKGROUND" staticAttribute="true">
+      <modelElement href="quizGame.uml#_Oexo03KvEeulKaaY3PFXgA"/>
+      <visibility xmi:id="_O7h2bnKvEeulKaaY3PFXgA" label="+"/>
+      <cardinality xmi:id="_O7h2b3KvEeulKaaY3PFXgA" label="1" max="1" min="1"/>
+      <type xmi:id="_O7h2cHKvEeulKaaY3PFXgA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_O7h2cXKvEeulKaaY3PFXgA" defaultValue="&quot;\u001B[44m&quot;" name="ANSI_BLUE_BACKGROUND" staticAttribute="true">
+      <modelElement href="quizGame.uml#_Oexo1XKvEeulKaaY3PFXgA"/>
+      <visibility xmi:id="_O7h2cnKvEeulKaaY3PFXgA" label="+"/>
+      <cardinality xmi:id="_O7h2c3KvEeulKaaY3PFXgA" label="1" max="1" min="1"/>
+      <type xmi:id="_O7h2dHKvEeulKaaY3PFXgA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_O7h2dXKvEeulKaaY3PFXgA" defaultValue="&quot;\u001B[45m&quot;" name="ANSI_PURPLE_BACKGROUND" staticAttribute="true">
+      <modelElement href="quizGame.uml#_Oexo13KvEeulKaaY3PFXgA"/>
+      <visibility xmi:id="_O7h2dnKvEeulKaaY3PFXgA" label="+"/>
+      <cardinality xmi:id="_O7h2d3KvEeulKaaY3PFXgA" label="1" max="1" min="1"/>
+      <type xmi:id="_O7h2eHKvEeulKaaY3PFXgA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_O7h2eXKvEeulKaaY3PFXgA" defaultValue="&quot;\u001B[46m&quot;" name="ANSI_CYAN_BACKGROUND" staticAttribute="true">
+      <modelElement href="quizGame.uml#_OeyP4HKvEeulKaaY3PFXgA"/>
+      <visibility xmi:id="_O7h2enKvEeulKaaY3PFXgA" label="+"/>
+      <cardinality xmi:id="_O7h2e3KvEeulKaaY3PFXgA" label="1" max="1" min="1"/>
+      <type xmi:id="_O7h2fHKvEeulKaaY3PFXgA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_O7h2fXKvEeulKaaY3PFXgA" defaultValue="&quot;\u001B[47m&quot;" name="ANSI_WHITE_BACKGROUND" staticAttribute="true">
+      <modelElement href="quizGame.uml#_OeyP4nKvEeulKaaY3PFXgA"/>
+      <visibility xmi:id="_O7h2fnKvEeulKaaY3PFXgA" label="+"/>
+      <cardinality xmi:id="_O7h2f3KvEeulKaaY3PFXgA" label="1" max="1" min="1"/>
+      <type xmi:id="_O7h2gHKvEeulKaaY3PFXgA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_O7h2gXKvEeulKaaY3PFXgA" name="main" staticOperation="true">
+      <modelElement href="quizGame.uml#_OcX1EHKvEeulKaaY3PFXgA"/>
+      <visibility xmi:id="_O7h2gnKvEeulKaaY3PFXgA" label="+"/>
+      <cardinality xmi:id="_O7h2g3KvEeulKaaY3PFXgA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_O7h2hHKvEeulKaaY3PFXgA" name="args">
+        <modelElement href="quizGame.uml#_OcX1EXKvEeulKaaY3PFXgA"/>
+        <cardinality xmi:id="_O7h2hXKvEeulKaaY3PFXgA" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_O7h2hnKvEeulKaaY3PFXgA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:PackageVisual" xmi:id="_O7-iMHKvEeulKaaY3PFXgA" name="javafx">
-    <modelElement href="quizGame.uml#_Oa84wHKvEeulKaaY3PFXgA"/>
-    <visualProperties xmi:id="_O7-iMXKvEeulKaaY3PFXgA" position="784.0,401.0" size="-1.0,-1.0"/>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_rJfpYHLGEeueUvXBUNUoQQ" name="ArrayList" associationsIn="_O7v4sHKvEeulKaaY3PFXgA">
+    <modelElement href="quizGame.uml#_OeMaAHKvEeulKaaY3PFXgA"/>
+    <visualProperties xmi:id="_rJfpYXLGEeueUvXBUNUoQQ" position="-628.0,-62.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_rJfpYnLGEeueUvXBUNUoQQ" name="Reference">
+      <modelElement href="quizGame.uml#_OeNBEHKvEeulKaaY3PFXgA"/>
+    </stereotypes>
+    <visibility xmi:id="_rJfpY3LGEeueUvXBUNUoQQ" label="+"/>
   </nodes>
   <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_O7wfwHKvEeulKaaY3PFXgA" name="User" associationsOut="_O7v4sHKvEeulKaaY3PFXgA">
     <modelElement href="quizGame.uml#_OcaRUHKvEeulKaaY3PFXgA"/>
-    <visualProperties xmi:id="_O7wfwXKvEeulKaaY3PFXgA" position="-428.0,145.0" size="401.0,303.0"/>
+    <visualProperties xmi:id="_O7wfwXKvEeulKaaY3PFXgA" position="-483.0,47.0" size="401.0,303.0"/>
     <visibility xmi:id="_O7wfwnKvEeulKaaY3PFXgA" label="+"/>
     <attributes xmi:id="_O7wfw3KvEeulKaaY3PFXgA" name="highscores" staticAttribute="true">
       <modelElement href="quizGame.uml#_OeyP5HKvEeulKaaY3PFXgA"/>
-      <stereotypes xmi:id="_O7wfxHKvEeulKaaY3PFXgA" name="Generics">
-        <modelElement href="quizGame.uml#_OezeAHKvEeulKaaY3PFXgA"/>
-      </stereotypes>
-      <stereotypes xmi:id="_O7wfxXKvEeulKaaY3PFXgA" name="LegacyStyledElement">
-        <modelElement href="quizGame.uml#_Oe0FEHKvEeulKaaY3PFXgA"/>
-      </stereotypes>
+      <stereotypes xmi:id="_c-dHAHLGEeueUvXBUNUoQQ" name="Generics"/>
+      <stereotypes xmi:id="_c-fjQHLGEeueUvXBUNUoQQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_c-gxYHLGEeueUvXBUNUoQQ" name="Generics"/>
+      <stereotypes xmi:id="_c-h_gHLGEeueUvXBUNUoQQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_c-nfEHLGEeueUvXBUNUoQQ" name="Generics"/>
+      <stereotypes xmi:id="_c-oGIHLGEeueUvXBUNUoQQ" name="LegacyStyledElement"/>
       <visibility xmi:id="_O7wfxnKvEeulKaaY3PFXgA" label="~"/>
       <cardinality xmi:id="_O7wfx3KvEeulKaaY3PFXgA" label="1" max="1" min="1"/>
       <type xmi:id="_O7wfyHKvEeulKaaY3PFXgA" name="ArrayList">
@@ -1633,159 +1805,6 @@
           <modelElement href="quizGame.uml#_OeMaAHKvEeulKaaY3PFXgA"/>
         </type>
       </outParameters>
-    </operations>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_O7hPMHKvEeulKaaY3PFXgA" name="QuizGame">
-    <modelElement href="quizGame.uml#_OcVY0HKvEeulKaaY3PFXgA"/>
-    <visualProperties xmi:id="_O7hPMXKvEeulKaaY3PFXgA" position="103.0,77.0" size="407.0,464.0"/>
-    <visibility xmi:id="_O7hPMnKvEeulKaaY3PFXgA" label="+"/>
-    <attributes xmi:id="_O7hPM3KvEeulKaaY3PFXgA" defaultValue="&quot;\u001B[0m&quot;" name="ANSI_RESET" staticAttribute="true">
-      <modelElement href="quizGame.uml#_OevMkHKvEeulKaaY3PFXgA"/>
-      <visibility xmi:id="_O7hPNHKvEeulKaaY3PFXgA" label="+"/>
-      <cardinality xmi:id="_O7hPNXKvEeulKaaY3PFXgA" label="1" max="1" min="1"/>
-      <type xmi:id="_O7h2QHKvEeulKaaY3PFXgA" name="String">
-        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_O7h2QXKvEeulKaaY3PFXgA" defaultValue="&quot;\u001B[30m&quot;" name="ANSI_BLACK" staticAttribute="true">
-      <modelElement href="quizGame.uml#_OevzoHKvEeulKaaY3PFXgA"/>
-      <visibility xmi:id="_O7h2QnKvEeulKaaY3PFXgA" label="+"/>
-      <cardinality xmi:id="_O7h2Q3KvEeulKaaY3PFXgA" label="1" max="1" min="1"/>
-      <type xmi:id="_O7h2RHKvEeulKaaY3PFXgA" name="String">
-        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_O7h2RXKvEeulKaaY3PFXgA" defaultValue="&quot;\u001B[31m&quot;" name="ANSI_RED" staticAttribute="true">
-      <modelElement href="quizGame.uml#_OevzonKvEeulKaaY3PFXgA"/>
-      <visibility xmi:id="_O7h2RnKvEeulKaaY3PFXgA" label="+"/>
-      <cardinality xmi:id="_O7h2R3KvEeulKaaY3PFXgA" label="1" max="1" min="1"/>
-      <type xmi:id="_O7h2SHKvEeulKaaY3PFXgA" name="String">
-        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_O7h2SXKvEeulKaaY3PFXgA" defaultValue="&quot;\u001B[32m&quot;" name="ANSI_GREEN" staticAttribute="true">
-      <modelElement href="quizGame.uml#_OewasHKvEeulKaaY3PFXgA"/>
-      <visibility xmi:id="_O7h2SnKvEeulKaaY3PFXgA" label="+"/>
-      <cardinality xmi:id="_O7h2S3KvEeulKaaY3PFXgA" label="1" max="1" min="1"/>
-      <type xmi:id="_O7h2THKvEeulKaaY3PFXgA" name="String">
-        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_O7h2TXKvEeulKaaY3PFXgA" defaultValue="&quot;\u001B[33m&quot;" name="ANSI_YELLOW" staticAttribute="true">
-      <modelElement href="quizGame.uml#_OewasnKvEeulKaaY3PFXgA"/>
-      <visibility xmi:id="_O7h2TnKvEeulKaaY3PFXgA" label="+"/>
-      <cardinality xmi:id="_O7h2T3KvEeulKaaY3PFXgA" label="1" max="1" min="1"/>
-      <type xmi:id="_O7h2UHKvEeulKaaY3PFXgA" name="String">
-        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_O7h2UXKvEeulKaaY3PFXgA" defaultValue="&quot;\u001B[34m&quot;" name="ANSI_BLUE" staticAttribute="true">
-      <modelElement href="quizGame.uml#_OewatHKvEeulKaaY3PFXgA"/>
-      <visibility xmi:id="_O7h2UnKvEeulKaaY3PFXgA" label="+"/>
-      <cardinality xmi:id="_O7h2U3KvEeulKaaY3PFXgA" label="1" max="1" min="1"/>
-      <type xmi:id="_O7h2VHKvEeulKaaY3PFXgA" name="String">
-        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_O7h2VXKvEeulKaaY3PFXgA" defaultValue="&quot;\u001B[35m&quot;" name="ANSI_PURPLE" staticAttribute="true">
-      <modelElement href="quizGame.uml#_OexBwHKvEeulKaaY3PFXgA"/>
-      <visibility xmi:id="_O7h2VnKvEeulKaaY3PFXgA" label="+"/>
-      <cardinality xmi:id="_O7h2V3KvEeulKaaY3PFXgA" label="1" max="1" min="1"/>
-      <type xmi:id="_O7h2WHKvEeulKaaY3PFXgA" name="String">
-        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_O7h2WXKvEeulKaaY3PFXgA" defaultValue="&quot;\u001B[36m&quot;" name="ANSI_CYAN" staticAttribute="true">
-      <modelElement href="quizGame.uml#_OexBwnKvEeulKaaY3PFXgA"/>
-      <visibility xmi:id="_O7h2WnKvEeulKaaY3PFXgA" label="+"/>
-      <cardinality xmi:id="_O7h2W3KvEeulKaaY3PFXgA" label="1" max="1" min="1"/>
-      <type xmi:id="_O7h2XHKvEeulKaaY3PFXgA" name="String">
-        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_O7h2XXKvEeulKaaY3PFXgA" defaultValue="&quot;\u001B[37m&quot;" name="ANSI_WHITE" staticAttribute="true">
-      <modelElement href="quizGame.uml#_OexBxHKvEeulKaaY3PFXgA"/>
-      <visibility xmi:id="_O7h2XnKvEeulKaaY3PFXgA" label="+"/>
-      <cardinality xmi:id="_O7h2X3KvEeulKaaY3PFXgA" label="1" max="1" min="1"/>
-      <type xmi:id="_O7h2YHKvEeulKaaY3PFXgA" name="String">
-        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_O7h2YXKvEeulKaaY3PFXgA" defaultValue="&quot;\u001B[40m&quot;" name="ANSI_BLACK_BACKGROUND" staticAttribute="true">
-      <modelElement href="quizGame.uml#_OexBxnKvEeulKaaY3PFXgA"/>
-      <visibility xmi:id="_O7h2YnKvEeulKaaY3PFXgA" label="+"/>
-      <cardinality xmi:id="_O7h2Y3KvEeulKaaY3PFXgA" label="1" max="1" min="1"/>
-      <type xmi:id="_O7h2ZHKvEeulKaaY3PFXgA" name="String">
-        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_O7h2ZXKvEeulKaaY3PFXgA" defaultValue="&quot;\u001B[41m&quot;" name="ANSI_RED_BACKGROUND" staticAttribute="true">
-      <modelElement href="quizGame.uml#_OexByHKvEeulKaaY3PFXgA"/>
-      <visibility xmi:id="_O7h2ZnKvEeulKaaY3PFXgA" label="+"/>
-      <cardinality xmi:id="_O7h2Z3KvEeulKaaY3PFXgA" label="1" max="1" min="1"/>
-      <type xmi:id="_O7h2aHKvEeulKaaY3PFXgA" name="String">
-        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_O7h2aXKvEeulKaaY3PFXgA" defaultValue="&quot;\u001B[42m&quot;" name="ANSI_GREEN_BACKGROUND" staticAttribute="true">
-      <modelElement href="quizGame.uml#_Oexo0XKvEeulKaaY3PFXgA"/>
-      <visibility xmi:id="_O7h2anKvEeulKaaY3PFXgA" label="+"/>
-      <cardinality xmi:id="_O7h2a3KvEeulKaaY3PFXgA" label="1" max="1" min="1"/>
-      <type xmi:id="_O7h2bHKvEeulKaaY3PFXgA" name="String">
-        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_O7h2bXKvEeulKaaY3PFXgA" defaultValue="&quot;\u001B[43m&quot;" name="ANSI_YELLOW_BACKGROUND" staticAttribute="true">
-      <modelElement href="quizGame.uml#_Oexo03KvEeulKaaY3PFXgA"/>
-      <visibility xmi:id="_O7h2bnKvEeulKaaY3PFXgA" label="+"/>
-      <cardinality xmi:id="_O7h2b3KvEeulKaaY3PFXgA" label="1" max="1" min="1"/>
-      <type xmi:id="_O7h2cHKvEeulKaaY3PFXgA" name="String">
-        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_O7h2cXKvEeulKaaY3PFXgA" defaultValue="&quot;\u001B[44m&quot;" name="ANSI_BLUE_BACKGROUND" staticAttribute="true">
-      <modelElement href="quizGame.uml#_Oexo1XKvEeulKaaY3PFXgA"/>
-      <visibility xmi:id="_O7h2cnKvEeulKaaY3PFXgA" label="+"/>
-      <cardinality xmi:id="_O7h2c3KvEeulKaaY3PFXgA" label="1" max="1" min="1"/>
-      <type xmi:id="_O7h2dHKvEeulKaaY3PFXgA" name="String">
-        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_O7h2dXKvEeulKaaY3PFXgA" defaultValue="&quot;\u001B[45m&quot;" name="ANSI_PURPLE_BACKGROUND" staticAttribute="true">
-      <modelElement href="quizGame.uml#_Oexo13KvEeulKaaY3PFXgA"/>
-      <visibility xmi:id="_O7h2dnKvEeulKaaY3PFXgA" label="+"/>
-      <cardinality xmi:id="_O7h2d3KvEeulKaaY3PFXgA" label="1" max="1" min="1"/>
-      <type xmi:id="_O7h2eHKvEeulKaaY3PFXgA" name="String">
-        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_O7h2eXKvEeulKaaY3PFXgA" defaultValue="&quot;\u001B[46m&quot;" name="ANSI_CYAN_BACKGROUND" staticAttribute="true">
-      <modelElement href="quizGame.uml#_OeyP4HKvEeulKaaY3PFXgA"/>
-      <visibility xmi:id="_O7h2enKvEeulKaaY3PFXgA" label="+"/>
-      <cardinality xmi:id="_O7h2e3KvEeulKaaY3PFXgA" label="1" max="1" min="1"/>
-      <type xmi:id="_O7h2fHKvEeulKaaY3PFXgA" name="String">
-        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_O7h2fXKvEeulKaaY3PFXgA" defaultValue="&quot;\u001B[47m&quot;" name="ANSI_WHITE_BACKGROUND" staticAttribute="true">
-      <modelElement href="quizGame.uml#_OeyP4nKvEeulKaaY3PFXgA"/>
-      <visibility xmi:id="_O7h2fnKvEeulKaaY3PFXgA" label="+"/>
-      <cardinality xmi:id="_O7h2f3KvEeulKaaY3PFXgA" label="1" max="1" min="1"/>
-      <type xmi:id="_O7h2gHKvEeulKaaY3PFXgA" name="String">
-        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </type>
-    </attributes>
-    <operations xmi:id="_O7h2gXKvEeulKaaY3PFXgA" name="main" staticOperation="true">
-      <modelElement href="quizGame.uml#_OcX1EHKvEeulKaaY3PFXgA"/>
-      <visibility xmi:id="_O7h2gnKvEeulKaaY3PFXgA" label="+"/>
-      <cardinality xmi:id="_O7h2g3KvEeulKaaY3PFXgA" label="1" max="1" min="1"/>
-      <parameters xmi:id="_O7h2hHKvEeulKaaY3PFXgA" name="args">
-        <modelElement href="quizGame.uml#_OcX1EXKvEeulKaaY3PFXgA"/>
-        <cardinality xmi:id="_O7h2hXKvEeulKaaY3PFXgA" label="1..*" max="-1" min="1"/>
-        <type xmi:id="_O7h2hnKvEeulKaaY3PFXgA" name="String">
-          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </type>
-      </parameters>
     </operations>
   </nodes>
 </com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

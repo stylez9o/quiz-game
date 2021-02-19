@@ -4,7 +4,7 @@
     <eAnnotations xmi:id="_OJ_EkHKvEeulKaaY3PFXgA" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_OJ_roHKvEeulKaaY3PFXgA" source="codegen">
         <details xmi:id="_OJ_roXKvEeulKaaY3PFXgA" key="codegenDirectory" value="/quizGame/src/main/java"/>
-        <details xmi:id="_OuLWwHKvEeulKaaY3PFXgA" key="AssociatedSourceCode" value="/quizGame/src/main/java/InnerQuestions.java;1855313483/1;/quizGame/src/main/java/IquestionBodys.java;3032884109/1;/quizGame/src/main/java/QuestInfo.java;732934495/1;/quizGame/src/main/java/Questions.java;2028706278/1;/quizGame/src/main/java/QuizGame.java;2100198094/1;/quizGame/src/main/java/User.java;1830107346/1;"/>
+        <details xmi:id="_OuLWwHKvEeulKaaY3PFXgA" key="AssociatedSourceCode" value="/quizGame/src/main/java/InnerQuestions.java;1855313483/1;/quizGame/src/main/java/IquestionBodys.java;3032884109/1;/quizGame/src/main/java/QuestInfo.java;1646091360/1;/quizGame/src/main/java/Questions.java;2028706278/1;/quizGame/src/main/java/QuizGame.java;2100198094/1;/quizGame/src/main/java/User.java;1830107346/1;"/>
       </contents>
     </eAnnotations>
     <elementImport xmi:id="_Oa7DkHKvEeulKaaY3PFXgA">
@@ -135,6 +135,7 @@
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
         </ownedParameter>
         <ownedParameter xmi:id="_OfA5YnKvEeulKaaY3PFXgA" direction="return">
+          <name xsi:nil="true"/>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
         </ownedParameter>
         <language>java</language>
@@ -185,6 +186,7 @@
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
         </ownedParameter>
         <ownedParameter xmi:id="_OfEjw3KvEeulKaaY3PFXgA" direction="return">
+          <name xsi:nil="true"/>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
         </ownedParameter>
         <language>java</language>
@@ -233,6 +235,7 @@
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
         </ownedParameter>
         <ownedParameter xmi:id="_OfFK03KvEeulKaaY3PFXgA" direction="return">
+          <name xsi:nil="true"/>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
         </ownedParameter>
         <language>java</language>
@@ -281,6 +284,7 @@
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
         </ownedParameter>
         <ownedParameter xmi:id="_OfFK13KvEeulKaaY3PFXgA" direction="return">
+          <name xsi:nil="true"/>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
         </ownedParameter>
         <language>java</language>
@@ -330,6 +334,7 @@
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
         </ownedParameter>
         <ownedParameter xmi:id="_OfFx43KvEeulKaaY3PFXgA" direction="return">
+          <name xsi:nil="true"/>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
         </ownedParameter>
         <language>java</language>
@@ -379,6 +384,7 @@
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
         </ownedParameter>
         <ownedParameter xmi:id="_OfGY83KvEeulKaaY3PFXgA" direction="return">
+          <name xsi:nil="true"/>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
         </ownedParameter>
         <language>java</language>
@@ -428,6 +434,7 @@
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
         </ownedParameter>
         <ownedParameter xmi:id="_OfGY93KvEeulKaaY3PFXgA" direction="return">
+          <name xsi:nil="true"/>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
         </ownedParameter>
         <language>java</language>
@@ -476,6 +483,7 @@
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
         </ownedParameter>
         <ownedParameter xmi:id="_OfHAA3KvEeulKaaY3PFXgA" direction="return">
+          <name xsi:nil="true"/>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
         </ownedParameter>
         <language>java</language>
@@ -524,6 +532,7 @@
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
         </ownedParameter>
         <ownedParameter xmi:id="_OfHAB3KvEeulKaaY3PFXgA" direction="return">
+          <name xsi:nil="true"/>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
         </ownedParameter>
         <language>java</language>
@@ -963,19 +972,23 @@
 			System.out.println(&quot;######### WÄHLE EIN THEMENGEBIET #########\n# [1]&quot; +ANSI_CYAN+ &quot;FILM  &quot; +ANSI_RESET+ &quot;[2]&quot; +ANSI_CYAN+ &quot;TECHNIK  &quot; +ANSI_RESET+ &quot;[3]&quot; +ANSI_CYAN+ &quot;NATUR  &quot; +ANSI_RESET+ &quot;[4]&quot; +ANSI_RED+ &quot;MIX&quot; +ANSI_RESET+ &quot;  #&quot;);&#xD;
 			String themeEingabe = chooseThemeScanner.nextLine();&#xD;
 			&#xD;
-			if(themeEingabe == &quot;1&quot;) {&#xD;
+			if(themeEingabe.equals(&quot;1&quot;)) {&#xD;
 				System.out.println(&quot;\n\n\n  ### Fragen aus dem FILM-Bereich. ###&quot;);&#xD;
 				return &quot;movie&quot;;}&#xD;
-			else if(themeEingabe == &quot;2&quot;) {&#xD;
+			else if(themeEingabe.equals(&quot;2&quot;)) {&#xD;
 				System.out.println(&quot;\n\n\n  ####### Fragen über TECHNIK. #######&quot;);&#xD;
+				chooseThemeScanner.close();&#xD;
 				return &quot;tech&quot;;}&#xD;
-			else if(themeEingabe == &quot;3&quot;) {&#xD;
+			else if(themeEingabe.equals(&quot;3&quot;)) {&#xD;
 				System.out.println(&quot;\n\n\n  ###### Fragen über die NATUR. ######&quot;);&#xD;
+				chooseThemeScanner.close();&#xD;
 				return &quot;nature&quot;;}&#xD;
-			else if(themeEingabe == &quot;4&quot;){&#xD;
+			else if(themeEingabe.equals(&quot;4&quot;)){&#xD;
 				System.out.println(&quot;\n\n\n  ###### Gemischte Fragen ######&quot;);&#xD;
+				chooseThemeScanner.close();&#xD;
 				return &quot;mix&quot;;} else{i--;}&#xD;
 		}&#xD;
+		&#xD;
 		return &quot;fehler&quot;;&#xD;
 		&#xD;
 		</body>

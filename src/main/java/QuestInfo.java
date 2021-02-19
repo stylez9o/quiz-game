@@ -127,21 +127,21 @@ public class QuestInfo {
 		Scanner chooseThemeScanner = new Scanner(System.in);
 		for(int i = 0; i<1; i++) {
 			System.out.println("######### WÄHLE EIN THEMENGEBIET #########\n# [1]" +ANSI_CYAN+ "FILM  " +ANSI_RESET+ "[2]" +ANSI_CYAN+ "TECHNIK  " +ANSI_RESET+ "[3]" +ANSI_CYAN+ "NATUR  " +ANSI_RESET+ "[4]" +ANSI_RED+ "MIX" +ANSI_RESET+ "  #");
-			String themeEingabe = chooseThemeScanner.nextLine();
-			
-			if(themeEingabe.equals("1")) {
+			String themeEingabe = chooseThemeScanner.nextLine();			
+			if("1".equals(themeEingabe)) {
 				System.out.println("\n\n\n  ### Fragen aus dem FILM-Bereich. ###");
 				return "movie";}
-			else if(themeEingabe.equals("2")) {
+			else if("2".equals(themeEingabe)) {
 				System.out.println("\n\n\n  ####### Fragen über TECHNIK. #######");
 				return "tech";}
-			else if(themeEingabe.equals("3")) {
+			else if("3".equals(themeEingabe)) {
 				System.out.println("\n\n\n  ###### Fragen über die NATUR. ######");
 				return "nature";}
-			else if(themeEingabe.equals("4")){
+			else if("4".equals(themeEingabe)){
 				System.out.println("\n\n\n  ###### Gemischte Fragen ######");
 				return "mix";} else{i--;}
 		}
+		
 		return "fehler";
 		
 		}
