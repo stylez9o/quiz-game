@@ -1,4 +1,6 @@
+import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.Random;
 import java.util.Scanner;
 import java.util.TreeSet;
 import java.util.regex.Matcher;
@@ -7,7 +9,7 @@ import javafx.*;
 import javafx.scene.paint.RadialGradient;
 
 public class QuizGame{
-
+static int f = 1;
 	// Farbkonstanten
 	public static final String ANSI_RESET = "\u001B[0m";
 	public static final String ANSI_BLACK = "\u001B[30m";
@@ -30,9 +32,6 @@ public class QuizGame{
 
 	public static void main(String[] args) {
 
-		//TEstig threads
-		Thread thread = new Thread(new QuizGameSecondThread());
-		thread.start();
 		
 		// Main Variables: often-Use
 //		User.lastQuestContainer;
@@ -44,6 +43,7 @@ public class QuizGame{
 		int intoSetPunkte = 0;
 		int pnkte = 0;
 		int diff = 0;
+		
 
 		// Blind Variables: without function
 		User dummyUser = new User("dummy", 0);
@@ -71,19 +71,21 @@ public class QuizGame{
 			/**
 			 * -----------------------------------------------------------------------------------------
 			 **/
+			
+			
 // Spieler erstellung! / Abfrage (if) ob der Spieler und der dummyUser(testNutzer) den selben Namen haben
 			for (int z = 1; z < 2; z++) {
 				if (user.getUsername().equals(dummyUser.getUsername())) {
 					username = QuestInfo.askUsername();
 					user = new User(username, 0);
 				}
+				
+				
+//Abfrage der Schwierigkeitsstufe
+				diff = QuestInfo.chooseDiff(); 
 
-				/**
-				 * ------------------------------------------------------------------------------------------
-				 **/
-
-				diff = QuestInfo.chooseDiff();
-
+				
+//Erneutes Abfragen der Schwierigkeitsstufe wenn während des Spiels ein neuer Spieler erstellt werden soll				
 				if (diff == 4) {
 					z--;
 					username = QuestInfo.askUsername();
@@ -97,54 +99,29 @@ public class QuizGame{
 //			int i;
 			if (diff == 1) {
 
-// Nummern Set ----- für jede Schwierigkeit - neu erzeugt -----				
-				TreeSet<Integer> setNmbrs = new TreeSet<Integer>();
-				int f = 0;
-				setNmbrs.add(17);
-				setNmbrs.add(0);
-				setNmbrs.add(20);
-				setNmbrs.add(1);
-				setNmbrs.add(18);
-				setNmbrs.add(3);
-				setNmbrs.add(15);
-				setNmbrs.add(19);
-				setNmbrs.add(2);
-				setNmbrs.add(8);
-				setNmbrs.add(4);
-				setNmbrs.add(12);
-				setNmbrs.add(9);
-				setNmbrs.add(5);
-				setNmbrs.add(16);
-				setNmbrs.add(10);
-				setNmbrs.add(13);
-				setNmbrs.add(7);
-				setNmbrs.add(14);
-				setNmbrs.add(11);
-				setNmbrs.add(6);
-
 				switch (theme) {
 				case "movie":
+					
 
+					
+					//Beginn: Film Fragen Schleife
 					for (int i = 1; i <= 10; i++) {
-
-						int[] arrayZ = new int[11];
-						Scanner mathScanner = new Scanner(System.in);
-						int x = 0 + (int) (Math.random() * 19);
-
-						for (int z = 0; z < 19; z++) {
-							if (x > 5) {
-								f = setNmbrs.higher(1 | 10);
-							} else {
-								f = setNmbrs.floor(19);
-							}
-						}
-
 						
-						int frageNr = f;// i oder x
+						int x = 0;						
+						
+						genNumber genNumber = new genNumber();
+						if(countDurchgänge<1) {
+							x = genNumber.random(9,i); 
+						}else {
+							genNumber genNumber2 = new genNumber();
+							x = genNumber2.random(9,i); 
+						}
+						
+						int frageNr = x;
 
 						int fA = i;
 
-						if (i != 10) { 
+						if (i != 9) { 
 
 							antwort = quest.questXmovieX_1(frageNr, fA);
 
@@ -153,34 +130,28 @@ public class QuizGame{
 								intoSetPunkte = 3;
 								user.setPunkte(intoSetPunkte);
 								punkte = user.getPunkte();
-								setNmbrs.remove(f);
+								
 							} else {
 								System.out.println("Deine letzte Punktzahl: " + user.getPunkte());
 								User.highscores.add(User.createUser(username, user.getPunkte()));
-								setNmbrs.remove(f);
+								
 								break;
 							} // arrayZ[i] = 0;
 
-						} if(i == 10) {System.out.println(">>>Du hast alle " + i + " Fragen dieser Schwierigkeitsstufe richtig beantwortet!<<< ");} 
-					}
+						} if(i == 10) {System.out.println(">>>Du hast alle " + i + " Fragen dieser Schwierigkeitsstufe richtig beantwortet!<<< "); break;}
+		
+					} 
+
 					break;
 				case "tech":
 
 					for (int i = 1; i <= 10; i++) {
-
-						int x = 0 + (int) (Math.random() * 19);
-
-						for (int z = 0; z < 19; z++) {
-							if (x > 5) {
-								f = setNmbrs.higher(1 | 10);
-							} else {
-								f = setNmbrs.floor(19);
-							}
-						}
-
-						int frageNr = f;// i oder x
+					
+					     
+						genNumber genNumber = new genNumber();					     
+						int frageNr = genNumber.random(9,i); 
 						int fA = i;
-						if (i != 10) {
+						if (i != 9) {
 							antwort = quest.questXtechnikX_1(frageNr, fA);
 
 							if (antwort) {
@@ -188,32 +159,30 @@ public class QuizGame{
 								intoSetPunkte = 3;
 								user.setPunkte(intoSetPunkte);
 								punkte = user.getPunkte();
-								setNmbrs.remove(f);
+						
 							} else {
 								System.out.println("Deine letzte Punktzahl: " + user.getPunkte());
 								User.highscores.add(User.createUser(username, user.getPunkte()));
-								setNmbrs.remove(f);
+								
 								break;
-							}
-						}if(i == 10) System.out.println(">>>Du hast alle " + i + " Fragen dieser Schwierigkeitsstufe richtig beantwortet!<<< ");
-					}
-					break;
-				case "nature":
-					for (int i = 1; i <= 20; i++) {
-
-						int x = 0 + (int) (Math.random() * 19);
-
-						for (int z = 0; z < 19; z++) {
-							if (x > 5) {
-								f = setNmbrs.higher(1 | 10);
-							} else {
-								f = setNmbrs.floor(19);
-							}
+							} if(i == 10) {System.out.println(">>>Du hast alle " + i + " Fragen dieser Schwierigkeitsstufe richtig beantwortet!<<< "); break;}
+						
+					
 						}
+					}
 
-						int frageNr = f;// i oder x
+						break;
+				case "nature":
+						
+					
+					for (int i = 1; i <= 10; i++) {
+						
+
+					     
+						genNumber genNumber = new genNumber();					     
+						int frageNr = genNumber.random(9,i); 
 						int fA = i;
-						if (i != 10) {
+						if (i != 9) {
 							antwort = quest.questXnaturX_1(frageNr, fA);
 
 							if (antwort) {
@@ -221,16 +190,16 @@ public class QuizGame{
 								intoSetPunkte = 3;
 								user.setPunkte(intoSetPunkte);
 								punkte = user.getPunkte();
-								setNmbrs.remove(f);
+							
 							} else {
 								System.out.println("Deine letzte Punktzahl: " + user.getPunkte());
 								User.highscores.add(User.createUser(username, user.getPunkte()));
-								setNmbrs.remove(f);
+						
 								break;
 							}
-						}if(i == 10) {System.out.println(">>>Du hast alle " + i + " Fragen dieser Schwierigkeitsstufe richtig beantwortet!<<< ");}
+						}if(i == 10) {System.out.println(">>>Du hast alle " + i + " Fragen dieser Schwierigkeitsstufe richtig beantwortet!<<< ");break;}
+					
 					}
-
 					break;
 				case "mix":
 					break;
@@ -240,49 +209,16 @@ public class QuizGame{
 
 			} else if (diff == 2) {
 
-// Nummern Set ----- für jede Schwierigkeit - neu erzeugt -----				
-				TreeSet<Integer> setNmbrs = new TreeSet<Integer>();
-				int f = 0;
-				setNmbrs.add(17);
-				setNmbrs.add(0);
-				setNmbrs.add(20);
-				setNmbrs.add(1);
-				setNmbrs.add(18);
-				setNmbrs.add(3);
-				setNmbrs.add(15);
-				setNmbrs.add(19);
-				setNmbrs.add(2);
-				setNmbrs.add(8);
-				setNmbrs.add(4);
-				setNmbrs.add(12);
-				setNmbrs.add(9);
-				setNmbrs.add(5);
-				setNmbrs.add(16);
-				setNmbrs.add(10);
-				setNmbrs.add(13);
-				setNmbrs.add(7);
-				setNmbrs.add(14);
-				setNmbrs.add(11);
-				setNmbrs.add(6);
-
 				switch (theme) {
 				case "movie":
 
 					for (int i = 1; i <= 15; i++) {
+					
 
-						int x = 0 + (int) (Math.random() * 19);
-
-						for (int z = 0; z < 19; z++) {
-							if (x > 5) {
-								f = setNmbrs.higher(1 | 10);
-							} else {
-								f = setNmbrs.floor(19);
-							}
-						}
-
-						int frageNr = f;// i oder x (x) = wenn zufälige zahlen erscheinen sollen
+					    genNumber genNumber = new genNumber();					     
+						int frageNr = genNumber.random(14,i); 
 						int fA = i;
-						if (i != 15) {
+						if (i != 14) {
 							antwort = quest.questXmovieX_2(frageNr, fA);
 
 							if (antwort) {
@@ -290,36 +226,27 @@ public class QuizGame{
 								intoSetPunkte = 5;
 								user.setPunkte(intoSetPunkte);
 								punkte = user.getPunkte();
-								setNmbrs.remove(f);
+								
 							} else {
 								System.out.println("Deine letzte Punktzahl: " + user.getPunkte());
 								User.highscores.add(User.createUser(username, user.getPunkte()));
-								setNmbrs.remove(f);
+							
 								break;
 							}
-						}if(i == 15) {System.out.println(">>>Du hast alle " + i + " Fragen dieser Schwierigkeitsstufe richtig beantwortet!<<< ");}
+						}if(i == 15) {System.out.println(">>>Du hast alle " + i + " Fragen dieser Schwierigkeitsstufe richtig beantwortet!<<< ");break;}
+					
 					}
 					break;
 				case "tech":
-
+					
 					for (int i = 1; i <= 15; i++) {
-
-						int x = 0 + (int) (Math.random() * 19);
-
-						for (int z = 0; z < 19; z++) {
-							if (x > 5) {
-								f = setNmbrs.higher(1 | 10);
-							} else {
-								f = setNmbrs.floor(19);
-							}
-						}
-
-						//Das hier ist ein Kommentar
 						
-						
-						int frageNr = f;// i oder x (x) = wenn zufälige zahlen erscheinen sollen
+
+					     
+						genNumber genNumber = new genNumber();					     
+						int frageNr = genNumber.random(14,i); 
 						int fA = i;
-						if (i != 15) {
+						if (i != 14) {
 							antwort = quest.questXtechnikX_2(frageNr, fA);
 
 							if (antwort) {
@@ -327,32 +254,25 @@ public class QuizGame{
 								intoSetPunkte = 5;
 								user.setPunkte(intoSetPunkte);
 								punkte = user.getPunkte();
-								setNmbrs.remove(f);
+								
 							} else {
 								System.out.println("Deine letzte Punktzahl: " + user.getPunkte());
 								User.highscores.add(User.createUser(username, user.getPunkte()));
-								setNmbrs.remove(f);
+								
 								break;
 							}
 						}if(i == 15) {System.out.println(">>>Du hast alle " + i + " Fragen dieser Schwierigkeitsstufe richtig beantwortet!<<< ");}
-					}
+					
+				}
 					break;
 				case "nature":
+					
 					for (int i = 1; i <= 15; i++) {
-
-						int x = 0 + (int) (Math.random() * 19);
-
-						for (int z = 0; z < 19; z++) {
-							if (x > 5) {
-								f = setNmbrs.higher(1 | 10);
-							} else {
-								f = setNmbrs.floor(19);
-							}
-						}
-
-						int frageNr = f;// i oder x (x) = wenn zufälige zahlen erscheinen sollen
+					
+						genNumber genNumber = new genNumber();					     
+						int frageNr = genNumber.random(14,i); 
 						int fA = i;
-						if (i != 15) {
+						if (i != 14) {							
 							antwort = quest.questXnaturX_2(frageNr, fA);
 
 							if (antwort) {
@@ -360,12 +280,12 @@ public class QuizGame{
 								intoSetPunkte = 5;
 								user.setPunkte(intoSetPunkte);
 								punkte = user.getPunkte();
-								setNmbrs.remove(f);
+							
 
 							} else {
 								System.out.println("Deine letzte Punktzahl: " + user.getPunkte());
 								User.highscores.add(User.createUser(username, user.getPunkte()));
-								setNmbrs.remove(f);
+							
 								break;
 							}
 						}if(i == 15) {System.out.println(">>>Du hast alle " + i + " Fragen dieser Schwierigkeitsstufe richtig beantwortet!<<< ");}
@@ -379,49 +299,19 @@ public class QuizGame{
 
 			} else if (diff == 3) {
 
-// Nummern Set ----- für jede Schwierigkeit - neu erzeugt -----				
-				TreeSet<Integer> setNmbrs = new TreeSet<Integer>();
-				int f = 0;
-				setNmbrs.add(17);
-				setNmbrs.add(0);
-				setNmbrs.add(20);
-				setNmbrs.add(1);
-				setNmbrs.add(18);
-				setNmbrs.add(3);
-				setNmbrs.add(15);
-				setNmbrs.add(19);
-				setNmbrs.add(2);
-				setNmbrs.add(8);
-				setNmbrs.add(4);
-				setNmbrs.add(12);
-				setNmbrs.add(9);
-				setNmbrs.add(5);
-				setNmbrs.add(16);
-				setNmbrs.add(10);
-				setNmbrs.add(13);
-				setNmbrs.add(7);
-				setNmbrs.add(14);
-				setNmbrs.add(11);
-				setNmbrs.add(6);
 
 				switch (theme) {
+				
 				case "movie":
-
+					
+				
 					for (int i = 1; i <= 20; i++) {
-
-						int x = 0 + (int) (Math.random() * 19);
-
-						for (int z = 0; z < 19; z++) {
-							if (x > 5) {
-								f = setNmbrs.higher(1 | 10);
-							} else {
-								f = setNmbrs.floor(19);
-							}
-						}
-
-						int frageNr = f;// i oder x (x) = wenn zufälige zahlen erscheinen sollen
+					
+					     
+						genNumber genNumber = new genNumber();					     
+						int frageNr = genNumber.random(19,i); 
 						int fA = i;
-						if (i != 20) {
+						if (i != 19) {
 							antwort = quest.questXmovieX_3(frageNr, fA);
 
 							if (antwort) {
@@ -429,33 +319,27 @@ public class QuizGame{
 								intoSetPunkte = 7;
 								user.setPunkte(intoSetPunkte);
 								punkte = user.getPunkte();
-								setNmbrs.remove(f);
+							
 							} else {
 								System.out.println("Deine letzte Punktzahl: " + user.getPunkte());
 								User.highscores.add(User.createUser(username, user.getPunkte()));
-								setNmbrs.remove(f);
+							
 								break;
 							}
 						}if(i == 20) {System.out.println(">>>Du hast alle " + i + " Fragen dieser Schwierigkeitsstufe richtig beantwortet!<<< ");}
 					}
 					break;
 				case "tech":
-
+					
+				
 					for (int i = 1; i <= 20; i++) {
+				
 
-						int x = 0 + (int) (Math.random() * 19);
-
-						for (int z = 0; z < 19; z++) {
-							if (x > 5) {
-								f = setNmbrs.higher(1 | 10);
-							} else {
-								f = setNmbrs.floor(19);
-							}
-						}
-
-						int frageNr = f;// i oder x (x) = wenn zufälige zahlen erscheinen sollen
+					     
+						genNumber genNumber = new genNumber();					     
+						int frageNr = genNumber.random(19,i); 
 						int fA = i;
-						if (i != 20) {
+						if (i != 19) {
 							antwort = quest.questXtechnikX_3(frageNr, fA);
 
 							if (antwort) {
@@ -463,33 +347,26 @@ public class QuizGame{
 								intoSetPunkte = 7;
 								user.setPunkte(intoSetPunkte);
 								punkte = user.getPunkte();
-								setNmbrs.remove(f);
+								
 
 							} else {
 								System.out.println("Deine letzte Punktzahl: " + user.getPunkte());
 								User.highscores.add(User.createUser(username, user.getPunkte()));
-								setNmbrs.remove(f);
+
 								break;
 							}
 						}if(i == 20) {System.out.println(">>>Du hast alle " + i + " Fragen dieser Schwierigkeitsstufe richtig beantwortet!<<< ");}
 					}
 					break;
 				case "nature":
+					
+				
 					for (int i = 1; i <= 20; i++) {
-
-						int x = 0 + (int) (Math.random() * 19);
-
-						for (int z = 0; z < 19; z++) {
-							if (x > 5) {
-								f = setNmbrs.higher(1 | 10);
-							} else {
-								f = setNmbrs.floor(19);
-							}
-						}
-
-						int frageNr = f;// i oder x (x) = wenn zufälige zahlen erscheinen sollen
+					
+						genNumber genNumber = new genNumber();					     
+						int frageNr = genNumber.random(19,i); 
 						int fA = i;
-						if (i != 20) {
+						if (i != 19) {
 							antwort = quest.questXnaturX_3(frageNr, fA);
 
 							if (antwort) {
@@ -497,12 +374,12 @@ public class QuizGame{
 								intoSetPunkte = 7;
 								user.setPunkte(intoSetPunkte);
 								punkte = user.getPunkte();
-								setNmbrs.remove(f);
+							
 
 							} else {
 								System.out.println("Deine letzte Punktzahl: " + user.getPunkte());
 								User.highscores.add(User.createUser(username, user.getPunkte()));
-								setNmbrs.remove(f);
+							
 								break;
 							}
 						}if(i == 20) {System.out.println(">>>Du hast alle " + i + " Fragen dieser Schwierigkeitsstufe richtig beantwortet!<<< ");}

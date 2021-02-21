@@ -15,7 +15,7 @@ public class Questions {
 							"Wer spielt Nick Fury, den Chef der Spionage-Agentur\nS.H.I.E.L.D., im Film *The Avengers*?\n",												//2
 							"Wie hei\u00dfen die Hauptfiguren in Titanic (1997) mit Vornamen ?\n",																			//3
 							"Wie hei\u00dft der B\u00f6sewicht in *The Dark Knight Rises* ?\n",																					//4
-							"Wie hei\u00dft der kleiner und schleimige \nehemalige Hobbit in *Der Herr der Ringe* (2001) ?\n",													//5
+							"Wie hei\u00dft der kleine und schleimige \nehemalige Hobbit in *Der Herr der Ringe* (2001) ?\n",													//5
 							"Wie hei\u00dft der Schauspieler, der in \n*Twilight* den Charakter Edward spielt ?\n",															//6
 							"Wie hei\u00dft der schwer atmende Sith der \ndunklen Seite in *Star Wars* (1977) ?\n",															//7
 							"Wer steckt hinter der Stimme von Darth Vader\nin den Star-Wars-Filmen? \n",																	//8
@@ -37,7 +37,7 @@ public class Questions {
 						//AO = Answer Options
 		String[] movieQlAO = {"[1]Barabara Sch\u00f6neberger   [2]Jella Haase   [3]Sibel Kekilli   [4]Fiona Schweiger",													//0
 									"[1]Robert Downey Jr.   [2]Charlie Sheen   [3]Tom Cruise   [4]Harrison Ford",													//1
-									"[1]Ludacris   [2]Stan Lee   [3]Sam\u00FCl L. Jackson   [4]Ice Cube",																//2
+									"[1]Ludacris   [2]Stan Lee   [3]Samuel L. Jackson   [4]Ice Cube",																//2
 									"[1]James & Kamilla   [2]Jackyl & Hide   [3]Jordan & Katy   [4]Jack & Kate",													//3
 									"[1]Bone   [2]Pinguin   [3]Bane   [4]Joker",																					//4
 									"[1]Frodo   [2]Aragorn   [3]Gandalf   [4]Gollum",																				//5
@@ -45,7 +45,7 @@ public class Questions {
 									"[1]Darth Maul   [2]Boba Fett   [3]Darth Vader   [4]Obi-Wan Kenobi",															//7
 									"[1]Robert Frederik [2]James Earl Jones   [3]Peter Scar   [4]James Cameron",													//8
 									"[1]Madagascar   [2]Afrika   [3]Italien   [4]China",
-									"[1]einen Mandalorianer der sich um Waisenkind namens *Grogu* k\u00FCmmert.\n[2]den Kampf gegen die Sith.\n[3]Luke Skywalker.\n[4]einen Sturmtruppler des Imperiums.",
+									"[1]einen Mandalorianer der sich um ein Waisenkind namens *Grogu* k\u00FCmmert.\n[2]den Kampf gegen die Sith.\n[3]Luke Skywalker.\n[4]einen Sturmtruppler des Imperiums.",
 									"[1]Club   [2]Theory   [3]Boom   [4]Bang",
 									"[1]Mel Gibson   [2]Hugh Grant   [3]Tom Hanks   [4]Sean Connery",
 									"[1]Fossilien   [2]Dinosaurier   [3]Gesteinsschichten   [4]Rechtsprechung",
