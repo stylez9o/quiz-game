@@ -1,15 +1,20 @@
 import java.util.ArrayList;
+import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.Random;
 import java.util.Scanner;
 import java.util.TreeSet;
+import java.util.function.IntConsumer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collector;
+import java.util.stream.IntStream;
+
 import javafx.*;
 import javafx.scene.paint.RadialGradient;
 
 public class QuizGame{
-static int f = 1;
+
 	// Farbkonstanten
 	public static final String ANSI_RESET = "\u001B[0m";
 	public static final String ANSI_BLACK = "\u001B[30m";
@@ -97,27 +102,30 @@ static int f = 1;
 			diff = QuestInfo.printDiffAnsw(diff);
 			String theme = QuestInfo.chooseTheme();
 //			int i;
+			
+			int size = 10;
+			int size2 = 15;
+			int size3 = 20;
 			if (diff == 1) {
 
 				switch (theme) {
 				case "movie":
 					
-
 					
+					 ArrayList<Integer> lis = new ArrayList<Integer>(size);
+				     ArrayList<Integer> list = new ArrayList<Integer>(size);
+					  for(int i = 1; i <= size; i++)
+					  {list.add(i);}
+				     Random rand = new Random();
+				     for(int i = 0; i <= list.size(); i++) {
+				      int index = rand.nextInt(list.size());
+				      lis.add(i, list.remove(index));}
+
 					//Beginn: Film Fragen Schleife
+	
 					for (int i = 1; i <= 10; i++) {
-						
-						int x = 0;						
-						
-						genNumber genNumber = new genNumber();
-						if(countDurchgänge<1) {
-							x = genNumber.random(9,i); 
-						}else {
-							genNumber genNumber2 = new genNumber();
-							x = genNumber2.random(9,i); 
-						}
-						
-						int frageNr = x;
+
+						int frageNr = lis.get(i-1);
 
 						int fA = i;
 
@@ -134,7 +142,7 @@ static int f = 1;
 							} else {
 								System.out.println("Deine letzte Punktzahl: " + user.getPunkte());
 								User.highscores.add(User.createUser(username, user.getPunkte()));
-								
+				
 								break;
 							} // arrayZ[i] = 0;
 
@@ -145,11 +153,19 @@ static int f = 1;
 					break;
 				case "tech":
 
-					for (int i = 1; i <= 10; i++) {
 					
-					     
-						genNumber genNumber = new genNumber();					     
-						int frageNr = genNumber.random(9,i); 
+					 ArrayList<Integer> listech1 = new ArrayList<Integer>(size);
+				     ArrayList<Integer> listtech1 = new ArrayList<Integer>(size);
+					  for(int i = 1; i <= size; i++)
+					  {listtech1.add(i);}
+				     Random rand2 = new Random();
+				     for(int i = 0; i <= listtech1.size(); i++) {
+				      int index = rand2.nextInt(listtech1.size());
+				      listech1.add(i, listtech1.remove(index));}
+					
+					for (int i = 1; i <= 10; i++) {
+							     
+						int frageNr = listech1.get(i-1);
 						int fA = i;
 						if (i != 9) {
 							antwort = quest.questXtechnikX_1(frageNr, fA);
@@ -174,13 +190,21 @@ static int f = 1;
 						break;
 				case "nature":
 						
+					 ArrayList<Integer> lisnature1 = new ArrayList<Integer>(size);
+				     ArrayList<Integer> listnature1 = new ArrayList<Integer>(size);
+					  for(int i = 1; i <= size; i++)
+					  {listnature1.add(i);}
+				     Random rand3 = new Random();
+				     for(int i = 0; i <= listnature1.size(); i++) {
+				      int index = rand3.nextInt(listnature1.size());
+				      lisnature1.add(i, listnature1.remove(index));}
 					
 					for (int i = 1; i <= 10; i++) {
 						
 
 					     
-						genNumber genNumber = new genNumber();					     
-						int frageNr = genNumber.random(9,i); 
+									     
+						int frageNr = lisnature1.get(i-1);
 						int fA = i;
 						if (i != 9) {
 							antwort = quest.questXnaturX_1(frageNr, fA);
@@ -211,12 +235,22 @@ static int f = 1;
 
 				switch (theme) {
 				case "movie":
-
-					for (int i = 1; i <= 15; i++) {
 					
+					 ArrayList<Integer> lis2 = new ArrayList<Integer>(size2);
+				     ArrayList<Integer> list2 = new ArrayList<Integer>(size2);
+					  for(int i = 1; i <= size2; i++)
+					  {list2.add(i);}
+				     Random rand3 = new Random();
+				     for(int i = 0; i <= list2.size(); i++) {
+				      int index = rand3.nextInt(list2.size());
+				      lis2.add(i, list2.remove(index));}
+					
+					for (int i = 1; i <= 15; i++) {
+						
 
-					    genNumber genNumber = new genNumber();					     
-						int frageNr = genNumber.random(14,i); 
+					     
+									     
+						int frageNr = lis2.get(i-1);
 						int fA = i;
 						if (i != 14) {
 							antwort = quest.questXmovieX_2(frageNr, fA);
@@ -239,12 +273,21 @@ static int f = 1;
 					break;
 				case "tech":
 					
+					 ArrayList<Integer> listech2 = new ArrayList<Integer>(size2);
+				     ArrayList<Integer> listtech2 = new ArrayList<Integer>(size2);
+					  for(int i = 1; i <= size2; i++)
+					  {listtech2.add(i);}
+				     Random rand4 = new Random();
+				     for(int i = 0; i <= listtech2.size(); i++) {
+				      int index = rand4.nextInt(listtech2.size());
+				      listech2.add(i, listtech2.remove(index));}
+					
 					for (int i = 1; i <= 15; i++) {
 						
 
 					     
-						genNumber genNumber = new genNumber();					     
-						int frageNr = genNumber.random(14,i); 
+									     
+						int frageNr = listech2.get(i-1);
 						int fA = i;
 						if (i != 14) {
 							antwort = quest.questXtechnikX_2(frageNr, fA);
@@ -267,10 +310,21 @@ static int f = 1;
 					break;
 				case "nature":
 					
-					for (int i = 1; i <= 15; i++) {
+					 ArrayList<Integer> lisnature2 = new ArrayList<Integer>(size2);
+				     ArrayList<Integer> listnature2 = new ArrayList<Integer>(size2);
+					  for(int i = 1; i <= size2; i++)
+					  {listnature2.add(i);}
+				     Random rand5 = new Random();
+				     for(int i = 0; i <= listnature2.size(); i++) {
+				      int index = rand5.nextInt(listnature2.size());
+				      lisnature2.add(i, listnature2.remove(index));}
 					
-						genNumber genNumber = new genNumber();					     
-						int frageNr = genNumber.random(14,i); 
+					for (int i = 1; i <= 15; i++) {
+						
+
+					     
+									     
+						int frageNr = lisnature2.get(i-1); 
 						int fA = i;
 						if (i != 14) {							
 							antwort = quest.questXnaturX_2(frageNr, fA);
@@ -304,12 +358,21 @@ static int f = 1;
 				
 				case "movie":
 					
-				
-					for (int i = 1; i <= 20; i++) {
+					 ArrayList<Integer> lis3 = new ArrayList<Integer>(size3);
+				     ArrayList<Integer> list3 = new ArrayList<Integer>(size3);
+					  for(int i = 1; i <= size3; i++)
+					  {list3.add(i);}
+				     Random rand6 = new Random();
+				     for(int i = 0; i <= list3.size(); i++) {
+				      int index = rand6.nextInt(list3.size());
+				      lis3.add(i, list3.remove(index));}
 					
+					for (int i = 1; i <= 20; i++) {
+						
+
 					     
-						genNumber genNumber = new genNumber();					     
-						int frageNr = genNumber.random(19,i); 
+									     
+						int frageNr = lis3.get(i-1);
 						int fA = i;
 						if (i != 19) {
 							antwort = quest.questXmovieX_3(frageNr, fA);
@@ -331,13 +394,21 @@ static int f = 1;
 					break;
 				case "tech":
 					
-				
+					 ArrayList<Integer> listech3 = new ArrayList<Integer>(size3);
+				     ArrayList<Integer> listtech3 = new ArrayList<Integer>(size3);
+					  for(int i = 1; i <= size3; i++)
+					  {listtech3.add(i);}
+				     Random rand7 = new Random();
+				     for(int i = 0; i <= listtech3.size(); i++) {
+				      int index = rand7.nextInt(listtech3.size());
+				      listech3.add(i, listtech3.remove(index));}
+					
 					for (int i = 1; i <= 20; i++) {
-				
+						
 
 					     
-						genNumber genNumber = new genNumber();					     
-						int frageNr = genNumber.random(19,i); 
+									     
+						int frageNr = listech3.get(i-1);
 						int fA = i;
 						if (i != 19) {
 							antwort = quest.questXtechnikX_3(frageNr, fA);
@@ -360,11 +431,21 @@ static int f = 1;
 					break;
 				case "nature":
 					
-				
-					for (int i = 1; i <= 20; i++) {
+					 ArrayList<Integer> lisnature3 = new ArrayList<Integer>(size3);
+				     ArrayList<Integer> listnature3 = new ArrayList<Integer>(size3);
+					  for(int i = 1; i <= size3; i++)
+					  {listnature3.add(i);}
+				     Random rand8 = new Random();
+				     for(int i = 0; i <= listnature3.size(); i++) {
+				      int index = rand8.nextInt(listnature3.size());
+				      lisnature3.add(i, listnature3.remove(index));}
 					
-						genNumber genNumber = new genNumber();					     
-						int frageNr = genNumber.random(19,i); 
+					for (int i = 1; i <= 10; i++) {
+						
+
+					     
+									     
+						int frageNr = lisnature3.get(i-1); 
 						int fA = i;
 						if (i != 19) {
 							antwort = quest.questXnaturX_3(frageNr, fA);
