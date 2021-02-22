@@ -43,11 +43,12 @@ public class QuizGame{
 		User.highscores = User.createHighScoreList();
 		boolean antwort;
 		String username = "Leer";
-		int countDurchgänge = 0;// Anzahl der SPIEL-Durchgänge
+
+		int countLoop = 0; //Spieldurchläufe
 		int punkte = 0;
 		int intoSetPunkte = 0;
 		int pnkte = 0;
-		int diff = 0;
+		String diff = "0";
 		
 
 		// Blind Variables: without function
@@ -69,6 +70,7 @@ public class QuizGame{
 		for (int count = 0; count < 1; count++) {
 			user.setPunkte(0);// Damit zu beginn des SPiels die Werte zurückgesetzt werden
 			pnkte = 0;// Dasselbe wie Oben pnkte ist ein zwischensammler der Punkte
+			
 //	 Startsequenz: Name des Spiels
 			System.out.println("\n[[[[[ DAS ]][[ FRAGE ]][[ SPIEL ]]]]]");
 			InnerQuestions quest = new InnerQuestions(); // Fragenkatalog Objekt wird erzeugt
@@ -91,7 +93,7 @@ public class QuizGame{
 
 				
 //Erneutes Abfragen der Schwierigkeitsstufe wenn während des Spiels ein neuer Spieler erstellt werden soll				
-				if (diff == 4) {
+				if ("4".equals(diff)) {
 					z--;
 					username = QuestInfo.askUsername();
 				} else {
@@ -106,7 +108,7 @@ public class QuizGame{
 			int size = 10;
 			int size2 = 15;
 			int size3 = 20;
-			if (diff == 1) {
+			if ("1".equals(diff)) {
 
 				switch (theme) {
 				case "movie":
@@ -116,6 +118,7 @@ public class QuizGame{
 				     ArrayList<Integer> list = new ArrayList<Integer>(size);
 					  for(int i = 1; i <= size; i++)
 					  {list.add(i);}
+					  
 				     Random rand = new Random();
 				     for(int i = 0; i <= list.size(); i++) {
 				      int index = rand.nextInt(list.size());
@@ -231,7 +234,7 @@ public class QuizGame{
 
 //------------------------------------------------------------------------------------------------------				
 
-			} else if (diff == 2) {
+			} else if ("2".equals(diff)) {
 
 				switch (theme) {
 				case "movie":
@@ -351,7 +354,7 @@ public class QuizGame{
 
 //------------------------------------------------------------------------------------------------------					
 
-			} else if (diff == 3) {
+			} else if ("3".equals(diff)) {
 
 
 				switch (theme) {
@@ -470,9 +473,15 @@ public class QuizGame{
 				case "mix":
 					break;
 				}
+				
+				if(user.getPunkte() != 0){
+					
+				User.highscores.add(countLoop,user);
+				}
+				
 			}
 
-			User userNeu = user;
+			
 
 			long finish = System.currentTimeMillis();
 			long timeElapsed = finish - start;
@@ -490,7 +499,7 @@ public class QuizGame{
 //				user.setPunkte(3);
 //			}
 
-			countDurchgänge++;// Zählt einen durchgang am ENDE eines Spiels
+			countLoop++;
 			if (QuestInfo.playAgainQuestion(user.getUsername()) == false) {
 				count++;
 				break;
@@ -502,9 +511,11 @@ public class QuizGame{
 			if (dummyUser.getUsername().equals(user.getUsername())) {
 
 			} else {
-				System.out.println("################################" + "\n## H  I  G  H  S  C  O  R  E ###"
-						+ "\n################################" + "\n#### N a m e ## P u n k t e ####"
-						+ "\n********************************");
+				System.out.println("################################" + 
+								   "\n## H  I  G  H  S  C  O  R  E ###"
+								 + "\n################################"
+								 + "\n#### N a m e ## P u n k t e ####"
+								 + "\n********************************");
 
 				user.setPunkte(-pnkte);
 				for (Object userInListe : User.highscores) {
