@@ -15,7 +15,7 @@ public class Questions {
 							"Wer spielt Nick Fury, den Chef der Spionage-Agentur\nS.H.I.E.L.D., im Film *The Avengers*?\n",												//2
 							"Wie hei\u00dfen die Hauptfiguren in Titanic (1997) mit Vornamen ?\n",																			//3
 							"Wie hei\u00dft der B\u00f6sewicht in *The Dark Knight Rises* ?\n",																					//4
-							"Wie hei\u00dft der kleiner und schleimige \nehemalige Hobbit in *Der Herr der Ringe* (2001) ?\n",													//5
+							"Wie hei\u00dft der kleine und schleimige \nehemalige Hobbit in *Der Herr der Ringe* (2001) ?\n",													//5
 							"Wie hei\u00dft der Schauspieler, der in \n*Twilight* den Charakter Edward spielt ?\n",															//6
 							"Wie hei\u00dft der schwer atmende Sith der \ndunklen Seite in *Star Wars* (1977) ?\n",															//7
 							"Wer steckt hinter der Stimme von Darth Vader\nin den Star-Wars-Filmen? \n",																	//8
@@ -37,7 +37,7 @@ public class Questions {
 						//AO = Answer Options
 		String[] movieQlAO = {"[1]Barabara Sch\u00f6neberger   [2]Jella Haase   [3]Sibel Kekilli   [4]Fiona Schweiger",													//0
 									"[1]Robert Downey Jr.   [2]Charlie Sheen   [3]Tom Cruise   [4]Harrison Ford",													//1
-									"[1]Ludacris   [2]Stan Lee   [3]Sam\u00FCl L. Jackson   [4]Ice Cube",																//2
+									"[1]Ludacris   [2]Stan Lee   [3]Samuel L. Jackson   [4]Ice Cube",																//2
 									"[1]James & Kamilla   [2]Jackyl & Hide   [3]Jordan & Katy   [4]Jack & Kate",													//3
 									"[1]Bone   [2]Pinguin   [3]Bane   [4]Joker",																					//4
 									"[1]Frodo   [2]Aragorn   [3]Gandalf   [4]Gollum",																				//5
@@ -45,7 +45,7 @@ public class Questions {
 									"[1]Darth Maul   [2]Boba Fett   [3]Darth Vader   [4]Obi-Wan Kenobi",															//7
 									"[1]Robert Frederik [2]James Earl Jones   [3]Peter Scar   [4]James Cameron",													//8
 									"[1]Madagascar   [2]Afrika   [3]Italien   [4]China",
-									"[1]einen Mandalorianer der sich um Waisenkind namens *Grogu* k\u00FCmmert.\n[2]den Kampf gegen die Sith.\n[3]Luke Skywalker.\n[4]einen Sturmtruppler des Imperiums.",
+									"[1]einen Mandalorianer der sich um ein Waisenkind namens *Grogu* k\u00FCmmert.\n[2]den Kampf gegen die Sith.\n[3]Luke Skywalker.\n[4]einen Sturmtruppler des Imperiums.",
 									"[1]Club   [2]Theory   [3]Boom   [4]Bang",
 									"[1]Mel Gibson   [2]Hugh Grant   [3]Tom Hanks   [4]Sean Connery",
 									"[1]Fossilien   [2]Dinosaurier   [3]Gesteinsschichten   [4]Rechtsprechung",
@@ -160,7 +160,7 @@ public class Questions {
 									"[1]Peter Jackson   [2]Mich\u00e4l Bay   [3]Steven Spielberg   [4]John Carpenter",
 									"[1]Christopher Nolan   [2]James Cameron   [3]Jonathan Frakes   [4]David Yates",
 									"[1]Clive Owen   [2]Tom Cruise   [3]Will Smith   [4]Tim Burton",
-									"[1]Tom Hanks   [2]Kevin Spacey   [3]Christian Bale   [4]Joaquin Ph\u00f6nix",
+									"[1]Tom Hanks   [2]Kevin Spacey   [3]Christian Bale   [4]Joaquin Phoenix",
 									"[1]Sean Connery   [2]Dustin Hoffmann   [3]Danny Clover   [4]David Hasselhoff",
 									"[1]Roger Moore   [2]Tom Selleck   [3]Nicolas Cage   [4]Jonathan Frakes",
 									"[1]Frank Debrin   [2]Jack Goldman   [3]James Hunt   [4]Pierre Cardin",
@@ -168,7 +168,7 @@ public class Questions {
 									"[1]Vom Winde verweht   [2]Hamlet   \n[3]Der mit dem Wolf tanzt   [4]Titanic",
 									"[1]Eisratte   [2]S\u00e4belzahneichh\u00f6rnchen\n[3]Mammutmaus   [4]Uhrzeithamster",
 									"[1]Scarlett Johansson & Ewan McGregor   [2]Jennifer Aniston & Owen Wilson\n[3]Tom Hanks & Sandra Bullock   [4]George Clooney & Patricia Hastie",
-									"[1]Henry Thomas   [2]Brad Pitt   [3]Keanu Reeves   [4]River Ph\u00f6nix",
+									"[1]Henry Thomas   [2]Brad Pitt   [3]Keanu Reeves   [4]River Phoenix",
 									"[1]Sie kann sich ohne Probleme in der Sonne zeigen.\n[2]Sie hat Visionen der Zukunft.\n[3]Sie kann Gedanken lesen.\n[4]Sie kann die Stimmung anderer Leute beeinflussen.",
 									"[1]Bei Anruf Mord   [2]Vertigo   [3]Das Fenster zum Hof   [4]Psycho",
 									"[1]Neo, Morpheus & Trinity   [2]Tick, Trick & Track\n[3]Lev, Frank & Claire   [4]Zac, Api & Joanne",
@@ -318,7 +318,7 @@ public static String techQuestionNrSchwer(int frageNr) {
 								"In welchem Jahr wurde der *Zauberw\u00FCrfel*,\nauch Rubik´s Cube genannt, erfunden?\n",
 								"Wann wurde die NASA gegr\u00FCndet?\n",
 								"Was wurde mit dem foucaultschen Pendel bewiesen?\n",
-								"Welcher Flugzeugba\u00FCr hat den Langstreckenbomber B-52 entwickelt?\n",
+								"Welcher Flugzeugbauer hat den Langstreckenbomber B-52 entwickelt?\n",
 								"Welches Unternehmen entwickelte den ersten PC,\nder am 12. August 1981 ver\u00f6ffentlicht wurde?\n",
 								"Wie hie\u00df die Raumfahrtmission, die im Jahr 1969\ndie ersten Menschen auf den Mond brachte?\n",
 								"Wof\u00FCr ist *Modem* eine Abk\u00FCrzung ?\n",
@@ -344,7 +344,7 @@ public static String techQuestionNrSchwer(int frageNr) {
 								"[1]1974   [2]1955   [3]1983   [4]1992",
 								"[1]1966   [2]1930   [3]1940   [4]1958",
 								"[1]Die Schwerkraft  [2]Die Erdrotation   [3]Hexerei   [4]Radioaktive Strahlung",
-								"[1]Lockheed   [2]Airbus   [3]B\u00f6ing   [4]Bell",
+								"[1]Lockheed   [2]Airbus   [3]Boeing   [4]Bell",
 								"[1]Apple   [2]Microsoft   [3]Atari   [4]IBM",
 								"[1]Apollo 11   [2]Apollo 7   [3]Apollo 18   [4]Apollo 9",
 								"[1]Modulator Demodulator   [2]Modemato Scalare\n[3]Multi Order Decryption Encryption Mode   [4]Mono-Decrypter",
@@ -454,8 +454,7 @@ public static String natureQuestionAnswerMittel(int frageNr) {
 	
 //--------------------------------------------------------------------------------------------------------------------	
 public static String natureQuestionNrSchwer(int frageNr) {
-	String[] natureQs = {"\n",
-								"Was wird mit der Fehlingl\u00f6sung nachgewiesen?\n",
+	String[] natureQs = {		"Was wird mit der Fehlingl\u00f6sung nachgewiesen?\n",
 								"Welcher von diesen Pflanzen sind giftig?\n",
 								"Wer oder was ist eine Mimose?\n",
 								"Wie viele L\u00e4nder grenzen an Ungarn?\n",

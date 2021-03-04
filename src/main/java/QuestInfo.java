@@ -45,8 +45,8 @@ public class QuestInfo {
 	//Hier wird beschrieben welche Ausgabe geprinted wird wenn zB eine Schwierigkeitsstufe gewählt wurde etc..
 	
 	//chooseDiff - fragt ab welche Schwierigkeitsstufe gewählt wird und gibt diese mittels RETURN als int-wert zurück.
-	public static int chooseDiff() {
-		int chosenDiff = 0;//Container der die eingegebene Zahl abspeichert und dann weitergibt
+	public static String chooseDiff() {
+		String chosenDiff = "0";//Container der die eingegebene Zahl abspeichert und dann weitergibt
 		Scanner scanDiff = new Scanner(System.in);
 		System.out.println("### Bitte Wählen Sie den Schwierigkeit'slevel ###\n" + 
 	"        (Eingabe über Tastatur)" + "\n[1]" + ANSI_GREEN + " Leicht" + ANSI_RESET  + "    [2]" + ANSI_YELLOW + " Mittel  " + ANSI_RESET + "  [3]" + ANSI_RED +" Schwer" + ANSI_RESET + ANSI_WHITE_BACKGROUND + ANSI_BLACK + "\n[4] Neuen Spieler erstellen." + ANSI_RESET);
@@ -54,41 +54,42 @@ public class QuestInfo {
 		
 		
 		for(int i = 0; i<1; i++) {
-			chosenDiff = scanDiff.nextInt();
-			if(chosenDiff > 4 | (chosenDiff < 1 | chosenDiff == 0)) {
+			chosenDiff = scanDiff.nextLine();
+			if(("4".equals(chosenDiff)| "3".equals(chosenDiff)) | ("2".equals(chosenDiff) | "1".equals(chosenDiff))) {
+				return chosenDiff;
+				
+			}else {
 				System.err.println("Eingabe ungültig! Erneut versuchen!");
 				i--;
-				break;
-			}else {
-				return chosenDiff;
+				
 			}
 			}
 		return chosenDiff;
 	}
 	
 			//gibt eine Passende Ausgabe zur gewählten Schwierigkeit aus (siehe chooseDiff())
-	public static int printDiffAnsw(int cases){
+	public static String printDiffAnsw(String cases){
 		int chosenDiff = 0;
 		for(int i = 0; i <1; i++) {
 			switch (cases) {
-				case 1:
-					System.out.println("\n### Du hast dich für leichte Fragen entschieden. ###\n\n");return 1;
+				case "1":
+					System.out.println("\n### Du hast dich für leichte Fragen entschieden. ###\n\n");return "1";
 
 					
-				case 2:
-					System.out.println("\n### Du hast dich für mittelschwere Fragen entschieden. ###\n\n");return 2;
+				case "2":
+					System.out.println("\n### Du hast dich für mittelschwere Fragen entschieden. ###\n\n");return "2";
 					
 				
-				case 3:
-					System.out.println("\n### Du hast dich für schwere Fragen entschieden. ###\n\n");return 3;
+				case "3":
+					System.out.println("\n### Du hast dich für schwere Fragen entschieden. ###\n\n");return "3";
 					
 				default:
 					Scanner printDiffAnswScanner = new Scanner(System.in);
 					i--;
-					return printDiffAnswScanner.nextInt();
+					return printDiffAnswScanner.nextLine();
 			}
 		}
-		return 0;
+		return "0";
 	}
 	
 	
@@ -121,27 +122,27 @@ public class QuestInfo {
 		}
 		return false;	
 	}
-		
+	
 	
 	public static String chooseTheme(){
 		Scanner chooseThemeScanner = new Scanner(System.in);
 		for(int i = 0; i<1; i++) {
 			System.out.println("######### WÄHLE EIN THEMENGEBIET #########\n# [1]" +ANSI_CYAN+ "FILM  " +ANSI_RESET+ "[2]" +ANSI_CYAN+ "TECHNIK  " +ANSI_RESET+ "[3]" +ANSI_CYAN+ "NATUR  " +ANSI_RESET+ "[4]" +ANSI_RED+ "MIX" +ANSI_RESET+ "  #");
-			int themeEingabe = chooseThemeScanner.nextInt();
-			
-			if(themeEingabe == 1) {
+			String themeEingabe = chooseThemeScanner.nextLine();			
+			if("1".equals(themeEingabe)) {
 				System.out.println("\n\n\n  ### Fragen aus dem FILM-Bereich. ###");
 				return "movie";}
-			else if(themeEingabe == 2) {
+			else if("2".equals(themeEingabe)) {
 				System.out.println("\n\n\n  ####### Fragen über TECHNIK. #######");
 				return "tech";}
-			else if(themeEingabe == 3) {
+			else if("3".equals(themeEingabe)) {
 				System.out.println("\n\n\n  ###### Fragen über die NATUR. ######");
 				return "nature";}
-			else if(themeEingabe == 4){
+			else if("4".equals(themeEingabe)){
 				System.out.println("\n\n\n  ###### Gemischte Fragen ######");
 				return "mix";} else{i--;}
 		}
+		
 		return "fehler";
 		
 		}

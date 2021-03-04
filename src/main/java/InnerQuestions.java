@@ -6,7 +6,7 @@ public class InnerQuestions extends Questions implements IquestionBodys {
 	// Hier werden die Fragen sowie die Abläufe dazu gesteuert z.B.
 	// Frageschwierigkeit, Welche frage, Welche Antwortmöglichkeiten, Punkte,
 	// Fehlschlagoptionen.
-
+//hgjkjhgfcdfvghjk
 	// Farbkonstanten
 	public static final String ANSI_RESET = "\u001B[0m";
 	public static final String ANSI_BLACK = "\u001B[30m";
@@ -37,13 +37,18 @@ public class InnerQuestions extends Questions implements IquestionBodys {
 		if (frageNr > 19 | frageNr < 0) {
 			System.err.println(
 					"Schwerer Frageparameter Fehler, bitte\nwenden Sie sich an den Entwickler.\n<<<<<< Code mov1QN>10QN<0 >>>>>>");
+			
 		} else {
+			
+			
+			
 			Scanner movieScL = new Scanner(System.in); // Scanner zum abfragen der Antwort
 			System.out.println("\nFRAGE " + (frageAbfolge));// Index Ausgabe, welche Frage?
 			System.out.println(movieQuestionNrLeicht(frageNr)); // Ausgabe methode der Frage #1
 			System.out.println(movieQuestionAOLeicht(frageNr)); // Antwortmöglichkeiten #2
 
 			for (int count = 0; count < 1; count++) {
+				
 				String richtigeAntwort = movieQuestionAnswerLeicht(frageNr);
 				String eingabeScanner = movieScL.nextLine();
 				
@@ -60,6 +65,8 @@ public class InnerQuestions extends Questions implements IquestionBodys {
 								+ richtigeAntwort + "] gewesen\n\n" + ANSI_RESET);
 
 					}
+					
+					
 				} else {// if Abfrage ob die richtige Antwort eingegeben wurde!
 					count--;
 					System.err.println(
@@ -73,6 +80,13 @@ public class InnerQuestions extends Questions implements IquestionBodys {
 		return false;
 	}
 
+	
+	
+	
+	
+	
+	
+	
 	@Override
 	public boolean questXmovieX_2(int frageNr, int frageAbfolge) {
 
