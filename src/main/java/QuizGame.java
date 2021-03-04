@@ -114,16 +114,30 @@ public class QuizGame{
 				case "movie":
 					
 					
+					
+					
 					 ArrayList<Integer> lis = new ArrayList<Integer>(size);
 				     ArrayList<Integer> list = new ArrayList<Integer>(size);
+				     
 					  for(int i = 1; i <= size; i++)
-					  {list.add(i);}
+						  
+					  {list.add(i);
+					  
+					  }
 					  
 				     Random rand = new Random();
+				     
+				     
 				     for(int i = 0; i <= list.size(); i++) {
+				    	 
 				      int index = rand.nextInt(list.size());
-				      lis.add(i, list.remove(index));}
+				      lis.add(i, list.remove(index));
+				      
+				     }
 
+				     
+				     
+				     
 					//Beginn: Film Fragen Schleife
 	
 					for (int i = 1; i <= 10; i++) {
